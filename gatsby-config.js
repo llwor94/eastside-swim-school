@@ -38,8 +38,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `testimonials`,
-        path: `${__dirname}/testimonial/`,
+        name: `classes`,
+        path: `${__dirname}/classes/`,
       },
     },
     'gatsby-transformer-remark',

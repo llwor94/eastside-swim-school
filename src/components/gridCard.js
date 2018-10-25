@@ -8,7 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
-const GridCard = ({ img, header, size, text }) => (
+const GridCard = ({ img, header, size, text, ages }) => (
 	<Grid item md={size}>
 		<Card>
 			<CardActionArea>
@@ -17,9 +17,12 @@ const GridCard = ({ img, header, size, text }) => (
 					<Typography gutterBottom variant="h2" component="h2">
 						{header}
 					</Typography>
-          <Typography component="p" variant='body1'>
-            {text}
-          </Typography>
+					<Typography component="h5" variant="h5">
+						{ages && `ages: ${ages}`}
+					</Typography>
+					<Typography component="p" variant="body1">
+						{text}
+					</Typography>
 				</CardContent>
 			</CardActionArea>
 		</Card>
