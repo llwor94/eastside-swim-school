@@ -1,33 +1,32 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
+
+import Logo from '../images/evelationlogo.png';
+import { flex } from '../styles/mixins';
+
+const Wrapper = styled.div`
+	background: white;
+	margin: 0 auto;
+	padding: 1rem 0;
+	height: 7vh;
+	${flex('row', 'space-between', 'center')};
+	img {
+		margin: 0;
+		max-width: 10rem;
+	}
+`;
 
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
+	<Wrapper>
+		<Link to="/">
+			<img src={Logo} />
+		</Link>
+		<div>
+			<Link to="/about">About</Link>
+			<Link to="/contact">Contact</Link>
+		</div>
+	</Wrapper>
+);
 
-export default Header
+export default Header;
