@@ -12,12 +12,12 @@ const GridCard = ({ img, header, size, text }) => (
 	<Grid item md={size}>
 		<Card>
 			<CardActionArea>
-				<CardMedia component="img" alt="Contemplative Reptile" height="140" image={img} title="Butt" />
+				<CardMedia component="img" alt="Contemplative Reptile" height="180" image={img} title="Butt" />
 				<CardContent>
-					<Typography gutterBottom variant="h5" component="h2">
+					<Typography gutterBottom variant="h2" component="h2">
 						{header}
 					</Typography>
-          <Typography component="p" style={{fontSize: '1.2rem'}}>
+          <Typography component="p" variant='body1'>
             {text}
           </Typography>
 				</CardContent>

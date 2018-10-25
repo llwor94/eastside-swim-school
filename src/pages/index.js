@@ -7,7 +7,7 @@ import Jumbotron from '../components/jumbotron';
 import Classes from '../components/classes';
 
 const Main = styled.div`
-	margin: 2rem;
+	margin: 20px;
 	height: 100vh;
 `;
 

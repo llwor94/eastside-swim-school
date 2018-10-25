@@ -8,12 +8,12 @@ import { flex } from '../styles/mixins';
 const Wrapper = styled.div`
 	background: white;
 	margin: 0 auto;
-	padding: 1rem 0;
+	padding: 10px 0;
 	height: 7vh;
 	${flex('row', 'space-between', 'center')};
 	img {
 		margin: 0;
-		max-width: 10rem;
+		max-width: 100px;
 	}
 `;
 
