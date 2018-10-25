@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: cooltable/eastside-swim-school
+  branch: ash
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+  - name: testimonial
+    label: Testimonial
+    folder: testimonial
+    create: true
+    fields:
+      - { name: title, label: Name }
+      - { name: testimonial, label: Testimonial, widget: text }
+  - name: announcement
+    label: Announcement
+    folder: announcement
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: announcement, label: Announcement, widget: markdown }
