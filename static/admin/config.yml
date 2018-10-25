@@ -9,15 +9,52 @@ public_folder: assets
 collections:
   - name: testimonial
     label: Testimonial
-    folder: testimonial
+    folder: testimonials
     create: true
     fields:
       - { name: title, label: Name }
-      - { name: testimonial, label: Testimonial, widget: text }
+      - { name: body, label: Testimonial, widget: text }
   - name: announcement
     label: Announcement
-    folder: announcement
+    folder: announcements
     create: true
     fields:
       - { name: title, label: Title }
-      - { name: announcement, label: Announcement, widget: markdown }
+      - { name: body, label: Announcement, widget: markdown }
+  - name: class
+    label: Class
+    folder: classes
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: time, label: Time }
+      - {
+          name: day,
+          label: 'Day of the week',
+          widget: select,
+          options:
+            [
+              'Sunday',
+              'Monday',
+              'Tuesday',
+              'Wednesday',
+              'Thursday',
+              'Friday',
+              'Saturday',
+            ],
+        }
+      - { name: body, label: Description, widget: markdown }
+      - {
+          name: ageGroup,
+          label: 'Age Group',
+          widget: select,
+          options: ['Preschool', 'Grade School', 'Jr. High', 'Adult'],
+        }
+      - {
+          name: difficulty,
+          label: Difficulty,
+          widget: select,
+          options: ['1', '2', '3'],
+        }
+      - { name: thumbnail, label: 'Featured Image', widget: 'image' }
+      - { name: link, label: 'Link to site' }
