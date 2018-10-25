@@ -3,43 +3,10 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
-import CssBaseline from ‘@material-ui/core/CssBaseline’;
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 import Header from './header';
 
-const theme = {
-	shamrock: '#7cba5a',
-};
-
-// const GlobalStyle = createGlobalStyle`
-//   *,
-//   *::after,
-//   *::before {
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: inherit;
-//   }
-//   ${'' /* html {
-//     font-size: 62.5%;
-//   } */}
-
-//   body {
-//     font-family: 'Lato', sans-serif;
-//     font-weight: 400;
-//     line-height: 1.7;
-//     color: @grey-dark;
-//     padding: 0 3rem;
-//     box-sizing: border-box;
-//   }
-
-//   a {
-//     text-decoration: none;
-//     font-size: 1.5rem;
-//     color: ${(props) => props.theme.shamrock};
-//     font-weight: 700;
-//     padding: 1rem;
-//   }
-// `;
 
 const LayoutWrapper = styled.div`margin: 0 auto;`;
 
@@ -54,8 +21,10 @@ const Layout = ({ children }) => (
 				}
 			}
 		`}
-		render={(data) => (
-			<ThemeProvider theme={theme}>
+		render={(data) => {
+      console.log(data)
+    return (
+			
 				<div>
 					<Helmet
 						title={data.site.siteMetadata.title}
@@ -75,11 +44,11 @@ const Layout = ({ children }) => (
           <CssBaseline />
 					<Header siteTitle={data.site.siteMetadata.title} />
 
-					<GlobalStyle />
+					
 					<LayoutWrapper>{children}</LayoutWrapper>
 				</div>
-			</ThemeProvider>
-		)}
+		
+		)}}
 	/>
 );
 

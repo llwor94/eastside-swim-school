@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { StaticQuery, graphql } from 'gatsby'
 import Grid from '@material-ui/core/Grid';
 
 import GridCard from './gridCard';
@@ -30,6 +31,23 @@ const Wrapper = styled.div`
 const GridWrapper = styled.div`margin: 3rem;`;
 
 const Classes = () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        allMarkdownRemark {
+          edges {
+            node {
+              frontmatter {
+                title
+                testimonial
+               }
+              }
+            }
+          }
+      }
+    `}
+    render={data => {console.log(data)
+    return (
 	<Wrapper name="classes">
 		<h1>Group Classes</h1>
 		<GridWrapper>
@@ -153,6 +171,8 @@ const Classes = () => (
 			</Grid>
 		</GridWrapper>
 	</Wrapper>
+  )}}
+  />
 );
 
 export default Classes;

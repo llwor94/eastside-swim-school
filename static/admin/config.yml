@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: cooltable/eastside-swim-school
-  branch: ash
+  
 
 media_folder: static/assets
 public_folder: assets
