@@ -1,5 +1,5 @@
 ---
 title: Ash
-testimonial: The classes are amazing
+testimonial: Blah blah
 ---
 
