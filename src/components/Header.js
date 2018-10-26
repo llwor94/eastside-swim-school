@@ -4,7 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
 
-import Logo from '../images/logo.png';
+import Logo from '../assets/essLogo.png';
 import styles from './Header.module.styl';
 
 const Header = () => (
