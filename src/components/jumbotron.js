@@ -1,33 +1,11 @@
-import React from 'react'
-import styled from 'styled-components'
-import Button from '@material-ui/core/Button'
-import Typography from '@material-ui/core/Typography'
-import { withStyles } from '@material-ui/core/styles'
-import Swimmer from '../images/swimmer.png'
-import { flex } from '../styles/mixins'
+import React from 'react';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import { withStyles } from '@material-ui/core/styles';
 
-const Wrapper = styled.div`
-  height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(180, 255, 255, 0.8),
-      rgba(75, 172, 184, 0.8)
-    ),
-    url(${Swimmer});
-  background-size: cover;
-  background-position: center;
-  ${flex('column', 'center', 'center')};
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-`
+import styles from './Jumbotron.module.styl';
 
-const TextBox = styled.div`
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  ${flex('column')};
-  margin-bottom: 10px;
-`
-const styles = theme => ({
+const styles1 = theme => ({
   button: {
     fontSize: theme.typography.pxToRem(20),
     letterSpacing: 5,
@@ -41,27 +19,29 @@ const styles = theme => ({
     fontWeight: 300,
     marginBottom: '3rem',
   },
-})
+});
 
 const Jumbotron = ({ classes }) => (
-  <Wrapper>
-    <TextBox>
+  <div className={styles.wrapper}>
+    <div className={styles.textBox}>
       <Typography className={classes.title} variant="h2" component="h1">
         Eastside Swim School
       </Typography>
-    </TextBox>
+    </div>
     <Button
       variant="contained"
       color="secondary"
       component="a"
       href="#classes"
       size="large"
-      className={classes.button}
+      classes={{
+        root: styles.btn,
+      }}
     >
       Jump In!
     </Button>
     {/* <Button to="#classes">Jump In!</Button> */}
-  </Wrapper>
-)
+  </div>
+);
 
-export default withStyles(styles)(Jumbotron)
+export default withStyles(styles1)(Jumbotron);

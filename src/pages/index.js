@@ -1,9 +1,9 @@
-import React from 'react'
-import Layout from '../components/layout'
+import React from 'react';
+import Layout from '../components/layout';
 
-import Jumbotron from '../components/jumbotron'
-import Classes from '../components/classes'
-import Instructors from '../components/instructors'
+import Jumbotron from '../components/Jumbotron';
+import Classes from '../components/classes';
+import Instructors from '../components/instructors';
 
 const IndexPage = () => (
   <Layout>
@@ -11,6 +11,6 @@ const IndexPage = () => (
     <Classes />
     <Instructors />
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

@@ -1,16 +1,16 @@
-import React from 'react'
-import styled from 'styled-components'
-import { StaticQuery, graphql } from 'gatsby'
-import { withStyles } from '@material-ui/core/styles'
+import React from 'react';
+import styled from 'styled-components';
+import { StaticQuery, graphql } from 'gatsby';
+import { withStyles } from '@material-ui/core/styles';
 
-import Grid from '@material-ui/core/Grid'
-import Button from '@material-ui/core/Button'
-import Card from '@material-ui/core/Card'
-import CardActionArea from '@material-ui/core/CardActionArea'
-import CardActions from '@material-ui/core/CardActions'
-import CardContent from '@material-ui/core/CardContent'
-import CardMedia from '@material-ui/core/CardMedia'
-import Typography from '@material-ui/core/Typography'
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Typography from '@material-ui/core/Typography';
 
 const Wrapper = styled.div`
   margin: 30px;
@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   max-width: 960px;
   margin: 0 auto;
   margin-top: 100px;
-`
+`;
 
 const styles = theme => ({
   root: {
@@ -29,7 +29,7 @@ const styles = theme => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
   },
-})
+});
 
 const Instructors = props => (
   <StaticQuery
@@ -41,7 +41,7 @@ const Instructors = props => (
           edges {
             node {
               frontmatter {
-                name
+                title
                 oneStudent
                 twoStudents
                 thumbnail
@@ -108,9 +108,9 @@ const Instructors = props => (
             ))}
           </Grid>
         </Wrapper>
-      )
+      );
     }}
   />
-)
+);
 
-export default withStyles(styles)(Instructors)
+export default withStyles(styles)(Instructors);

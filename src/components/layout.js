@@ -1,13 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
-import CssBaseline from '@material-ui/core/CssBaseline'
-import { MuiThemeProvider } from '@material-ui/core/styles'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { MuiThemeProvider } from '@material-ui/core/styles';
 
-import Header from './header'
-import Footer from './footer'
-import theme from '../styles/theme'
+import Header from './Header';
+import Footer from './footer';
+import theme from '../styles/theme';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -51,13 +51,13 @@ const Layout = ({ children }) => (
           {children}
           <Footer />
         </MuiThemeProvider>
-      )
+      );
     }}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

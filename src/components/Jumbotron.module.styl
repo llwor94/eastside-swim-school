@@ -1,0 +1,26 @@
+@import '../styles/utils'
+
+.wrapper
+  height 95vh
+  background-image linear-gradient(
+    to right bottom,
+    rgba(primary-light, 0.8),
+    rgba(primary-dark, 0.8)
+    ), url(../images/swimmer.png)
+  background-size cover
+  background-position center
+  flex(column, center, center)
+  clip-path polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%)
+
+.text-box
+  color white
+  text-transform uppercase
+  text-align center
+  flex(column)
+  margin-bottom 10px
+
+.btn
+  font-size unit(20/16, 'rem') !important
+  letter-spacing: 5px
+  padding-left 45px !important
+  padding-right 45px !important
