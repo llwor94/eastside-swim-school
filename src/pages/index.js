@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/layout';
 
 import Jumbotron from '../components/Jumbotron';
-import Classes from '../components/classes';
+import Classes from '../components/Classes';
 import Instructors from '../components/instructors';
 
 const IndexPage = () => (

@@ -1,24 +1,9 @@
-import React from 'react'
-import styled from 'styled-components'
-import { StaticQuery, graphql } from 'gatsby'
-import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
-import GridCard from './gridCard'
-
-const Wrapper = styled.div`
-  margin: 30px;
-
-  padding-top: 80px;
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 1024px;
-  margin: 0 auto;
-  margin-top: 100px;
-`
-
-const GridWrapper = styled.div`
-  margin: 3rem 0;
-`
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+import GridCard from './GridCard';
+import styles from './Classes.module.styl';
 
 const Classes = () => (
   <StaticQuery
@@ -47,17 +32,12 @@ const Classes = () => (
     render={({ allMarkdownRemark }) => {
       // console.log(allMarkdownRemark)
       return (
-        <Wrapper name="classes">
+        <section className={styles.wrapper} name="classes">
           <Typography variant="h2" component="h2">
             Group Classes
           </Typography>
-          <GridWrapper>
-            <Grid
-              container
-              spacing={40}
-              alignItems="stretch"
-              style={{ marginTop: '2rem', marginBottom: '2rem' }}
-            >
+          <div className={styles.grid}>
+            <Grid container spacing={40} alignItems="stretch">
               {allMarkdownRemark.edges
                 .filter(({ node }) => node.frontmatter.ageGroup === 'Preschool')
                 .map(({ node }) => (
@@ -77,14 +57,10 @@ const Classes = () => (
                 ))}
             </Grid>
 
-            <Grid
-              container
-              spacing={40}
-              style={{ marginTop: '2rem', marginBottom: '2rem' }}
-            >
+            <Grid container spacing={40} className={styles.grid}>
               {allMarkdownRemark.edges
                 .filter(
-                  ({ node }) => node.frontmatter.ageGroup === 'Grade School'
+                  ({ node }) => node.frontmatter.ageGroup === 'Grade School',
                 )
                 .map(({ node }) => (
                   <GridCard
@@ -103,11 +79,7 @@ const Classes = () => (
                 ))}
             </Grid>
 
-            <Grid
-              container
-              spacing={40}
-              style={{ marginTop: '2rem', marginBottom: '2rem' }}
-            >
+            <Grid container spacing={40} className={styles.grid}>
               {allMarkdownRemark.edges
                 .filter(({ node }) => node.frontmatter.ageGroup === 'Jr. High')
                 .map(({ node }) => (
@@ -127,11 +99,7 @@ const Classes = () => (
                 ))}
             </Grid>
 
-            <Grid
-              container
-              spacing={40}
-              style={{ marginTop: '2rem', marginBottom: '2rem' }}
-            >
+            <Grid container spacing={40} className={styles.grid}>
               {allMarkdownRemark.edges
                 .filter(({ node }) => node.frontmatter.ageGroup === 'Adult')
                 .map(({ node }) => (
@@ -150,11 +118,11 @@ const Classes = () => (
                   />
                 ))}
             </Grid>
-          </GridWrapper>
-        </Wrapper>
-      )
+          </div>
+        </section>
+      );
     }}
   />
-)
+);
 
-export default Classes
+export default Classes;

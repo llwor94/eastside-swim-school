@@ -1,54 +1,29 @@
-import React from 'react'
-import Button from '@material-ui/core/Button'
-import Grid from '@material-ui/core/Grid'
-import Card from '@material-ui/core/Card'
-import CardActionArea from '@material-ui/core/CardActionArea'
-import CardActions from '@material-ui/core/CardActions'
-import Icon from '@material-ui/core/Icon'
-import CardContent from '@material-ui/core/CardContent'
-import CardMedia from '@material-ui/core/CardMedia'
-import Typography from '@material-ui/core/Typography'
-import { withStyles } from '@material-ui/core'
+import React from 'react';
+import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import Icon from '@material-ui/core/Icon';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Typography from '@material-ui/core/Typography';
+import styles from './GridCard.module.styl';
 
-const styles = theme => ({
-  card: {
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  grow: {
-    flexGrow: 1,
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'flex-start',
-  },
-  icon: {
-    color: theme.palette.primary.main,
-  },
-})
-
-const GridCard = ({
-  img,
-  header,
-  size,
-  ages,
-
-  level,
-  time,
-  link,
-  classes,
-  text,
-}) => {
+const GridCard = ({ img, header, size, ages, level, time, link, text }) => {
   return (
-    <Grid item md={size} style={{ flexGrow: 1 }}>
-      <Card className={classes.card}>
-        <CardActionArea className={classes.grow}>
+    <Grid item sm={size} style={{ flexGrow: 1 }}>
+      <Card className={styles.card}>
+        <CardActionArea className={styles.grow}>
           <CardMedia
             component="img"
             alt="Contemplative Reptile"
             height="180"
             image={img}
             title="Butt"
+            classes={{
+              media: styles.img,
+            }}
           />
           <CardContent>
             <Typography gutterBottom variant="title" component="h2">
@@ -62,7 +37,7 @@ const GridCard = ({
               {Array(level * 1)
                 .fill()
                 .map((_, i) => (
-                  <Icon className={classes.icon} key={i}>
+                  <Icon className={styles.icon} key={i}>
                     star
                   </Icon>
                 ))}
@@ -84,7 +59,7 @@ const GridCard = ({
         </CardActions>
       </Card>
     </Grid>
-  )
-}
+  );
+};
 
-export default withStyles(styles)(GridCard)
+export default GridCard;
