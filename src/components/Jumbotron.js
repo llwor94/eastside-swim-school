@@ -1,31 +1,14 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import { withStyles } from '@material-ui/core/styles';
 
 import styles from './Jumbotron.module.styl';
 
-const styles1 = theme => ({
-  button: {
-    fontSize: theme.typography.pxToRem(20),
-    letterSpacing: 5,
-    paddingLeft: theme.spacing.unit * 4,
-    paddingRight: theme.spacing.unit * 4,
-  },
-  title: {
-    letterSpacing: 5,
-    color: '#fff',
-    fontFamily: 'Lato',
-    fontWeight: 300,
-    marginBottom: '3rem',
-  },
-});
-
-const Jumbotron = ({ classes }) => (
+const Jumbotron = () => (
   <div className={styles.wrapper}>
     <div className={styles.textBox}>
-      <Typography className={classes.title} variant="h2" component="h1">
-        Eastside Swim School
+      <Typography className={styles.title} variant="h2" component="h1">
+        Eastside <span className={styles.green}>Swim</span> School
       </Typography>
     </div>
     <Button
@@ -44,4 +27,4 @@ const Jumbotron = ({ classes }) => (
   </div>
 );
 
-export default withStyles(styles1)(Jumbotron);
+export default Jumbotron;

@@ -13,7 +13,7 @@ import styles from './GridCard.module.styl';
 const GridCard = ({ img, header, size, ages, level, time, link, text }) => {
   // console.log(img.node.childImageSharp.fluid);
   return (
-    <Grid item sm={size} style={{ flexGrow: 1 }}>
+    <Grid item sm={6} md={4} style={{ flexGrow: 1 }}>
       <Card className={styles.card}>
         <CardActionArea className={styles.grow}>
           <CardMedia
