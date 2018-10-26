@@ -34,12 +34,10 @@ const Classes = () => (
 	<StaticQuery
 		query={graphql`
 			query {
-				allMarkdownRemark {
+				allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/classes/" } }) {
 					edges {
 						node {
-							internal {
-								content
-							}
+							html
 							frontmatter {
 								title
 								time
@@ -54,39 +52,39 @@ const Classes = () => (
 				}
 			}
 		`}
-		render={(data) => {
-			// let PreKind = data.allMarkdownRemark.edges.filter(node => node.node.frontmatter.ageGroup === 'Preschool');
-			// console.log(PreKind)
-
+		render={({ allMarkdownRemark }) => {
+			console.log(allMarkdownRemark);
 			return (
 				<Wrapper name="classes">
 					<h1>Group Classes</h1>
 					<GridWrapper>
 						<Grid container spacing={40} style={{ marginTop: '2rem', marginBottom: '2rem' }}>
-							{data.allMarkdownRemark.edges
-								.filter((node) => node.node.frontmatter.ageGroup === 'Preschool')
-								.map((node) => (
+							{allMarkdownRemark.edges
+								.filter(({ node }) => node.frontmatter.ageGroup === 'Preschool')
+								.map(({ node }) => (
 									<GridCard
-										img={node.node.frontmatter.thumbnail}
-										header={node.node.frontmatter.title}
-										text={node.node.internal.content}
+										img={node.frontmatter.thumbnail}
+										header={node.frontmatter.title}
 										size={4}
 										ages="3-5"
-									/>
+									>
+										<div dangerouslySetInnerHTML={{ __html: node.html }} />
+									</GridCard>
 								))}
 						</Grid>
 
 						<Grid container spacing={40} style={{ marginTop: '2rem', marginBottom: '2rem' }}>
-							{data.allMarkdownRemark.edges
-								.filter((node) => node.node.frontmatter.ageGroup === 'Grade School')
-								.map((node) => (
+							{allMarkdownRemark.edges
+								.filter(({ node }) => node.frontmatter.ageGroup === 'Grade School')
+								.map(({ node }) => (
 									<GridCard
-										img={node.node.frontmatter.thumbnail}
-										header={node.node.frontmatter.title}
-										text={node.node.internal.content}
+										img={node.frontmatter.thumbnail}
+										header={node.frontmatter.title}
 										size={4}
 										ages="5-12"
-									/>
+									>
+										<div dangerouslySetInnerHTML={{ __html: node.html }} />
+									</GridCard>
 								))}
 						</Grid>
 
