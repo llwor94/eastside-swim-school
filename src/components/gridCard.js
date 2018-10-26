@@ -8,7 +8,6 @@ import Icon from '@material-ui/core/Icon';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import { StaticQuery, graphql } from 'gatsby';
 import styles from './GridCard.module.styl';
 
 const GridCard = ({ img, header, size, ages, level, time, link, text }) => {

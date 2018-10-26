@@ -1,10 +1,10 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
 
-import Layout from '../components/layout'
-import Lisa from '../images/lisa.png'
-import instructors from '../images/instructors.png'
+import Layout from '../components/Layout';
+import Lisa from '../images/lisa.png';
+import instructors from '../images/instructors.png';
 
 const Wrapper = styled.div`
   margin: 0 30px;
@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 
   max-width: 960px;
   margin: 0 auto;
-`
+`;
 
 const About = () => (
   <Layout>
@@ -71,6 +71,6 @@ const About = () => (
       <Link to="/">Go back to the homepage</Link>
     </Wrapper>
   </Layout>
-)
+);
 
-export default About
+export default About;
