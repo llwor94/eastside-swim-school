@@ -27,10 +27,25 @@ const Classes = () => (
             }
           }
         }
+        allFile(filter: { sourceInstanceName: { regex: "/cms/" } }) {
+          edges {
+            node {
+              childImageSharp {
+                fluid(maxWidth: 1200, jpegProgressive: true) {
+                  srcSet
+                  src
+                  sizes
+                  originalName
+                }
+              }
+            }
+          }
+        }
       }
     `}
-    render={({ allMarkdownRemark }) => {
+    render={({ allMarkdownRemark, allFile }) => {
       // console.log(allMarkdownRemark)
+
       return (
         <section className={styles.wrapper} name="classes">
           <Typography variant="h2" component="h2">
@@ -46,7 +61,12 @@ const Classes = () => (
                       node.frontmatter.time
                     }`}
                     key={node.frontmatter.title}
-                    img={node.frontmatter.thumbnail}
+                    img={allFile.edges.find(({ node: file }) => {
+                      return (
+                        file.childImageSharp.fluid.originalName ===
+                        node.frontmatter.thumbnail.split('/')[2]
+                      );
+                    })}
                     header={node.frontmatter.title}
                     level={node.frontmatter.difficulty}
                     size={4}
@@ -67,7 +87,12 @@ const Classes = () => (
                     time={`${node.frontmatter.day}s at ${
                       node.frontmatter.time
                     }`}
-                    img={node.frontmatter.thumbnail}
+                    img={allFile.edges.find(({ node: file }) => {
+                      return (
+                        file.childImageSharp.fluid.originalName ===
+                        node.frontmatter.thumbnail.split('/')[2]
+                      );
+                    })}
                     header={node.frontmatter.title}
                     size={4}
                     level={node.frontmatter.difficulty}
@@ -87,7 +112,12 @@ const Classes = () => (
                     time={`${node.frontmatter.day}s at ${
                       node.frontmatter.time
                     }`}
-                    img={node.frontmatter.thumbnail}
+                    img={allFile.edges.find(({ node: file }) => {
+                      return (
+                        file.childImageSharp.fluid.originalName ===
+                        node.frontmatter.thumbnail.split('/')[2]
+                      );
+                    })}
                     header={node.frontmatter.title}
                     size={4}
                     ages="18 and under"
@@ -107,7 +137,12 @@ const Classes = () => (
                     time={`${node.frontmatter.day}s at ${
                       node.frontmatter.time
                     }`}
-                    img={node.frontmatter.thumbnail}
+                    img={allFile.edges.find(({ node: file }) => {
+                      return (
+                        file.childImageSharp.fluid.originalName ===
+                        node.frontmatter.thumbnail.split('/')[2]
+                      );
+                    })}
                     header={node.frontmatter.title}
                     size={4}
                     ages="18 +"
