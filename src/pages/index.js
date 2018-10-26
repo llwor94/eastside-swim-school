@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 
 import Jumbotron from '../components/Jumbotron';
 import Classes from '../components/Classes';
-import Instructors from '../components/instructors';
+import Instructors from '../components/Instructors';
 
 const IndexPage = () => (
   <Layout>

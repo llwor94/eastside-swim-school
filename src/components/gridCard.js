@@ -53,7 +53,13 @@ const GridCard = ({ img, header, size, ages, level, time, link, text }) => {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary" component="a" href={link}>
+          <Button
+            size="small"
+            color="primary"
+            component="a"
+            href={link}
+            target="_blank"
+          >
             Register now!
           </Button>
         </CardActions>
