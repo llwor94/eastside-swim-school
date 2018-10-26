@@ -1,22 +1,17 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core/styles'
 import Swimmer from '../images/swimmer.png'
-import { moveInLeft, moveInRight } from '../styles/keyframes'
 import { flex } from '../styles/mixins'
 
 const Wrapper = styled.div`
-  height: 80vh;
+  height: 95vh;
   background-image: linear-gradient(
       to right bottom,
       rgba(180, 255, 255, 0.8),
       rgba(75, 172, 184, 0.8)
-        /* rgba(124, 186, 90, 0.8) 0%,
-      rgba(5, 130, 126, 0.8) 79%,
-      rgba(0, 128, 128, 0.8) 83% */
     ),
     url(${Swimmer});
   background-size: cover;
@@ -25,19 +20,12 @@ const Wrapper = styled.div`
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 `
 
-const TextBox = styled.h1`
+const TextBox = styled.div`
   color: white;
   text-transform: uppercase;
   text-align: center;
   ${flex('column')};
   margin-bottom: 10px;
-`
-
-const Text = styled.span`
-  font-size: ${props => (props.sub ? '31px' : '50px')};
-  font-weight: ${props => (props.sub ? '700' : '400')};
-  letter-spacing: ${props => (props.sub ? '25px' : '27px')};
-  animation: ${moveInLeft} 1s ease-out;
 `
 const styles = theme => ({
   button: {

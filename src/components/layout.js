@@ -21,7 +21,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => {
-      console.log(data)
+      // console.log(data)
       return (
         <MuiThemeProvider theme={theme}>
           <Helmet

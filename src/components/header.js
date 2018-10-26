@@ -8,7 +8,6 @@ import { withStyles } from '@material-ui/core'
 import Logo from '../images/logo.png'
 
 const styles = theme => {
-  console.log(theme)
   return {
     img: {
       maxWidth: 100,
@@ -32,7 +31,7 @@ const Header = ({ classes }) => (
   <AppBar color="primary">
     <Toolbar>
       <Link className={classes.grow} to="/">
-        <img src={Logo} className={classes.img} />
+        <img src={Logo} className={classes.img} alt="logo" />
       </Link>
       <div>
         <Button color="inherit">
