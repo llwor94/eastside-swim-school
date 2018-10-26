@@ -64,7 +64,7 @@ const Jumbotron = ({ classes }) => (
     </TextBox>
     <Button
       variant="contained"
-      color="primary"
+      color="secondary"
       component="a"
       href="#classes"
       size="large"
