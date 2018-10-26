@@ -1,7 +1,6 @@
 backend:
   name: github
   repo: cooltable/eastside-swim-school
-  
 
 media_folder: static/assets
 public_folder: assets
@@ -62,8 +61,8 @@ collections:
     label: Coach-Dummy
     folder: coach-dummy
     fields:
-      - {name: name, label: Name}
-      - {name: oneStudent, label: 'One Student'}
-      - {name: twoStudents, label: 'Two Students'}
+      - { name: title, label: Name }
+      - { name: oneStudent, label: 'One Student' }
+      - { name: twoStudents, label: 'Two Students' }
       - { name: thumbnail, label: 'Featured Image', widget: 'image' }
       - { name: link, label: 'Link to site' }
