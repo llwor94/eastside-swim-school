@@ -2,15 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components'
 import CssBaseline from '@material-ui/core/CssBaseline'
+import { MuiThemeProvider } from '@material-ui/core/styles'
 
 import Header from './header'
 import Footer from './footer'
-
-const LayoutWrapper = styled.div`
-  margin: 0 auto;
-`
+import theme from '../styles/theme'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -26,7 +23,7 @@ const Layout = ({ children }) => (
     render={data => {
       console.log(data)
       return (
-        <div>
+        <MuiThemeProvider theme={theme}>
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
@@ -51,9 +48,9 @@ const Layout = ({ children }) => (
           <CssBaseline />
           <Header siteTitle={data.site.siteMetadata.title} />
 
-          <LayoutWrapper>{children}</LayoutWrapper>
+          {children}
           <Footer />
-        </div>
+        </MuiThemeProvider>
       )
     }}
   />
