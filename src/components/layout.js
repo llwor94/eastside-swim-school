@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 import Header from './header';
-
+import Footer from './footer';
 
 const LayoutWrapper = styled.div`margin: 0 auto;`;
 
@@ -22,9 +22,8 @@ const Layout = ({ children }) => (
 			}
 		`}
 		render={(data) => {
-      console.log(data)
-    return (
-			
+			console.log(data);
+			return (
 				<div>
 					<Helmet
 						title={data.site.siteMetadata.title}
@@ -41,14 +40,14 @@ const Layout = ({ children }) => (
 						<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
 						<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 					</Helmet>
-          <CssBaseline />
+					<CssBaseline />
 					<Header siteTitle={data.site.siteMetadata.title} />
 
-					
 					<LayoutWrapper>{children}</LayoutWrapper>
+					<Footer />
 				</div>
-		
-		)}}
+			);
+		}}
 	/>
 );
 

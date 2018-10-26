@@ -5,16 +5,18 @@ import Layout from '../components/layout';
 
 import Jumbotron from '../components/jumbotron';
 import Classes from '../components/classes';
+import Instructors from '../components/instructors';
 
-const Main = styled.div`
-	margin: 20px;
-	height: 100vh;
-`;
+// const Main = styled.div`
+// 	margin: 20px;
+// 	height: 100vh;
+// `;
 
 const IndexPage = () => (
 	<Layout>
 		<Jumbotron />
-		<Classes name="classes" />
+		<Classes />
+		<Instructors />
 	</Layout>
 );
 

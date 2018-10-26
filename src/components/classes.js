@@ -2,21 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Grid from '@material-ui/core/Grid';
-
 import GridCard from './gridCard';
-
-import Logo from '../images/evelationlogo.png';
-import PreSchool1 from '../assets/preschool1.jpg';
-import PreSchool2 from '../assets/preschool2.jpg';
-import PreSchool3 from '../assets/preschool3.jpg';
-import Elementary1 from '../assets/elementary1.jpg';
-import Elementary2 from '../assets/elementary 2.jpg';
-import Elementary3 from '../assets/elementary3.jpg';
-import AdvancedEl from '../assets/advancedelementary1.jpg';
-import AdvancedEl2 from '../assets/advancedelementary2.jpg';
-import Adult1 from '../assets/adult1.jpg';
-import Adult2 from '../assets/MASTERS.jpg';
-import Adult3 from '../assets/triathlon.jpg';
 
 const Wrapper = styled.div`
 	margin: 30px;
@@ -63,12 +49,16 @@ const Classes = () => (
 								.filter(({ node }) => node.frontmatter.ageGroup === 'Preschool')
 								.map(({ node }) => (
 									<GridCard
+										time={`${node.frontmatter.day}s at ${node.frontmatter.time}`}
+										key={node.frontmatter.title}
 										img={node.frontmatter.thumbnail}
 										header={node.frontmatter.title}
+										level={node.frontmatter.difficulty}
 										size={4}
+										link={node.frontmatter.link}
 										ages="3-5"
 									>
-										<div dangerouslySetInnerHTML={{ __html: node.html }} />
+										<p dangerouslySetInnerHTML={{ __html: node.html }} />
 									</GridCard>
 								))}
 						</Grid>
@@ -78,65 +68,56 @@ const Classes = () => (
 								.filter(({ node }) => node.frontmatter.ageGroup === 'Grade School')
 								.map(({ node }) => (
 									<GridCard
+										time={`${node.frontmatter.day}s at ${node.frontmatter.time}`}
 										img={node.frontmatter.thumbnail}
 										header={node.frontmatter.title}
 										size={4}
+										level={node.frontmatter.difficulty}
 										ages="5-12"
+										key={node.frontmatter.title}
+										link={node.frontmatter.link}
 									>
-										<div dangerouslySetInnerHTML={{ __html: node.html }} />
+										<p dangerouslySetInnerHTML={{ __html: node.html }} />
 									</GridCard>
 								))}
 						</Grid>
 
 						<Grid container spacing={40} style={{ marginTop: '2rem', marginBottom: '2rem' }}>
-							<GridCard
-								img={AdvancedEl}
-								header="Lizard"
-								size={6}
-								text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Quisque nisl nibh, mattis eget massa a, rhoncus viverra est. 
-          Etiam et posuere ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-          per inceptos himenaeos."
-							/>
-							<GridCard
-								img={AdvancedEl2}
-								header="Lizard"
-								size={6}
-								text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Quisque nisl nibh, mattis eget massa a, rhoncus viverra est. 
-          Etiam et posuere ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-          per inceptos himenaeos."
-							/>
+							{allMarkdownRemark.edges
+								.filter(({ node }) => node.frontmatter.ageGroup === 'Jr. High')
+								.map(({ node }) => (
+									<GridCard
+										time={`${node.frontmatter.day}s at ${node.frontmatter.time}`}
+										img={node.frontmatter.thumbnail}
+										header={node.frontmatter.title}
+										size={4}
+										ages="18 and under"
+										level={node.frontmatter.difficulty}
+										key={node.frontmatter.title}
+										link={node.frontmatter.link}
+									>
+										<p dangerouslySetInnerHTML={{ __html: node.html }} />
+									</GridCard>
+								))}
 						</Grid>
 
 						<Grid container spacing={40} style={{ marginTop: '2rem', marginBottom: '2rem' }}>
-							<GridCard
-								img={Adult1}
-								header="Lizard"
-								text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Quisque nisl nibh, mattis eget massa a, rhoncus viverra est. 
-          Etiam et posuere ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-          per inceptos himenaeos."
-								size={4}
-							/>
-							<GridCard
-								img={Adult2}
-								header="Lizard"
-								text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Quisque nisl nibh, mattis eget massa a, rhoncus viverra est. 
-          Etiam et posuere ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-          per inceptos himenaeos."
-								size={4}
-							/>
-							<GridCard
-								img={Adult3}
-								header="Lizard"
-								text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Quisque nisl nibh, mattis eget massa a, rhoncus viverra est. 
-          Etiam et posuere ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-          per inceptos himenaeos."
-								size={4}
-							/>
+							{allMarkdownRemark.edges
+								.filter(({ node }) => node.frontmatter.ageGroup === 'Adult')
+								.map(({ node }) => (
+									<GridCard
+										time={`${node.frontmatter.day}s at ${node.frontmatter.time}`}
+										img={node.frontmatter.thumbnail}
+										header={node.frontmatter.title}
+										size={4}
+										ages="18 +"
+										level={node.frontmatter.difficulty}
+										key={node.frontmatter.title}
+										link={node.frontmatter.link}
+									>
+										<p dangerouslySetInnerHTML={{ __html: node.html }} />
+									</GridCard>
+								))}
 						</Grid>
 					</GridWrapper>
 				</Wrapper>
