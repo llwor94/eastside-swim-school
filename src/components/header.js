@@ -1,57 +1,37 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Toolbar from '@material-ui/core/Toolbar'
-import AppBar from '@material-ui/core/AppBar'
-import Button from '@material-ui/core/Button'
-import { withStyles } from '@material-ui/core'
+import React from 'react';
+import { Link } from 'gatsby';
+import Toolbar from '@material-ui/core/Toolbar';
+import AppBar from '@material-ui/core/AppBar';
+import Button from '@material-ui/core/Button';
 
-import Logo from '../images/logo.png'
+import Logo from '../images/logo.png';
+import styles from './Header.module.styl';
 
-const styles = theme => {
-  return {
-    img: {
-      maxWidth: 100,
-      // filter: 'drop-shadow(0px 10px 15px rgba(0, 0,0, 0.7));',
-      filter: 'hue-rotate(60deg) brightness(150%)',
-    },
-    grow: {
-      flexGrow: 1,
-    },
-    link: {
-      color: 'inherit',
-      textDecoration: 'none',
-    },
-    appbar: {
-      backgroundColor: theme.palette.primary['main'],
-    },
-  }
-}
-
-const Header = ({ classes }) => (
+const Header = () => (
   <AppBar color="primary">
-    <Toolbar>
-      <Link className={classes.grow} to="/">
-        <img src={Logo} className={classes.img} alt="logo" />
+    <Toolbar className={styles.toolbar}>
+      <Link to="/">
+        <img src={Logo} className={styles.img} alt="logo" />
       </Link>
       <div>
         <Button color="inherit">
-          <Link className={classes.link} to="#coaches">
+          <Link className={styles.link} to="#coaches">
             Private Lessons
           </Link>
         </Button>
         <Button color="inherit">
-          <Link className={classes.link} to="#classes">
+          <Link className={styles.link} to="#classes">
             Group Classes
           </Link>
         </Button>
         <Button color="inherit">
-          <Link className={classes.link} to="/about">
+          <Link className={styles.link} to="/about">
             About
           </Link>
         </Button>
       </div>
     </Toolbar>
   </AppBar>
-)
+);
 
-export default withStyles(styles)(Header)
+export default Header;
