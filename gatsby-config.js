@@ -56,6 +56,13 @@ module.exports = {
 				path: `${__dirname}/coach-dummy/`,
 			},
 		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `testimonial`,
+				path: `${__dirname}/testimonial/`,
+			},
+		},
 		'gatsby-transformer-remark',
 		'gatsby-plugin-stylus',
 	],

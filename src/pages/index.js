@@ -4,13 +4,15 @@ import Layout from '../components/Layout';
 import Jumbotron from '../components/Jumbotron';
 import Classes from '../components/Classes';
 import Instructors from '../components/Instructors';
+import Testimonial from '../components/Testimonials';
 
 const IndexPage = () => (
-  <Layout>
-    <Jumbotron />
-    <Classes />
-    <Instructors />
-  </Layout>
+	<Layout>
+		<Jumbotron />
+		<Classes />
+		<Testimonial />
+		<Instructors />
+	</Layout>
 );
 
 export default IndexPage;
