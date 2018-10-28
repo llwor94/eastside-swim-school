@@ -10,8 +10,8 @@ const IndexPage = () => (
 	<Layout>
 		<Jumbotron />
 		<Classes />
-		<Testimonial />
 		<Instructors />
+		<Testimonial />
 	</Layout>
 );
 

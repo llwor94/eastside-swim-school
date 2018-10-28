@@ -69,7 +69,6 @@ const Classes = () => (
                     })}
                     header={node.frontmatter.title}
                     level={node.frontmatter.difficulty}
-                    size={4}
                     link={node.frontmatter.link}
                     ages="3-5"
                     text={node.html}
@@ -94,7 +93,6 @@ const Classes = () => (
                       );
                     })}
                     header={node.frontmatter.title}
-                    size={4}
                     level={node.frontmatter.difficulty}
                     ages="5-12"
                     key={node.frontmatter.title}
@@ -119,7 +117,6 @@ const Classes = () => (
                       );
                     })}
                     header={node.frontmatter.title}
-                    size={4}
                     ages="18 and under"
                     level={node.frontmatter.difficulty}
                     key={node.frontmatter.title}
@@ -144,7 +141,6 @@ const Classes = () => (
                       );
                     })}
                     header={node.frontmatter.title}
-                    size={4}
                     ages="18 +"
                     level={node.frontmatter.difficulty}
                     key={node.frontmatter.title}
