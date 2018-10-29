@@ -83,23 +83,9 @@ const Instructors = () => (
 														<Typography
 															gutterBottom
 															variant="body1"
-															component="p"
+															component="div"
 															dangerouslySetInnerHTML={{ __html: html }}
 														/>
-														{/* Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-															Itaque odio architecto nam similique ratione! Non distinctio
-															doloribus blanditiis placeat soluta numquam consequuntur qui
-															totam possimus earum! Veniam quaerat velit provident. Lorem
-															ipsum dolor sit amet consectetur adipisicing elit. Quae eum,
-															in velit praesentium quibusdam dolor. Tempore provident ad
-															in aspernatur minima corrupti repellat delectus ex
-															voluptates quas illum, sapiente sequi? Lorem ipsum dolor
-															sit, amet consectetur adipisicing elit. Odit perferendis
-															excepturi nostrum, porro recusandae exercitationem soluta
-															quaerat magnam voluptatem, consectetur pariatur quidem
-															facilis laboriosam sit ipsam, animi atque provident?
-															Suscipit! */}
-
 														<BottomBar styles={styles} link={link} />
 													</div>
 												</Grid>

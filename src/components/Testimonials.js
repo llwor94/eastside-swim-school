@@ -13,52 +13,50 @@ import Paper from '@material-ui/core/Paper';
 
 import './Testimonials.styl';
 
-const Testimonials = props => (
-  <StaticQuery
-    query={graphql`
-      query {
-        allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "/testimonials/" } }
-        ) {
-          edges {
-            node {
-              frontmatter {
-                title
-              }
-              html
-            }
-          }
-        }
-      }
-    `}
-    render={({ allMarkdownRemark }) => {
-      console.log(allMarkdownRemark);
-      // const { classes } = props
-      return (
-        <div className="Testimonials">
-          <Typography variant="h2" component="h2" gutterBottom>
-            Testimonials
-          </Typography>
-          <div className="content-wrapper">
-            {allMarkdownRemark.edges.map(({ node }) => (
-              <Paper key={node.title} className="content active">
-                <Typography
-                  gutterBottom
-                  className="text"
-                  component="p"
-                  variant="subtitle1"
-                  dangerouslySetInnerHTML={{ __html: node.html }}
-                />
-                <Typography variant="title" className="right">
-                  - {node.frontmatter.title}
-                </Typography>
-              </Paper>
-            ))}
-          </div>
-        </div>
-      );
-    }}
-  />
+const Testimonials = (props) => (
+	<StaticQuery
+		query={graphql`
+			query {
+				allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/testimonials/" } }) {
+					edges {
+						node {
+							frontmatter {
+								title
+							}
+							html
+						}
+					}
+				}
+			}
+		`}
+		render={({ allMarkdownRemark }) => {
+			console.log(allMarkdownRemark);
+			// const { classes } = props
+			return (
+				<div className="Testimonials">
+					<Typography variant="h2" component="h2" gutterBottom>
+						Testimonials
+					</Typography>
+					<div className="content-wrapper">
+						{allMarkdownRemark.edges.map(({ node }) => (
+							<Paper key={node.title} className="content active">
+								<Typography
+									gutterBottom
+									className="text"
+									component="div"
+									variant="subtitle1"
+									dangerouslySetInnerHTML={{ __html: node.html }}
+								/>
+								<Typography variant="title" className="right">
+									- {node.frontmatter.title}
+								</Typography>
+							</Paper>
+						))}
+					</div>
+				</div>
+			);
+		}}
+	/>
 );
 
 export default Testimonials;
