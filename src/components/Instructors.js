@@ -39,6 +39,7 @@ const Instructors = () => (
 				allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/coaches/" } }) {
 					edges {
 						node {
+							html
 							frontmatter {
 								title
 								oneStudent
@@ -64,7 +65,12 @@ const Instructors = () => (
 							<Grid container spacing={40}>
 								{allMarkdownRemark.edges.map(
 									(
-										{ node: { frontmatter: { thumbnail, title, oneStudent, twoStudents, link } } },
+										{
+											node: {
+												frontmatter: { thumbnail, title, oneStudent, twoStudents, link },
+												html,
+											},
+										},
 										idx,
 									) => (
 										<Grid className={styles.bottomLineWrapper} item xs={12}>
@@ -74,8 +80,13 @@ const Instructors = () => (
 														<Typography gutterBottom variant="h5" component="h3">
 															{title}
 														</Typography>
-														<Typography gutterBottom variant="body1" component="p">
-															Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+														<Typography
+															gutterBottom
+															variant="body1"
+															component="p"
+															dangerouslySetInnerHTML={{ __html: html }}
+														/>
+														{/* Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 															Itaque odio architecto nam similique ratione! Non distinctio
 															doloribus blanditiis placeat soluta numquam consequuntur qui
 															totam possimus earum! Veniam quaerat velit provident. Lorem
@@ -87,8 +98,8 @@ const Instructors = () => (
 															excepturi nostrum, porro recusandae exercitationem soluta
 															quaerat magnam voluptatem, consectetur pariatur quidem
 															facilis laboriosam sit ipsam, animi atque provident?
-															Suscipit!
-														</Typography>
+															Suscipit! */}
+
 														<BottomBar styles={styles} link={link} />
 													</div>
 												</Grid>
