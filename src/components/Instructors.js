@@ -9,156 +9,111 @@ import Typography from '@material-ui/core/Typography';
 import styles from './Instructors.module.styl';
 
 const BottomBar = ({ styles, link }) => (
-  <div>
-    <Typography variant="h6" component="h4" className={styles.mr} gutterBottom>
-      Schedule Private Lessons
-    </Typography>
-    <div className={styles.bottomBar}>
-      <Button
-        variant="contained"
-        color="primary"
-        size="small"
-        href={link}
-        component="a"
-        className={styles.mr}
-        target="_blank"
-      >
-        1-on-1
-      </Button>
-      <Button
-        variant="contained"
-        color="primary"
-        size="small"
-        href={link}
-        component="a"
-        target="_blank"
-      >
-        1-on-2
-      </Button>
-    </div>
-  </div>
+	<div>
+		<Typography variant="h6" component="h4" className={styles.mr} gutterBottom>
+			Schedule Private Lessons
+		</Typography>
+		<div className={styles.bottomBar}>
+			<Button
+				variant="contained"
+				color="primary"
+				size="small"
+				href={link}
+				component="a"
+				className={styles.mr}
+				target="_blank"
+			>
+				1-on-1
+			</Button>
+			<Button variant="contained" color="primary" size="small" href={link} component="a" target="_blank">
+				1-on-2
+			</Button>
+		</div>
+	</div>
 );
 
 const Instructors = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "/coach-dummy/" } }
-        ) {
-          edges {
-            node {
-              frontmatter {
-                title
-                oneStudent
-                twoStudents
-                thumbnail
-                link
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={({ allMarkdownRemark }) => {
-      // console.log(allMarkdownRemark);
-      // const { classes } = props
-      return (
-        <section className={styles.instructors} name="coaches">
-          <div className={styles.container}>
-            <Typography gutterBottom variant="h2" component="h2">
-              Private Lessons
-            </Typography>
-            <Paper className={styles.instructor}>
-              <Grid container spacing={40}>
-                {allMarkdownRemark.edges.map(
-                  (
-                    {
-                      node: {
-                        frontmatter: {
-                          thumbnail,
-                          title,
-                          oneStudent,
-                          twoStudents,
-                          link,
-                        },
-                      },
-                    },
-                    idx,
-                  ) => (
-                    <Grid className={styles.bottomLineWrapper} item xs={12}>
-                      <Grid
-                        container
-                        spacing={40}
-                        className={styles.bottomLine}
-                      >
-                        <Grid
-                          item
-                          className={styles.grow}
-                          xs={12}
-                          sm={7}
-                          md={8}
-                        >
-                          <div className={styles.wrapper}>
-                            <Typography
-                              gutterBottom
-                              variant="h5"
-                              component="h3"
-                            >
-                              {title}
-                            </Typography>
-                            <Typography
-                              gutterBottom
-                              variant="body1"
-                              component="p"
-                            >
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Itaque odio architecto nam
-                              similique ratione! Non distinctio doloribus
-                              blanditiis placeat soluta numquam consequuntur qui
-                              totam possimus earum! Veniam quaerat velit
-                              provident. Lorem ipsum dolor sit amet consectetur
-                              adipisicing elit. Quae eum, in velit praesentium
-                              quibusdam dolor. Tempore provident ad in
-                              aspernatur minima corrupti repellat delectus ex
-                              voluptates quas illum, sapiente sequi? Lorem ipsum
-                              dolor sit, amet consectetur adipisicing elit. Odit
-                              perferendis excepturi nostrum, porro recusandae
-                              exercitationem soluta quaerat magnam voluptatem,
-                              consectetur pariatur quidem facilis laboriosam sit
-                              ipsam, animi atque provident? Suscipit!
-                            </Typography>
-                            <BottomBar styles={styles} link={link} />
-                          </div>
-                        </Grid>
-                        <Grid
-                          item
-                          className={`${idx % 2 === 0 && styles.first} ${
-                            styles.pic
-                          }`}
-                          xs={12}
-                          sm={5}
-                          md={4}
-                        >
-                          <div className={styles.imgWrapper}>
-                            <img
-                              src={thumbnail}
-                              alt={title}
-                              className={styles.img}
-                            />
-                          </div>
-                        </Grid>
-                      </Grid>
-                    </Grid>
-                  ),
-                )}
-              </Grid>
-            </Paper>
-          </div>
-        </section>
-      );
-    }}
-  />
+	<StaticQuery
+		query={graphql`
+			query {
+				allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/coaches/" } }) {
+					edges {
+						node {
+							frontmatter {
+								title
+								oneStudent
+								twoStudents
+								thumbnail
+								link
+							}
+						}
+					}
+				}
+			}
+		`}
+		render={({ allMarkdownRemark }) => {
+			// console.log(allMarkdownRemark);
+			// const { classes } = props
+			return (
+				<section className={styles.instructors} name="coaches">
+					<div className={styles.container}>
+						<Typography gutterBottom variant="h2" component="h2">
+							Private Lessons
+						</Typography>
+						<Paper className={styles.instructor}>
+							<Grid container spacing={40}>
+								{allMarkdownRemark.edges.map(
+									(
+										{ node: { frontmatter: { thumbnail, title, oneStudent, twoStudents, link } } },
+										idx,
+									) => (
+										<Grid className={styles.bottomLineWrapper} item xs={12}>
+											<Grid container spacing={40} className={styles.bottomLine}>
+												<Grid item className={styles.grow} xs={12} sm={7} md={8}>
+													<div className={styles.wrapper}>
+														<Typography gutterBottom variant="h5" component="h3">
+															{title}
+														</Typography>
+														<Typography gutterBottom variant="body1" component="p">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+															Itaque odio architecto nam similique ratione! Non distinctio
+															doloribus blanditiis placeat soluta numquam consequuntur qui
+															totam possimus earum! Veniam quaerat velit provident. Lorem
+															ipsum dolor sit amet consectetur adipisicing elit. Quae eum,
+															in velit praesentium quibusdam dolor. Tempore provident ad
+															in aspernatur minima corrupti repellat delectus ex
+															voluptates quas illum, sapiente sequi? Lorem ipsum dolor
+															sit, amet consectetur adipisicing elit. Odit perferendis
+															excepturi nostrum, porro recusandae exercitationem soluta
+															quaerat magnam voluptatem, consectetur pariatur quidem
+															facilis laboriosam sit ipsam, animi atque provident?
+															Suscipit!
+														</Typography>
+														<BottomBar styles={styles} link={link} />
+													</div>
+												</Grid>
+												<Grid
+													item
+													className={`${idx % 2 === 0 && styles.first} ${styles.pic}`}
+													xs={12}
+													sm={5}
+													md={4}
+												>
+													<div className={styles.imgWrapper}>
+														<img src={thumbnail} alt={title} className={styles.img} />
+													</div>
+												</Grid>
+											</Grid>
+										</Grid>
+									),
+								)}
+							</Grid>
+						</Paper>
+					</div>
+				</section>
+			);
+		}}
+	/>
 );
 
 export default Instructors;
