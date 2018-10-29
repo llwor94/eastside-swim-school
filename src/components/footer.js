@@ -1,21 +1,24 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import Typography from '@material-ui/core/Typography';
 
-import styled from 'styled-components';
+import './footer.styl';
 
-const Wrapper = styled.div`
-	width: 100%;
-	background-color: black;
-	color: white;
-
-	height: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-`;
 const Footer = () => (
-	<Wrapper>
-		Made by <a href="http://www.cooltable.io">Cool Table</a>
-	</Wrapper>
+  <footer className="footer">
+    <Typography variant="subtitle1" className="author">
+      Designed by{' '}
+      <a className="link" href="https://github.com/cooltable" target="_blank">
+        Cool Table
+      </a>
+    </Typography>
+    <div className="icon">
+      <a href="https://facebook.com/" target="_blank">
+        <FontAwesomeIcon icon={faFacebook} size="3x" />
+      </a>
+    </div>
+  </footer>
 );
 
 export default Footer;
