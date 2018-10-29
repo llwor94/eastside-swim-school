@@ -66,3 +66,4 @@ collections:
       - { name: twoStudents, label: 'Two Students' }
       - { name: thumbnail, label: 'Featured Image', widget: 'image' }
       - { name: link, label: 'Link to site' }
+      - { name: body, label: "Bio", widget: "text"}
