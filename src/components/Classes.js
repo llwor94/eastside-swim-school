@@ -11,6 +11,7 @@ const Classes = () => (
       query {
         allMarkdownRemark(
           filter: { fileAbsolutePath: { regex: "/classes/" } }
+          sort: { fields: frontmatter___difficulty }
         ) {
           edges {
             node {
@@ -72,6 +73,7 @@ const Classes = () => (
                     link={node.frontmatter.link}
                     ages="3-5"
                     text={node.html}
+                    color="ps"
                   />
                 ))}
             </Grid>
@@ -98,6 +100,7 @@ const Classes = () => (
                     key={node.frontmatter.title}
                     link={node.frontmatter.link}
                     text={node.html}
+                    color="gs"
                   />
                 ))}
             </Grid>
@@ -122,6 +125,7 @@ const Classes = () => (
                     key={node.frontmatter.title}
                     link={node.frontmatter.link}
                     text={node.html}
+                    color="jh"
                   />
                 ))}
             </Grid>
@@ -146,6 +150,7 @@ const Classes = () => (
                     key={node.frontmatter.title}
                     link={node.frontmatter.link}
                     text={node.html}
+                    color="ad"
                   />
                 ))}
             </Grid>

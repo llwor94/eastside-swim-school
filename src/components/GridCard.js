@@ -11,7 +11,17 @@ import Typography from '@material-ui/core/Typography';
 import Tooltip from '@material-ui/core/Tooltip';
 import styles from './GridCard.module.styl';
 
-const GridCard = ({ img, header, size, ages, level, time, link, text }) => {
+const GridCard = ({
+  img,
+  header,
+  size,
+  ages,
+  level,
+  time,
+  link,
+  text,
+  color,
+}) => {
   // console.log(img.node.childImageSharp.fluid);
   return (
     <Grid item sm={6} md={4} style={{ flexGrow: 1 }}>
@@ -45,7 +55,7 @@ const GridCard = ({ img, header, size, ages, level, time, link, text }) => {
                 {Array(level * 1)
                   .fill()
                   .map((_, i) => (
-                    <Icon className={styles.icon} key={i}>
+                    <Icon className={`${styles.icon} ${styles[color]}`} key={i}>
                       star
                     </Icon>
                   ))}
