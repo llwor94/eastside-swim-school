@@ -20,30 +20,54 @@
   object-fit: cover;
 
 .instructor
-  padding: 3rem;
+  padding: 5rem 3rem;
 
 .img-wrapper
-  width: 250px;
-  height: 250px;
   clip-path: circle(45%)
 
 .grow
   flex-grow: 1
 
+
 .mr.mr
-  margin-right: 1rem;
+  @media (min-width 600px)
+    margin-right: 1rem;
 
 .wrapper
-  flex(column, center)
+  flex(column, flex-start, stretch)
   height 100%
-
-.first
-  order -1
+  h3, p
+    line-height 1.5
 
 .align-right
   text-align: right
 
+.griditem
+  padding 2rem
+
+.pic
+  order -1
+  @media (min-width 600px)
+    order 0
+
+.first
+  order -1
+
 .bottom-bar
-  flex(row, flex-start, center)
-  & > *
-    margin-right 1rem
+  display flex
+  flex-direction column
+  @media (min-width 600px)
+    flex()
+  a
+    flex-grow 1
+    margin-bottom 20px
+    @media (min-width 600px)
+      margin-bottom 0
+
+.bottom-line-wrapper
+  &:not(:last-child) .bottom-line::after
+    content ""
+    width 80%
+    height 2px
+    background-color #eee
+    margin 40px auto
