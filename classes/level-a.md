@@ -3,7 +3,7 @@ title: Level A
 time: '5:00'
 day: Thursday
 ageGroup: Jr. High
-difficulty: '1'
+difficulty: '2'
 thumbnail: /assets/advancedelementary1.jpg
 link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class_tab=12270&uid=0&id_class_tab=2
