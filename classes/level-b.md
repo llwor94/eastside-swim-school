@@ -1,5 +1,5 @@
 ---
-title: Level B
+title: Pre Comp B
 time: '4:00'
 day: Thursday
 ageGroup: Jr. High
