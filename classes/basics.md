@@ -1,5 +1,5 @@
 ---
-title: ALTS
+title: Adult Learn To Swim
 time: '7:00'
 day: Thursday
 ageGroup: Adult
@@ -8,4 +8,4 @@ thumbnail: /assets/adult1.jpg
 link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=93118&k_class_tab=10915
 ---
-Adult learn to swim. Adults new to swimming, not comfortable in the water.
+Adults new to swimming, not comfortable in the water.
