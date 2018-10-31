@@ -1,5 +1,5 @@
 ---
-title: PK 3
+title: Preschool 3
 time: '4:00'
 day: Monday
 ageGroup: Preschool
