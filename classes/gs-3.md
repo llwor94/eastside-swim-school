@@ -1,6 +1,6 @@
 ---
 title: Grade School 3
-time: '4:30, 5:30'
+time: '4:30'
 day: Wednesday
 ageGroup: Grade School
 difficulty: '3'
