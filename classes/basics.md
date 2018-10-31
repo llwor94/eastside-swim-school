@@ -1,7 +1,7 @@
 ---
 title: ALTS
 time: '7:00'
-day: Tuesday
+day: Thursday
 ageGroup: Adult
 difficulty: '1'
 thumbnail: /assets/adult1.jpg
