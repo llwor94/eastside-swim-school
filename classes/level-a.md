@@ -1,5 +1,5 @@
 ---
-title: Level A
+title: Pre Comp A
 time: '5:00'
 day: Thursday
 ageGroup: Jr. High
