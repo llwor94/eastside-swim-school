@@ -1,7 +1,7 @@
 ---
 title: Grade School 1
-time: '5:00'
-day: Thursday
+time: '5:30'
+day: Monday
 ageGroup: Grade School
 difficulty: '1'
 thumbnail: /assets/elementary1.jpg
