@@ -1,7 +1,7 @@
 ---
 title: Preschool 1
-time: '4:30'
-day: Monday
+time: ''
+day: ''
 ageGroup: Preschool
 difficulty: '1'
 thumbnail: /assets/preschool1.jpg
