@@ -1,5 +1,5 @@
 ---
-title: GS 1
+title: Grade School 1
 time: '5:00'
 day: Thursday
 ageGroup: Grade School
