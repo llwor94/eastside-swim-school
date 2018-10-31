@@ -20,6 +20,10 @@ const Classes = () => (
 								title
 								time
 								day
+								time2
+								day2
+								time3
+								day3
 								ageGroup
 								difficulty
 								thumbnail
@@ -58,7 +62,17 @@ const Classes = () => (
 								.filter(({ node }) => node.frontmatter.ageGroup === 'Preschool')
 								.map(({ node }) => (
 									<GridCard
-										time={`${node.frontmatter.day}s at ${node.frontmatter.time}`}
+										time={
+											node.frontmatter.day ? (
+												`${node.frontmatter.day}s at ${node.frontmatter.time}`
+											) : (
+												'We recommend private instruction.'
+											)
+										}
+										time2={
+											node.frontmatter.time2 &&
+											`${node.frontmatter.day2}s at ${node.frontmatter.time2}`
+										}
 										key={node.frontmatter.title}
 										img={allFile.edges.find(({ node: file }) => {
 											return (
@@ -82,6 +96,14 @@ const Classes = () => (
 								.map(({ node }) => (
 									<GridCard
 										time={`${node.frontmatter.day}s at ${node.frontmatter.time}`}
+										time2={
+											node.frontmatter.time2 &&
+											`${node.frontmatter.day2}s at ${node.frontmatter.time2}`
+										}
+										time3={
+											node.frontmatter.time3 &&
+											`${node.frontmatter.day3}s at ${node.frontmatter.time3}`
+										}
 										img={allFile.edges.find(({ node: file }) => {
 											return (
 												file.childImageSharp.fluid.originalName ===
@@ -105,6 +127,14 @@ const Classes = () => (
 								.map(({ node }) => (
 									<GridCard
 										time={`${node.frontmatter.day}s at ${node.frontmatter.time}`}
+										time2={
+											node.frontmatter.time2 &&
+											`${node.frontmatter.day2}s at ${node.frontmatter.time2}`
+										}
+										time3={
+											node.frontmatter.time3 &&
+											`${node.frontmatter.day3}s at ${node.frontmatter.time3}`
+										}
 										img={allFile.edges.find(({ node: file }) => {
 											return (
 												file.childImageSharp.fluid.originalName ===
@@ -128,6 +158,14 @@ const Classes = () => (
 								.map(({ node }) => (
 									<GridCard
 										time={`${node.frontmatter.day}s at ${node.frontmatter.time}`}
+										time2={
+											node.frontmatter.time2 &&
+											`${node.frontmatter.day2}s at ${node.frontmatter.time2}`
+										}
+										time3={
+											node.frontmatter.time3 &&
+											`${node.frontmatter.day3}s at ${node.frontmatter.time3}`
+										}
 										img={allFile.edges.find(({ node: file }) => {
 											return (
 												file.childImageSharp.fluid.originalName ===
