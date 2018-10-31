@@ -1,7 +1,9 @@
 ---
 title: Masters
-time: '6:00'
+time: '8:00'
 day: Thursday
+time2: '8:00'
+day2: Tuesday
 ageGroup: Adult
 difficulty: '3'
 thumbnail: /assets/masters.jpg
