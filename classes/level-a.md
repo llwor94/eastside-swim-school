@@ -6,7 +6,7 @@ time2: '6:30'
 day2: Wednesday
 ageGroup: Jr. High
 difficulty: '2'
-thumbnail: /assets/advancedelementary1.jpg
+thumbnail: /assets/precomp1.png
 link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class_tab=12270&uid=0&id_class_tab=2
 ---
