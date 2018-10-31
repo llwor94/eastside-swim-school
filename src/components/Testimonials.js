@@ -12,7 +12,6 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 
 import './Testimonials.styl';
-import { GridList } from '@material-ui/core';
 
 const Testimonials = (props) => (
 	<StaticQuery
