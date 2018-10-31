@@ -6,19 +6,19 @@ import Typography from '@material-ui/core/Typography';
 import './footer.styl';
 
 const Footer = () => (
-  <footer className="footer">
-    <Typography variant="subtitle1" className="author">
-      Designed by{' '}
-      <a className="link" href="https://github.com/cooltable" target="_blank">
-        Cool Table
-      </a>
-    </Typography>
-    <div className="icon">
-      <a href="https://facebook.com/" target="_blank">
-        <FontAwesomeIcon icon={faFacebook} size="3x" />
-      </a>
-    </div>
-  </footer>
+	<footer className="footer">
+		<Typography variant="subtitle1" className="author">
+			Designed by{' '}
+			<a className="link" href="https://github.com/cooltable" target="_blank">
+				Cool Table
+			</a>
+		</Typography>
+		<div className="icon">
+			<a href="https://www.facebook.com/eastsideswimschool/" target="_blank">
+				<FontAwesomeIcon icon={faFacebook} size="3x" />
+			</a>
+		</div>
+	</footer>
 );
 
 export default Footer;
