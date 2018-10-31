@@ -1,7 +1,11 @@
 ---
 title: Grade School 2
-time: '4:00, 5:00'
-day: Wednesday
+time: '5:00'
+day: Monday
+time2: '4:00'
+day2: Wednesday
+time3: '5:00'
+day3: Wednesday
 ageGroup: Grade School
 difficulty: '2'
 thumbnail: /assets/elementary-2.jpg
