@@ -60,9 +60,9 @@ collections:
             ],
           required: false
         }
-      - { name: time2, label: 'Time 3 *optional', required: false }
+      - { name: time3, label: 'Time 3 *optional', required: false }
       - {
-          name: day2,
+          name: day3,
           label: 'Day of the week 3 *optional',
           widget: select,
           options:
