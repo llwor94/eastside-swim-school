@@ -10,54 +10,49 @@ import Footer from './footer';
 import theme from '../styles/theme';
 
 const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => {
-      // console.log(data)
-      return (
-        <MuiThemeProvider theme={theme}>
-          <Helmet
-            title={data.site.siteMetadata.title}
-            meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
-            ]}
-          >
-            <html lang="en" />
-            <link
-              href="https://fonts.googleapis.com/css?family=Lato:300"
-              rel="stylesheet"
-            />
-            <link
-              rel="stylesheet"
-              href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-            />
-            <link
-              rel="stylesheet"
-              href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            />
-          </Helmet>
-          <CssBaseline />
-          <Header siteTitle={data.site.siteMetadata.title} />
+	<StaticQuery
+		query={graphql`
+			query SiteTitleQuery {
+				site {
+					siteMetadata {
+						title
+					}
+				}
+			}
+		`}
+		render={(data) => {
+			// console.log(data)
+			return (
+				<MuiThemeProvider theme={theme}>
+					<Helmet
+						title={data.site.siteMetadata.title}
+						meta={[
+							{ name: 'description', content: 'Sample' },
+							{
+								name: 'keywords',
+								content:
+									'swim, swimming, lessons, kids, woodinville, youth, adult, learn, instruction, woodinville, bothell, redmond, kirkland, eastside, school, bellevue, kenmore, snohomish, king, seattle, north, east, babies, toddler, instruction, triathlon, masters, class, video, analysis',
+							},
+						]}
+					>
+						<html lang="en" />
+						<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" />
+						<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
+						<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+					</Helmet>
+					<CssBaseline />
+					<Header siteTitle={data.site.siteMetadata.title} />
 
-          {children}
-          <Footer />
-        </MuiThemeProvider>
-      );
-    }}
-  />
+					{children}
+					<Footer />
+				</MuiThemeProvider>
+			);
+		}}
+	/>
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+	children: PropTypes.node.isRequired,
 };
 
 export default Layout;
