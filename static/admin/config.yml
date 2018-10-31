@@ -26,7 +26,7 @@ collections:
     create: true
     fields:
       - { name: title, label: Title }
-      - { name: time, label: Time }
+      - { name: time, label: Time, required: false }
       - {
           name: day,
           label: 'Day of the week',
@@ -41,6 +41,7 @@ collections:
               'Friday',
               'Saturday',
             ],
+            required: false
         }
       - { name: time2, label: 'Time 2', required: false }
       - {
