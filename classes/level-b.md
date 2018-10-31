@@ -1,7 +1,9 @@
 ---
 title: Pre Comp B
-time: '4:00'
-day: Thursday
+time: '6:00'
+day: Sunday
+time2: '6:30'
+day2: Wednesday
 ageGroup: Jr. High
 difficulty: '1'
 thumbnail: /assets/advancedelementary2.jpg
