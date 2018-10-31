@@ -43,10 +43,27 @@ collections:
             ],
             required: false
         }
-      - { name: time2, label: 'Time 2', required: false }
+      - { name: time2, label: 'Time 2 *optional', required: false }
       - {
           name: day2,
-          label: 'Day of the week 2',
+          label: 'Day of the week 2 *optional',
+          widget: select,
+          options:
+            [
+              'Sunday',
+              'Monday',
+              'Tuesday',
+              'Wednesday',
+              'Thursday',
+              'Friday',
+              'Saturday',
+            ],
+          required: false
+        }
+      - { name: time2, label: 'Time 3 *optional', required: false }
+      - {
+          name: day2,
+          label: 'Day of the week 3 *optional',
           widget: select,
           options:
             [
