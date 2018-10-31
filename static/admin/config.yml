@@ -42,7 +42,7 @@ collections:
               'Saturday',
             ],
         }
-      - { name: time2, label: 'Time 2' }
+      - { name: time2, label: 'Time 2', required: false }
       - {
           name: day2,
           label: 'Day of the week 2',
@@ -57,6 +57,7 @@ collections:
               'Friday',
               'Saturday',
             ],
+          required: false
         }
       - { name: body, label: Description, widget: markdown }
       - {
