@@ -24,7 +24,7 @@ const Testimonials = (props) => (
 			}
 		`}
 		render={({ allMarkdownRemark }) => {
-			//console.log(allMarkdownRemark);
+			console.log(allMarkdownRemark);
 			// const { classes } = props
 			return (
 				<div className="Testimonials">
@@ -34,7 +34,7 @@ const Testimonials = (props) => (
 					<GridList className="grid-list">
 						<div className="content-wrapper">
 							{allMarkdownRemark.edges.map(({ node }) => (
-								<Paper className="content active" key={node.frontmatter.title}>
+								<Paper key={node.title} className="content active">
 									<Typography
 										gutterBottom
 										className="text"
@@ -42,7 +42,7 @@ const Testimonials = (props) => (
 										variant="subtitle1"
 										dangerouslySetInnerHTML={{ __html: node.html }}
 									/>
-									<Typography variant="h6" className="right">
+									<Typography variant="title" className="right">
 										- {node.frontmatter.title}
 									</Typography>
 								</Paper>

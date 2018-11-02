@@ -56,7 +56,7 @@ const Instructors = () => (
 			// console.log(allMarkdownRemark);
 			// const { classes } = props
 			return (
-				<section className={styles.instructors} id="coaches">
+				<section className={styles.instructors} name="coaches">
 					<div className={styles.container}>
 						<Typography gutterBottom variant="h2" component="h2">
 							Private Lessons
@@ -73,7 +73,7 @@ const Instructors = () => (
 										},
 										idx,
 									) => (
-										<Grid className={styles.bottomLineWrapper} item xs={12} key={thumbnail}>
+										<Grid className={styles.bottomLineWrapper} item xs={12}>
 											<Grid container spacing={40} className={styles.bottomLine}>
 												<Grid item className={styles.grow} xs={12} sm={7} md={8}>
 													<div className={styles.wrapper}>

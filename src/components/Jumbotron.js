@@ -4,14 +4,13 @@ import Typography from '@material-ui/core/Typography';
 
 import styles from './Jumbotron.module.styl';
 
-const Jumbotron = ({ text, button, link, about }) => (
+const Jumbotron = () => (
 	<div className={styles.wrapper}>
 		<div className={styles.textBox}>
 			<Typography className={styles.title} variant="h2" component="h1">
-				{text}
+				Eastside <span className={styles.green}>Swim</span> School
 			</Typography>
 		</div>
-
 		<Button
 			variant="contained"
 			color="secondary"
@@ -22,9 +21,8 @@ const Jumbotron = ({ text, button, link, about }) => (
 				root: styles.btn,
 			}}
 		>
-			{button}
+			Jump In!
 		</Button>
-
 		{/* <Button to="#classes">Jump In!</Button> */}
 	</div>
 );
