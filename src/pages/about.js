@@ -52,9 +52,9 @@ const About = () => (
 				Heart Zones Cycling and Personal Training, Certified Lifeguard, First Aid, and CPR.
 			</p>
 			<p>Lisa teaches both at her private residence and Gold Creek Club in Woodinville.</p>
-			<img src={instructors} alt="" />
+			{/* <img src={instructors} alt="" />
 			<p>Deanna, Lisa, Tiffani and Lori. All professional adults with decades of experience.</p>
-			<Link to="/">Go back to the homepage</Link>
+			<Link to="/">Go back to the homepage</Link> */}
 		</Wrapper>
 	</Layout>
 );
