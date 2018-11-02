@@ -53,19 +53,16 @@ class Header extends React.Component {
 											<Button color="inherit" component="a" href="#coaches">
 												Private Lessons
 											</Button>
-											<Button
-												color="inherit"
-												className={styles.link}
-												component={Link}
-												to="/about"
-											>
-												About
+											<Button color="inherit">
+												<Link className={styles.link} to="/about">
+													About
+												</Link>
 											</Button>
 										</div>
 									);
 								else
 									return (
-										<Button color="inherit" className={styles.link} component={Link} to="/">
+										<Button color="inherit" className={styles.link} component="a" href="/">
 											Home
 										</Button>
 									);
@@ -120,8 +117,8 @@ class Header extends React.Component {
 												<MenuItem
 													onClick={this.handleClose}
 													className={styles.link}
-													component={Link}
-													to="/about"
+													component="a"
+													href="/about"
 												>
 													About
 												</MenuItem>
@@ -130,7 +127,7 @@ class Header extends React.Component {
 									);
 								else
 									return (
-										<Button color="inherit" className={styles.link} component={Link} to="/">
+										<Button color="inherit" className={styles.link} component="a" href="/">
 											Home
 										</Button>
 									);
