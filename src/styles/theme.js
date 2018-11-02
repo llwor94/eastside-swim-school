@@ -1,9 +1,6 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
-	typography: {
-		useNextVariants: true,
-	},
 	palette: {
 		primary: {
 			light: '#b4ffff',
@@ -16,9 +13,6 @@ const theme = createMuiTheme({
 			main: '#fafafa',
 			dark: '#c7c7c7',
 			contrastText: '#455a64',
-		},
-		accent: {
-			main: '#66bc4a',
 		},
 	},
 });
