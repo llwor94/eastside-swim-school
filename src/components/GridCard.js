@@ -19,7 +19,7 @@ const GridCard = ({ img, header, size, ages, level, time, link, text, color, tim
 				<CardActionArea className={styles.grow} component="a" href={link} target="_blank">
 					<CardMedia
 						component="img"
-						alt="Contemplative Reptile"
+						alt={header}
 						height="180"
 						title="Butt"
 						classes={{
@@ -28,7 +28,7 @@ const GridCard = ({ img, header, size, ages, level, time, link, text, color, tim
 						{...img.node.childImageSharp.fluid}
 					/>
 					<CardContent>
-						<Typography gutterBottom variant="title" component="h2">
+						<Typography gutterBottom variant="h6" component="h2">
 							{header}
 						</Typography>
 						<Typography variant="subtitle1">{ages && `ages: ${ages}`}</Typography>

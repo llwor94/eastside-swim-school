@@ -52,7 +52,7 @@ const Classes = () => (
 			// console.log(allMarkdownRemark)
 
 			return (
-				<section className={styles.wrapper} name="classes">
+				<section className={styles.wrapper} id="classes">
 					<Typography variant="h2" component="h2">
 						Group Classes
 					</Typography>

@@ -8,7 +8,7 @@ import Testimonial from '../components/Testimonials';
 
 const IndexPage = () => (
 	<Layout>
-		<Jumbotron />
+		<Jumbotron text="Eastside Swim School" button="Jump In!" link="#classes" />
 		<Classes />
 		<Instructors />
 		<Testimonial />
