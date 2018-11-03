@@ -19,11 +19,11 @@ class Header extends React.Component {
 		anchorEl: null,
 	};
 
-	handleChange = (event) => {
+	handleChange = event => {
 		this.setState({ auth: event.target.checked });
 	};
 
-	handleMenu = (event) => {
+	handleMenu = event => {
 		this.setState({ anchorEl: event.currentTarget });
 	};
 
@@ -31,30 +31,39 @@ class Header extends React.Component {
 		this.setState({ anchorEl: null });
 	};
 	render() {
-		const { auth, anchorEl } = this.state;
+		const { anchorEl } = this.state;
 		const open = Boolean(anchorEl);
 		return (
-			<AppBar color="primary">
+			<AppBar color='primary'>
 				<Toolbar className={styles.toolbar}>
-					<Link to="/">
-						<img src={Logo} className={styles.img} alt="logo" />
+					<Link to='/'>
+						<img src={Logo} className={styles.img} alt='logo' />
 					</Link>
 					<Hidden xsDown>
 						<div>
-							<Button color="inherit">
-								<Link className={styles.link} to="#classes">
-									Group Classes
-								</Link>
+							<Button
+								color='inherit'
+								className={styles.link}
+								component='a'
+								href='#classes'
+							>
+								Group Classes
 							</Button>
-							<Button color="inherit">
-								<Link className={styles.link} to="#coaches">
-									Private Lessons
-								</Link>
+							<Button
+								color='inherit'
+								className={styles.link}
+								component='a'
+								href='#coaches'
+							>
+								Private Lessons
 							</Button>
-							<Button color="inherit">
-								<Link className={styles.link} to="/about">
-									About
-								</Link>
+							<Button
+								color='inherit'
+								className={styles.link}
+								component={Link}
+								to='/about'
+							>
+								About
 							</Button>
 						</div>
 					</Hidden>
@@ -62,14 +71,14 @@ class Header extends React.Component {
 						<div>
 							<IconButton
 								aria-owns={open ? 'menu-appbar' : null}
-								aria-haspopup="true"
+								aria-haspopup='true'
 								onClick={this.handleMenu}
-								color="inherit"
+								color='inherit'
 							>
 								<Icon className={styles.icon}>menu</Icon>
 							</IconButton>
 							<Menu
-								id="menu-appbar"
+								id='menu-appbar'
 								anchorEl={anchorEl}
 								anchorOrigin={{
 									vertical: 'top',
@@ -82,20 +91,29 @@ class Header extends React.Component {
 								open={open}
 								onClose={this.handleClose}
 							>
-								<MenuItem onClick={this.handleClose}>
-									<Link className={styles.link} to="#classes">
-										Group Classes
-									</Link>
+								<MenuItem
+									onClick={this.handleClose}
+									className={styles.link}
+									component='a'
+									href='#classes'
+								>
+									Group Classes
 								</MenuItem>
-								<MenuItem onClick={this.handleClose}>
-									<Link className={styles.link} to="#coaches">
-										Private Lessons
-									</Link>
+								<MenuItem
+									onClick={this.handleClose}
+									className={styles.link}
+									component='a'
+									href='#coaches'
+								>
+									Private Lessons
 								</MenuItem>
-								<MenuItem onClick={this.handleClose}>
-									<Link className={styles.link} to="/about">
-										About
-									</Link>
+								<MenuItem
+									onClick={this.handleClose}
+									className={styles.link}
+									component={Link}
+									to='/about'
+								>
+									About
 								</MenuItem>
 							</Menu>
 						</div>
