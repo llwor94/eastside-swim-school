@@ -10,32 +10,16 @@ import styles from './Instructors.module.styl';
 
 const BottomBar = ({ styles, link }) => (
   <div>
-    <Typography variant="h6" component="h4" className={styles.mr} gutterBottom>
+    <Button
+      variant="contained"
+      color="secondary"
+      href={link}
+      component="a"
+      className={styles.mr}
+      target="_blank"
+    >
       Schedule Private Lessons
-    </Typography>
-    <div className={styles.bottomBar}>
-      <Button
-        variant="contained"
-        color="primary"
-        size="small"
-        href={link}
-        component="a"
-        className={styles.mr}
-        target="_blank"
-      >
-        1-on-1
-      </Button>
-      <Button
-        variant="contained"
-        color="primary"
-        size="small"
-        href={link}
-        component="a"
-        target="_blank"
-      >
-        1-on-2
-      </Button>
-    </div>
+    </Button>
   </div>
 );
 
@@ -86,10 +70,13 @@ const Instructors = () => (
       return (
         <section className={styles.instructors} name="coaches">
           <div className={styles.container}>
-            <Typography gutterBottom variant="h2" component="h2">
-              Private Lessons
-            </Typography>
             <Paper className={styles.instructor}>
+              <div className={styles.bline}>
+                <Typography gutterBottom variant="h2" component="h2">
+                  Private Lessons
+                </Typography>
+              </div>
+
               <Grid container spacing={40}>
                 {allMarkdownRemark.edges.map(
                   (
