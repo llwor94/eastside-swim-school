@@ -58,5 +58,6 @@ module.exports = {
 		},
 		'gatsby-transformer-remark',
 		'gatsby-plugin-stylus',
+		'@wapps/gatsby-plugin-material-ui'
 	],
 };
