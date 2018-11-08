@@ -75,7 +75,13 @@ const About = () => (
 					Call: (425)-248-0908
 				</Typography>
 				<Typography variant='body1' component='p'>
-					Email: eastsideswimschool@comcast.net
+					Email:<Typography
+						variant='body1'
+						component='a'
+						href='mailto:eastsideswimschool@comcast.net'
+					>
+						eastsideswimschool@comcast.net{' '}
+					</Typography>
 				</Typography>
 			</Paper>
 			<Paper className='about-content'>
