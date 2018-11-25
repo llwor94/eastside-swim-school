@@ -53,8 +53,11 @@ const Classes = () => (
 
 			return (
 				<section className={styles.wrapper} name="classes">
-					<Typography variant="h2" component="h2">
+					<Typography variant="h2" component="h2" gutterBottom>
 						Group Classes
+					</Typography>
+					<Typography variant="subtitle1" component="p" className={styles.important}>
+						Note: We are not scheduling lessons for December. Check back on January 1, 2019.
 					</Typography>
 					<div className={styles.grid}>
 						<Grid container spacing={40} alignItems="stretch">
