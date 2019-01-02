@@ -52,29 +52,32 @@ const Classes = () => (
 			// console.log(allMarkdownRemark)
 
 			return (
-				<section className={styles.wrapper} name="classes">
-					<Typography variant="h2" component="h2" gutterBottom>
+				<section className={styles.wrapper} name='classes'>
+					<Typography variant='h2' component='h2' gutterBottom>
 						Group Classes
 					</Typography>
-					<Typography variant="subtitle1" component="p" className={styles.important}>
-						Note: We are not scheduling lessons for December. Check back on January 1, 2019.
+					<Typography variant='subtitle1' component='p' className={styles.important}>
+						Eastside Swim School has found a new location! Classes will begin February
+						1st. Watch for registration to open in a few weeks.
 					</Typography>
 					<div className={styles.grid}>
-						<Grid container spacing={40} alignItems="stretch">
+						<Grid container spacing={40} alignItems='stretch'>
 							{allMarkdownRemark.edges
 								.filter(({ node }) => node.frontmatter.ageGroup === 'Preschool')
 								.map(({ node }) => (
 									<GridCard
 										time={
 											node.frontmatter.day ? (
-												`${node.frontmatter.day.slice(0, 3)} ${node.frontmatter.time}`
+												`${node.frontmatter.day.slice(0, 3)} ${node
+													.frontmatter.time}`
 											) : (
 												'We recommend private instruction.'
 											)
 										}
 										time2={
 											node.frontmatter.time2 &&
-											`${node.frontmatter.day2.slice(0, 3)} ${node.frontmatter.time2}`
+											`${node.frontmatter.day2.slice(0, 3)} ${node.frontmatter
+												.time2}`
 										}
 										key={node.frontmatter.title}
 										img={allFile.edges.find(({ node: file }) => {
@@ -86,9 +89,9 @@ const Classes = () => (
 										header={node.frontmatter.title}
 										level={node.frontmatter.difficulty}
 										link={node.frontmatter.link}
-										ages="3-5"
+										ages='3-5'
 										text={node.html}
-										color="ps"
+										color='ps'
 									/>
 								))}
 						</Grid>
@@ -98,14 +101,17 @@ const Classes = () => (
 								.filter(({ node }) => node.frontmatter.ageGroup === 'Grade School')
 								.map(({ node }) => (
 									<GridCard
-										time={`${node.frontmatter.day.slice(0, 3)} ${node.frontmatter.time}`}
+										time={`${node.frontmatter.day.slice(0, 3)} ${node
+											.frontmatter.time}`}
 										time2={
 											node.frontmatter.time2 &&
-											`${node.frontmatter.day2.slice(0, 3)} ${node.frontmatter.time2}`
+											`${node.frontmatter.day2.slice(0, 3)} ${node.frontmatter
+												.time2}`
 										}
 										time3={
 											node.frontmatter.time3 &&
-											`${node.frontmatter.day3.slice(0, 3)} ${node.frontmatter.time3}`
+											`${node.frontmatter.day3.slice(0, 3)} ${node.frontmatter
+												.time3}`
 										}
 										img={allFile.edges.find(({ node: file }) => {
 											return (
@@ -115,11 +121,11 @@ const Classes = () => (
 										})}
 										header={node.frontmatter.title}
 										level={node.frontmatter.difficulty}
-										ages="5-12"
+										ages='5-12'
 										key={node.frontmatter.title}
 										link={node.frontmatter.link}
 										text={node.html}
-										color="gs"
+										color='gs'
 									/>
 								))}
 						</Grid>
@@ -129,14 +135,17 @@ const Classes = () => (
 								.filter(({ node }) => node.frontmatter.ageGroup === 'Jr. High')
 								.map(({ node }) => (
 									<GridCard
-										time={`${node.frontmatter.day.slice(0,3)} ${node.frontmatter.time}`}
+										time={`${node.frontmatter.day.slice(0, 3)} ${node
+											.frontmatter.time}`}
 										time2={
 											node.frontmatter.time2 &&
-											`${node.frontmatter.day2.slice(0, 3)} ${node.frontmatter.time2}`
+											`${node.frontmatter.day2.slice(0, 3)} ${node.frontmatter
+												.time2}`
 										}
 										time3={
 											node.frontmatter.time3 &&
-											`${node.frontmatter.day3.slice(0, 3)} ${node.frontmatter.time3}`
+											`${node.frontmatter.day3.slice(0, 3)} ${node.frontmatter
+												.time3}`
 										}
 										img={allFile.edges.find(({ node: file }) => {
 											return (
@@ -145,12 +154,12 @@ const Classes = () => (
 											);
 										})}
 										header={node.frontmatter.title}
-										ages="14 and under"
+										ages='14 and under'
 										level={node.frontmatter.difficulty}
 										key={node.frontmatter.title}
 										link={node.frontmatter.link}
 										text={node.html}
-										color="jh"
+										color='jh'
 									/>
 								))}
 						</Grid>
@@ -160,14 +169,17 @@ const Classes = () => (
 								.filter(({ node }) => node.frontmatter.ageGroup === 'Adult')
 								.map(({ node }) => (
 									<GridCard
-										time={`${node.frontmatter.day.slice(0, 3)} ${node.frontmatter.time}`}
+										time={`${node.frontmatter.day.slice(0, 3)} ${node
+											.frontmatter.time}`}
 										time2={
 											node.frontmatter.time2 &&
-											`${node.frontmatter.day2.slice(0, 3)} ${node.frontmatter.time2}`
+											`${node.frontmatter.day2.slice(0, 3)} ${node.frontmatter
+												.time2}`
 										}
 										time3={
 											node.frontmatter.time3 &&
-											`${node.frontmatter.day3.slice(0, 3)} ${node.frontmatter.time3}`
+											`${node.frontmatter.day3.slice(0, 3)} ${node.frontmatter
+												.time3}`
 										}
 										img={allFile.edges.find(({ node: file }) => {
 											return (
@@ -176,12 +188,12 @@ const Classes = () => (
 											);
 										})}
 										header={node.frontmatter.title}
-										ages="18 +"
+										ages='18 +'
 										level={node.frontmatter.difficulty}
 										key={node.frontmatter.title}
 										link={node.frontmatter.link}
 										text={node.html}
-										color="ad"
+										color='ad'
 									/>
 								))}
 						</Grid>
