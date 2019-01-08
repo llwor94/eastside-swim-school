@@ -4,7 +4,7 @@ time: '3:30'
 day: Wednesday
 ageGroup: Preschool
 difficulty: '3'
-thumbnail: /assets/preschool.jpg
+thumbnail: /assets/ps2.jpg
 link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=93130&k_class_tab=10864
 ---
