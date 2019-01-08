@@ -1,6 +1,6 @@
 ---
 title: Adult Learn To Swim
-time: '7:00 '
+time: '7:00'
 day: Thursday
 time2: '7:00'
 day2: Tuesday
