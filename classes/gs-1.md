@@ -4,7 +4,7 @@ time: '5:30'
 day: Monday
 ageGroup: Grade School
 difficulty: '1'
-thumbnail: /assets/adult.jpg
+thumbnail: /assets/gs1.png
 link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=93276&k_class_tab=10908
 ---
