@@ -2,6 +2,7 @@
 title: Grade School 1
 time: '4:30'
 day: Monday
+time2: '4:30'
 day2: Wednesday
 ageGroup: Grade School
 difficulty: '1'
