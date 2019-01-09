@@ -3,7 +3,8 @@ title: Tiffani
 oneStudent: '45'
 twoStudents: '55'
 thumbnail: /assets/tiffani.jpeg
-link: 'https://www.wellnessliving.com/rs/appointment/eastside_swim_school'
+link: >-
+  https://www.wellnessliving.com/rs/appointment-start.html?id_class_tab=3&k_business=248418&k_class_tab=10878&k_service=87318
 ---
 I am a married mother of two teenage boys, and in my spare time I volunteer at Paws Wildlife as a rehabber.  I am a member of WASART animal rescue team and help with ASPCA field investigation rescue team.   My love for the water and swimming started at an early age, Growing up in Southern California provided me the opportunity to learn and compete with some of the best SoCal swimmers.
 
