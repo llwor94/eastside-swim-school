@@ -132,7 +132,7 @@ const Classes = () => (
 
 						<Grid container spacing={40} className={styles.grid}>
 							{allMarkdownRemark.edges
-								.filter(({ node }) => node.frontmatter.ageGroup === 'Jr. High')
+								.filter(({ node }) => node.frontmatter.ageGroup === 'Pre Comp')
 								.map(({ node }) => (
 									<GridCard
 										time={`${node.frontmatter.day.slice(0, 3)} ${node

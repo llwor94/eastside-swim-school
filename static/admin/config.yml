@@ -82,7 +82,7 @@ collections:
           name: ageGroup,
           label: 'Age Group',
           widget: select,
-          options: ['Preschool', 'Grade School', 'Jr. High', 'Adult'],
+          options: ['Preschool', 'Grade School', 'Pre Comp', 'Adult'],
         }
       - {
           name: difficulty,

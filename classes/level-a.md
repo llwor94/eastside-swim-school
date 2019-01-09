@@ -4,7 +4,7 @@ time: '6:45'
 day: Sunday
 time2: '6:45'
 day2: Wednesday
-ageGroup: Grade School
+ageGroup: Pre Comp
 difficulty: '3'
 thumbnail: /assets/precomp1.png
 link: >-
