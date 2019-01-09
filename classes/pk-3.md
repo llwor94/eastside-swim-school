@@ -1,7 +1,8 @@
 ---
 title: Preschool 3
-time: '3:30'
+time: '4:00'
 day: Wednesday
+day2: Wednesday
 ageGroup: Preschool
 difficulty: '3'
 thumbnail: /assets/ps2.jpg
