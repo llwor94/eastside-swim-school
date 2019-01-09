@@ -56,10 +56,7 @@ const Classes = () => (
 					<Typography variant='h2' component='h2' gutterBottom>
 						Group Classes
 					</Typography>
-					<Typography variant='subtitle1' component='p' className={styles.important}>
-						Eastside Swim School has found a new location! Classes will begin February
-						1st. Watch for registration to open in a few weeks.
-					</Typography>
+
 					<div className={styles.grid}>
 						<Grid container spacing={40} alignItems='stretch'>
 							{allMarkdownRemark.edges

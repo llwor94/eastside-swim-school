@@ -39,13 +39,14 @@ class Header extends React.Component {
 					<Link to='/'>
 						<img src={Logo} className={styles.img} alt='logo' />
 					</Link>
-					<Location>
-						{({ location }) => {
-							if (location.pathname === '/') {
-								return (
-									<Fragment>
-										<Hidden xsDown>
-											<div>
+
+					<Hidden xsDown>
+						<div>
+							<Location>
+								{({ location }) => {
+									if (location.pathname === '/') {
+										return (
+											<Fragment>
 												<Button
 													color='inherit'
 													className={styles.link}
@@ -62,40 +63,84 @@ class Header extends React.Component {
 												>
 													Private Lessons
 												</Button>
-												<Button
-													color='inherit'
-													className={styles.link}
-													component={Link}
-													to='/about'
-												>
-													About
-												</Button>
-											</div>
-										</Hidden>
-										<Hidden smUp>
-											<div>
-												<IconButton
-													aria-owns={open ? 'menu-appbar' : null}
-													aria-haspopup='true'
-													onClick={this.handleMenu}
-													color='inherit'
-												>
-													<Icon className={styles.icon}>menu</Icon>
-												</IconButton>
-												<Menu
-													id='menu-appbar'
-													anchorEl={anchorEl}
-													anchorOrigin={{
-														vertical: 'top',
-														horizontal: 'right',
-													}}
-													transformOrigin={{
-														vertical: 'top',
-														horizontal: 'right',
-													}}
-													open={open}
-													onClose={this.handleClose}
-												>
+											</Fragment>
+										);
+									} else
+										return (
+											<Button
+												color='inherit'
+												className={styles.link}
+												component='a'
+												href='/'
+											>
+												Home
+											</Button>
+										);
+								}}
+							</Location>
+							<Button
+								color='inherit'
+								className={styles.link}
+								component={Link}
+								to='/about'
+							>
+								About
+							</Button>
+							<Button
+								color='inherit'
+								className={styles.link}
+								component={Link}
+								to='/services'
+							>
+								Services
+							</Button>
+							<Button
+								color='inherit'
+								className={styles.link}
+								component={Link}
+								to='/faq'
+							>
+								FAQs
+							</Button>
+							<Button
+								color='inherit'
+								className={styles.link}
+								component={Link}
+								to='/location'
+							>
+								Location
+							</Button>
+						</div>
+					</Hidden>
+					<Hidden smUp>
+						<div>
+							<IconButton
+								aria-owns={open ? 'menu-appbar' : null}
+								aria-haspopup='true'
+								onClick={this.handleMenu}
+								color='inherit'
+							>
+								<Icon className={styles.icon}>menu</Icon>
+							</IconButton>
+							<Menu
+								id='menu-appbar'
+								anchorEl={anchorEl}
+								anchorOrigin={{
+									vertical: 'top',
+									horizontal: 'right',
+								}}
+								transformOrigin={{
+									vertical: 'top',
+									horizontal: 'right',
+								}}
+								open={open}
+								onClose={this.handleClose}
+							>
+								<Location>
+									{({ location }) => {
+										if (location.pathname === '/') {
+											return (
+												<Fragment>
 													<MenuItem
 														onClick={this.handleClose}
 														className={styles.link}
@@ -112,35 +157,57 @@ class Header extends React.Component {
 													>
 														Private Lessons
 													</MenuItem>
-													<MenuItem
-														onClick={this.handleClose}
-														className={styles.link}
-														component={Link}
-														to='/about'
-													>
-														About
-													</MenuItem>
-												</Menu>
-											</div>
-										</Hidden>
-									</Fragment>
-								);
-							} else {
-								return (
-									<div>
-										<Button
-											color='inherit'
-											className={styles.link}
-											component={Link}
-											to='/'
-										>
-											Home
-										</Button>
-									</div>
-								);
-							}
-						}}
-					</Location>
+												</Fragment>
+											);
+										} else {
+											return (
+												<MenuItem
+													onClick={this.handleClose}
+													className={styles.link}
+													component={Link}
+													to='/'
+												>
+													Home
+												</MenuItem>
+											);
+										}
+									}}
+								</Location>
+								<MenuItem
+									onClick={this.handleClose}
+									className={styles.link}
+									component={Link}
+									to='/about'
+								>
+									About
+								</MenuItem>
+								<MenuItem
+									onClick={this.handleClose}
+									className={styles.link}
+									component={Link}
+									to='/services'
+								>
+									Services
+								</MenuItem>
+								<MenuItem
+									onClick={this.handleClose}
+									className={styles.link}
+									component={Link}
+									to='/faq'
+								>
+									FAQs
+								</MenuItem>
+								<MenuItem
+									onClick={this.handleClose}
+									className={styles.link}
+									component={Link}
+									to='/location'
+								>
+									Location
+								</MenuItem>
+							</Menu>
+						</div>
+					</Hidden>
 				</Toolbar>
 			</AppBar>
 		);
