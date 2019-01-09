@@ -2,6 +2,7 @@
 title: Preschool 3
 time: '4:00'
 day: Monday
+time2: '4:00'
 day2: Wednesday
 ageGroup: Preschool
 difficulty: '3'
