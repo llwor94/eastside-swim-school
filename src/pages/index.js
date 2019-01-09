@@ -31,7 +31,7 @@ class IndexPage extends React.Component {
 					<SnackbarContent
 						variant='success'
 						message='Eastside Swim School has found a new location! Classes will begin February
-						1st. Watch for registration to open in a few weeks.'
+						1st. Watch for registration to open at the end of the week'
 						style={{ maxWidth: '100%', width: '100vh' }}
 						action={[
 							<IconButton
