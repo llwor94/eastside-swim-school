@@ -58,7 +58,7 @@ const Faq = props => {
 					</Typography>
 					<PricesWrapper>
 						<Typography gutterBottom variant='h6' component='h2'>
-							One instructor, one students:
+							One instructor, one student:
 						</Typography>
 						<Typography gutterBottom variant='body1' component='p'>
 							These vary by instructor and range from $40 - $50 per class.
