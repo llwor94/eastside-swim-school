@@ -8,6 +8,6 @@ ageGroup: Adult
 difficulty: '1'
 thumbnail: /assets/adult.jpg
 link: >-
-  https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=93118&k_class_tab=10915
+  https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=107801&k_class_tab=10915
 ---
 Adults new to swimming, not comfortable in the water.
