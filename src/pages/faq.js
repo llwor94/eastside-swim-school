@@ -71,7 +71,7 @@ const Faq = props => {
 							arrange the pairings.
 						</Typography>
 						<Typography gutterBottom variant='h6' component='h2'>
-							Willows Prep Studen Discout
+							Willows Prep Student Discount
 						</Typography>
 						<Typography gutterBottom variant='body1' component='p'>
 							Our host facility provides its students a 15% discount on all classes.
