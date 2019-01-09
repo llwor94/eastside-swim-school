@@ -58,6 +58,12 @@ const Faq = props => {
 					</Typography>
 					<PricesWrapper>
 						<Typography gutterBottom variant='h6' component='h2'>
+							Group:
+						</Typography>
+						<Typography gutterBottom variant='body1' component='p'>
+							Classes average $22 a class or $88 a month.
+						</Typography>
+						<Typography gutterBottom variant='h6' component='h2'>
 							One instructor, one student:
 						</Typography>
 						<Typography gutterBottom variant='body1' component='p'>
