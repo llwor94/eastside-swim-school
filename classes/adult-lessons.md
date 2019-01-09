@@ -3,7 +3,7 @@ title: Adult lessons
 time: '7:30'
 day: Thursday
 ageGroup: Adult
-difficulty: '1'
+difficulty: '2'
 thumbnail: /assets/adult-class.jpg
 link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=85843&k_class_tab=10916
