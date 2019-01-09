@@ -2,7 +2,7 @@
 title: Adult Learn To Swim
 time: '7:00'
 day: Thursday
-time2: '7:00'
+time2: ''
 day2: Tuesday
 ageGroup: Adult
 difficulty: '1'
