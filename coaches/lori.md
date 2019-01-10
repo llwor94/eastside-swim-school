@@ -3,8 +3,7 @@ title: Deanna
 oneStudent: '40'
 twoStudents: '50'
 thumbnail: /assets/deanna1.png
-link: >-
-  https://www.wellnessliving.com/rs/appointment-start.html?id_class_tab=3&k_business=248418&k_class_tab=13641&k_service=87316
+link: 'https://www.wellnessliving.com/rs/appointment/eastside_swim_school?s_id=U6OB3E'
 ---
 My cute mother decided I needed a job when I was just 14 years old. So, she set up my first swimming class. It has been a water journey since then.  During the past 40 years I have taught over 20,00 children how to swim, coached USS Swim teams,  coached Recreational Swim Teams, coaches Master Swim teams, taught Water Aerobics, Trained Lifeguards and Coached Water Polo. I have managed several Olympic size pools and facilities. Pools and swimming is my second love behind my family.
 
