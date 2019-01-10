@@ -1,10 +1,10 @@
 ---
 title: Lisa
-oneStudent: '45'
-twoStudents: '55'
+oneStudent: '50'
+twoStudents: '60'
 thumbnail: /assets/lisa1.jpg
 link: >-
-  https://www.wellnessliving.com/rs/appointment-start.html?id_class_tab=3&k_business=248418&k_class_tab=10878&k_service=75984
+  https://www.wellnessliving.com/rs/appointment-start.html?id_class_tab=3&k_business=248418&k_class_tab=13640&k_service=75984
 ---
 Lisa has has been teaching swim lessons for over 35 years and competing and coaching triathlons of all distances for 25 years .  She learned to swim at a young age, competed thru the collegiate level and  has continued swimming competitively thru her adult life.
 
