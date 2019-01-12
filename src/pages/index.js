@@ -30,8 +30,7 @@ class IndexPage extends React.Component {
 				>
 					<SnackbarContent
 						variant='success'
-						message='Eastside Swim School has found a new location! Classes will begin February
-						1st. Watch for registration to open at the end of the week'
+						message='Eastside Swim School has started taking registration online. If you have any trouble with the online site please call 425-248-0908 and you can register over the phone.'
 						style={{ maxWidth: '100%', width: '100vh' }}
 						action={[
 							<IconButton
