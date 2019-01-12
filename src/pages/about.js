@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import Layout from '../components/Layout';
 import Lisa from '../images/lisa.png';
 import { StaticQuery, graphql } from 'gatsby';
+import Hidden from '@material-ui/core/Hidden';
 
 const Wrapper = styled.div`
 	margin: 0 30px;
@@ -13,7 +14,9 @@ const Wrapper = styled.div`
 	margin: 0 auto;
 	display: flex;
 	align-items: flex-start;
-
+	@media (max-width: 700px) {
+		padding-top: 50px;
+	}
 	img {
 		display: block;
 		width: 100%;
@@ -67,23 +70,25 @@ const About = () => (
 		/>
 
 		<Wrapper>
-			<Paper className='about-contact'>
-				<Typography variant='h4' gutterBottom>
-					Contact
-				</Typography>
-				<Typography variant='body1' component='p'>
-					Call: (425)-248-0908
-				</Typography>
-				<Typography variant='body1' component='p'>
-					Email:<Typography
-						variant='body1'
-						component='a'
-						href='mailto:eastsideswimschool@comcast.net'
-					>
-						eastsideswimschool@comcast.net{' '}
+			<Hidden smDown>
+				<Paper className='about-contact'>
+					<Typography variant='h4' gutterBottom>
+						Contact
 					</Typography>
-				</Typography>
-			</Paper>
+					<Typography variant='body1' component='p'>
+						Call: (425)-248-0908
+					</Typography>
+					<Typography variant='body1' component='p'>
+						Email:<Typography
+							variant='body1'
+							component='a'
+							href='mailto:eastsideswimschool@comcast.net'
+						>
+							eastsideswimschool@comcast.net{' '}
+						</Typography>
+					</Typography>
+				</Paper>
+			</Hidden>
 			<Paper className='about-content'>
 				<TextWrapper>
 					<Typography gutterBottom variant='h2' component='h2'>

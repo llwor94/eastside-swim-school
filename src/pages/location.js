@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Typography from '@material-ui/core/Typography';
 import styled from 'styled-components';
 import Paper from '@material-ui/core/Paper';
+import Hidden from '@material-ui/core/Hidden';
 
 import Map from '../components/Map';
 const Wrapper = styled.div`
@@ -12,12 +13,19 @@ const Wrapper = styled.div`
 	margin: 0 auto;
 	display: flex;
 	margin-bottom: 100px;
+	@media (max-width: 700px) {
+		flex-direction: column-reverse;
+		width: 100%;
+	}
 	.location-page {
 		padding: 30px;
 		display: flex;
 		width: 40%;
 		flex-direction: column;
 		justify-content: center;
+		@media (max-width: 700px) {
+			width: 100%;
+		}
 	}
 `;
 const LocationPage = () => (
@@ -30,6 +38,7 @@ const LocationPage = () => (
 		>
 			Location
 		</Typography>
+
 		<Wrapper>
 			<Paper className='location-page'>
 				<Typography gutterBottom variant='title' component='h2'>

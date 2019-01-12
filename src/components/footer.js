@@ -1,8 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
 import Typography from '@material-ui/core/Typography';
+import Hidden from '@material-ui/core/Hidden';
 
 import './footer.styl';
 
@@ -14,18 +15,39 @@ const Footer = () => (
 				Cool Table
 			</a>
 		</Typography>
-		<div className='icons'>
-			<div className='icon'>
-				<a href='mailto:eastsideswimschool@comcast.net'>
-					<FontAwesomeIcon icon={faEnvelope} size='3x' />
-				</a>
+		<Hidden xsDown>
+			<div className='icons'>
+				<div className='icon'>
+					<a href='mailto:eastsideswimschool@comcast.net'>
+						<FontAwesomeIcon icon={faEnvelope} size='3x' />
+					</a>
+				</div>
+				<div className='icon'>
+					<a href='https://www.facebook.com/eastsideswimschool/' target='_blank'>
+						<FontAwesomeIcon icon={faFacebook} size='3x' />
+					</a>
+				</div>
 			</div>
-			<div className='icon'>
-				<a href='https://www.facebook.com/eastsideswimschool/' target='_blank'>
-					<FontAwesomeIcon icon={faFacebook} size='3x' />
-				</a>
+		</Hidden>
+		<Hidden smUp>
+			<div className='icons'>
+				<div className='icon'>
+					<a href='tel:1-425-577-9426'>
+						<FontAwesomeIcon icon={faPhoneSquare} size='2x' />
+					</a>
+				</div>
+				<div className='icon'>
+					<a href='mailto:eastsideswimschool@comcast.net'>
+						<FontAwesomeIcon icon={faEnvelope} size='2x' />
+					</a>
+				</div>
+				<div className='icon'>
+					<a href='https://www.facebook.com/eastsideswimschool/' target='_blank'>
+						<FontAwesomeIcon icon={faFacebook} size='2x' />
+					</a>
+				</div>
 			</div>
-		</div>
+		</Hidden>
 	</footer>
 );
 

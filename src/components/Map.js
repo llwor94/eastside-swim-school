@@ -13,6 +13,9 @@ const Wrapper = styled.div`
 		position: relative !important;
 		height: 600px !important;
 	}
+	@media (max-width: 700px) {
+		width: 100%;
+	}
 `;
 
 class MapWrapper extends React.Component {

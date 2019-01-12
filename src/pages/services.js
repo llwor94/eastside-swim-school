@@ -18,6 +18,9 @@ const Wrapper = styled.div`
 	p {
 		color: black;
 	}
+	@media (max-width: 700px) {
+		padding-top: 50px;
+	}
 `;
 
 const PricesWrapper = styled.div`
