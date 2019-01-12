@@ -64,6 +64,13 @@ module.exports = {
 				path: `${__dirname}/coaches/`,
 			},
 		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `announcements`,
+				path: `${__dirname}/announcements/`,
+			},
+		},
 		'gatsby-transformer-remark',
 		'gatsby-plugin-stylus',
 		'@wapps/gatsby-plugin-material-ui',
