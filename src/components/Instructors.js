@@ -124,7 +124,11 @@ class Instructors extends React.Component {
 										or “semi-privates” (these are the pair lessons) The price
 										will be listed.
 									</Typography>
-									<img src={classesView} className={styles.modalImg} />
+									<img
+										src={classesView}
+										className={styles.modalImg}
+										alt='Classes View'
+									/>
 									<Typography gutterBottom variant='body1' component='p'>
 										Click “NEXT” on bottom right of page. This will take you to
 										the calendar.
@@ -134,12 +138,20 @@ class Instructors extends React.Component {
 										bolded. The non highlighted days denote that the instructor
 										is not available.
 									</Typography>
-									<img src={calendarView} className={styles.modalImg} />
+									<img
+										src={calendarView}
+										className={styles.modalImg}
+										alt='Calendar View'
+									/>
 									<Typography gutterBottom variant='body1' component='p'>
 										Select a day and the system will display the available
 										times. Select a time.
 									</Typography>
-									<img src={timeView} className={styles.modalImg} />
+									<img
+										src={timeView}
+										className={styles.modalImg}
+										alt='Time View'
+									/>
 									<Typography gutterBottom variant='body1' component='p'>
 										Please start with a day at the beginning of the month. Once
 										you have made your selection this day and time is locked in
@@ -159,7 +171,11 @@ class Instructors extends React.Component {
 										on the Calendar Icon and select the end of the current month
 										or a subsequent month (up to three).
 									</Typography>
-									<img src={finishedView} className={styles.modalImg} />
+									<img
+										src={finishedView}
+										className={styles.modalImg}
+										alt='Finished View'
+									/>
 								</MuiDialogContent>
 							</Dialog>
 							<div className={styles.container}>
@@ -189,8 +205,7 @@ class Instructors extends React.Component {
 														frontmatter: {
 															thumbnail,
 															title,
-															oneStudent,
-															twoStudents,
+
 															link,
 														},
 														html,

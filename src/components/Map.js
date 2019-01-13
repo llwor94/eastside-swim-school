@@ -47,7 +47,7 @@ class MapWrapper extends React.Component {
 					/>
 					<InfoWindow visible={this.state.showingWindow} marker={this.state.marker}>
 						<Paper>
-							<Typography variant='headline' component='h4'>
+							<Typography variant='h5' component='h4'>
 								Willows Prep Pool
 							</Typography>
 							<Typography component='p'>

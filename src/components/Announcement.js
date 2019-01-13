@@ -29,7 +29,6 @@ class Announcement extends React.Component {
 					}
 				`}
 				render={({ allMarkdownRemark }) => {
-					console.log(allMarkdownRemark);
 					return (
 						<Snackbar
 							anchorOrigin={{
@@ -40,7 +39,6 @@ class Announcement extends React.Component {
 							onClose={() => this.setState({ open: false })}
 						>
 							<SnackbarContent
-								variant='success'
 								message={
 									<span>{allMarkdownRemark.edges[0].node.frontmatter.title}</span>
 								}

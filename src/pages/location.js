@@ -3,7 +3,6 @@ import Layout from '../components/Layout';
 import Typography from '@material-ui/core/Typography';
 import styled from 'styled-components';
 import Paper from '@material-ui/core/Paper';
-import Hidden from '@material-ui/core/Hidden';
 
 import Map from '../components/Map';
 const Wrapper = styled.div`
@@ -41,7 +40,7 @@ const LocationPage = () => (
 
 		<Wrapper>
 			<Paper className='location-page'>
-				<Typography gutterBottom variant='title' component='h2'>
+				<Typography gutterBottom variant='h6' component='h2'>
 					Willows Prep:
 				</Typography>
 

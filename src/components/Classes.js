@@ -61,8 +61,6 @@ class Classes extends React.Component {
 					}
 				`}
 				render={({ allMarkdownRemark, allFile }) => {
-					// console.log(allMarkdownRemark)
-
 					return (
 						<section className={styles.wrapper} name='classes'>
 							<Dialog

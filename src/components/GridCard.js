@@ -7,24 +7,22 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import Chip from '@material-ui/core/Chip';
-import Icon from '@material-ui/core/Icon';
+
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Tooltip from '@material-ui/core/Tooltip';
 import styles from './GridCard.module.styl';
 
-const GridCard = ({ img, header, size, ages, level, time, link, text, color, time2, time3 }) => {
-	// console.log(img.node.childImageSharp.fluid);
+const GridCard = ({ img, header, ages, level, time, link, text, color, time2, time3 }) => {
 	return (
 		<Grid item sm={6} md={4} style={{ flexGrow: 1 }}>
 			<Card className={styles.card}>
 				<CardActionArea className={styles.grow} component='a' href={link} target='_blank'>
 					<CardMedia
 						component='img'
-						alt='Contemplative Reptile'
+						alt='Image'
 						height='180'
-						title='Butt'
 						classes={{
 							media: styles.img,
 						}}
@@ -38,17 +36,12 @@ const GridCard = ({ img, header, size, ages, level, time, link, text, color, tim
 						<Chip color='primary' label={time} className={styles.chip} />
 						{time2 && <Chip color='primary' label={time2} className={styles.chip} />}
 						{time3 && <Chip color='primary' label={time3} className={styles.chip} />}
-						{/* <Typography variant="subtitle1">{time}</Typography>
-            {time2 && <Typography variant="subtitle1"> or {time2}</Typography>}
-            {time3 && <Typography variant="subtitle1"> or {time3}</Typography>} */}
+
 						<Tooltip title='Difficulty'>
 							<div className={`${styles.icon} ${styles[color]}`}>
 								{Array(level * 1)
 									.fill()
 									.map((_, i) => <FontAwesomeIcon key={i} icon={faStar} />)}
-
-								{/* {(level == 2 || level == 3) && <Icon>chevron_right</Icon>}
-              {level == 3 && <Icon>chevron_right</Icon>} */}
 							</div>
 						</Tooltip>
 						<Typography
@@ -65,7 +58,6 @@ const GridCard = ({ img, header, size, ages, level, time, link, text, color, tim
 						component='a'
 						href={link}
 						target='_blank'
-						variant='outlined'
 					>
 						Register now!
 					</Button>

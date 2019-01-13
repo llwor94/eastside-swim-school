@@ -11,7 +11,12 @@ const Footer = () => (
 	<footer className='footer'>
 		<Typography variant='subtitle1' className='author'>
 			Designed by{' '}
-			<a className='link' href='https://github.com/cooltable' target='_blank'>
+			<a
+				className='link'
+				href='https://github.com/cooltable'
+				target='_blank'
+				rel='noopener noreferrer'
+			>
 				Cool Table
 			</a>
 		</Typography>
@@ -23,7 +28,11 @@ const Footer = () => (
 					</a>
 				</div>
 				<div className='icon'>
-					<a href='https://www.facebook.com/eastsideswimschool/' target='_blank'>
+					<a
+						href='https://www.facebook.com/eastsideswimschool/'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
 						<FontAwesomeIcon icon={faFacebook} size='3x' />
 					</a>
 				</div>
@@ -42,7 +51,11 @@ const Footer = () => (
 					</a>
 				</div>
 				<div className='icon'>
-					<a href='https://www.facebook.com/eastsideswimschool/' target='_blank'>
+					<a
+						href='https://www.facebook.com/eastsideswimschool/'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
 						<FontAwesomeIcon icon={faFacebook} size='2x' />
 					</a>
 				</div>

@@ -139,9 +139,6 @@ const About = () => (
 							Lisa teaches both at her private residence and Gold Creek Club in
 							Woodinville.
 						</p>
-						{/* <img src={instructors} alt="" />
-			<p>Deanna, Lisa, Tiffani and Lori. All professional adults with decades of experience.</p>
-			<Link to="/">Go back to the homepage</Link> */}
 					</Typography>
 				</TextWrapper>
 			</Paper>

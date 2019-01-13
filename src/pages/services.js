@@ -23,14 +23,6 @@ const Wrapper = styled.div`
 	}
 `;
 
-const PricesWrapper = styled.div`
-	margin-left: 10px;
-	h2 {
-		font-size: 16px;
-		margin-top: 15px;
-	}
-`;
-
 const Services = props => {
 	return (
 		<Layout>
