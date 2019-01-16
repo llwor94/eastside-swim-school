@@ -1,9 +1,9 @@
 ---
 title: Grade School 3
-time: ''
-day: ''
-time2: '5:30'
-day2: Wednesday
+time: '5:30'
+day: Wednesday
+time2: ''
+day2: ''
 ageGroup: Grade School
 difficulty: '3'
 thumbnail: /assets/gs3.png
