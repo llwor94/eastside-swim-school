@@ -1,7 +1,7 @@
 ---
 title: Grade School 3
-time: '5:30'
-day: Monday
+time: ''
+day: ''
 time2: '5:30'
 day2: Wednesday
 ageGroup: Grade School
