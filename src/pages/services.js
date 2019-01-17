@@ -90,8 +90,9 @@ const Services = props => {
 						Pool Rental
 					</Typography>
 					<Typography gutterBottom variant='body1' component='p'>
-						We offer pool rental for groups and parties. Contact us at 425-248-0908 to
-						make an appointment.
+						
+We make our pool available to rent for special events.  Our price is a $15/hr lifeguard fee (per lifeguard) plus $85/hr for the facility.  For every twenty people at your event you will need one lifeguard.  Contact us at 425-248-0908 to make an appointment.
+
 					</Typography>
 				</Paper>
 			</Wrapper>

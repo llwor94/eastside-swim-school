@@ -6,6 +6,8 @@ time2: '5:00'
 day2: Wednesday
 time3: '4:30'
 day3: Wednesday
+time4: '5:30'
+day4: Wednesday
 ageGroup: Grade School
 difficulty: '2'
 thumbnail: /assets/gs22.jpg

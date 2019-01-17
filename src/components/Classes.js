@@ -163,6 +163,11 @@ class Classes extends React.Component {
 													`${node.frontmatter.day3.slice(0, 3)} ${node
 														.frontmatter.time3}`
 												}
+												time4={
+													node.frontmatter.time4 &&
+													`${node.frontmatter.day4.slice(0, 3)} ${node
+														.frontmatter.time4}`
+												}
 												img={allFile.edges.find(({ node: file }) => {
 													return (
 														file.childImageSharp.fluid.originalName ===

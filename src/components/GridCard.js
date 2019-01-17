@@ -14,7 +14,8 @@ import Typography from '@material-ui/core/Typography';
 import Tooltip from '@material-ui/core/Tooltip';
 import styles from './GridCard.module.styl';
 
-const GridCard = ({ img, header, ages, level, time, link, text, color, time2, time3 }) => {
+const GridCard = ({ img, header, ages, level, time, link, text, color, time2, time3, time4 }) => {
+	console.log(time4);
 	return (
 		<Grid item sm={6} md={4} style={{ flexGrow: 1 }}>
 			<Card className={styles.card}>
@@ -36,7 +37,7 @@ const GridCard = ({ img, header, ages, level, time, link, text, color, time2, ti
 						<Chip color='primary' label={time} className={styles.chip} />
 						{time2 && <Chip color='primary' label={time2} className={styles.chip} />}
 						{time3 && <Chip color='primary' label={time3} className={styles.chip} />}
-
+						{time4 && <Chip color='primary' label={time4} className={styles.chip} />}
 						<Tooltip title='Difficulty'>
 							<div className={`${styles.icon} ${styles[color]}`}>
 								{Array(level * 1)
