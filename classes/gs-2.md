@@ -1,6 +1,6 @@
 ---
 title: Grade School 2
-time: '5:00'
+time: '5:30'
 day: Monday
 time2: '5:00'
 day2: Wednesday
