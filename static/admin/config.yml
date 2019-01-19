@@ -77,6 +77,40 @@ collections:
             ],
           required: false
         }
+        - { name: time4, label: 'Time 4 *optional', required: false }
+      - {
+          name: day4,
+          label: 'Day of the week 4 *optional',
+          widget: select,
+          options:
+            [
+              'Sunday',
+              'Monday',
+              'Tuesday',
+              'Wednesday',
+              'Thursday',
+              'Friday',
+              'Saturday',
+            ],
+          required: false
+        }
+        - { name: time5, label: 'Time 5 *optional', required: false }
+      - {
+          name: day5,
+          label: 'Day of the week 5 *optional',
+          widget: select,
+          options:
+            [
+              'Sunday',
+              'Monday',
+              'Tuesday',
+              'Wednesday',
+              'Thursday',
+              'Friday',
+              'Saturday',
+            ],
+          required: false
+        }
       - { name: body, label: Description, widget: markdown }
       - {
           name: ageGroup,
@@ -95,10 +129,11 @@ collections:
   - name: coaches
     label: Coaches
     folder: coaches
+    create: true
     fields:
       - { name: title, label: Name }
-      - { name: oneStudent, label: 'One Student' }
-      - { name: twoStudents, label: 'Two Students' }
+      - { name: oneStudent, label: 'One Student', required: false }
+      - { name: twoStudents, label: 'Two Students', required: false }
       - { name: thumbnail, label: 'Featured Image', widget: 'image' }
       - { name: link, label: 'Link to site' }
       - { name: body, label: "Bio", widget: "text"}
