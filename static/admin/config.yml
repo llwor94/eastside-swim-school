@@ -77,7 +77,7 @@ collections:
             ],
           required: false
         }
-        - { name: time4, label: 'Time 4 *optional', required: false }
+      - { name: time4, label: 'Time 4 *optional', required: false }
       - {
           name: day4,
           label: 'Day of the week 4 *optional',
