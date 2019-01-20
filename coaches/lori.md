@@ -2,6 +2,7 @@
 title: Deanna
 oneStudent: '40'
 twoStudents: '50'
+order: '2'
 thumbnail: /assets/deanna1.png
 link: >-
   https://www.wellnessliving.com/rs/appointment-start.html?id_class_tab=3&k_business=248418&k_class_tab=13641&k_service=87316

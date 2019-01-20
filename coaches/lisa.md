@@ -3,6 +3,7 @@ title: Lori
 oneStudent: '40'
 twoStudents: '60'
 thumbnail: /assets/lori1.jpg
+order: '5'
 link: >-
   https://www.wellnessliving.com/rs/appointment-start.html?id_class_tab=3&k_business=248418&k_class_tab=13642&k_service=87321
 ---

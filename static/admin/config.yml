@@ -132,6 +132,12 @@ collections:
     create: true
     fields:
       - { name: title, label: Name }
+      - { 
+          name: order, 
+          label: Ranking,
+          widget: select,
+          options: ['1', '2', '3', '4', '5'], 
+        }
       - { name: oneStudent, label: 'One Student', required: false }
       - { name: twoStudents, label: 'Two Students', required: false }
       - { name: thumbnail, label: 'Featured Image', widget: 'image' }

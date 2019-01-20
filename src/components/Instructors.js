@@ -43,7 +43,10 @@ class Instructors extends React.Component {
 			<StaticQuery
 				query={graphql`
 					query {
-						allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/coaches/" } }) {
+						allMarkdownRemark(
+							filter: { fileAbsolutePath: { regex: "/coaches/" } }
+							sort: { fields: frontmatter___order }
+						) {
 							edges {
 								node {
 									html
@@ -62,17 +65,7 @@ class Instructors extends React.Component {
 				render={({ allMarkdownRemark }) => {
 					// console.log(allMarkdownRemark);
 					// const { classes } = props
-					allMarkdownRemark.edges.sort(
-						(
-							{ node: { frontmatter: { title: title1 } } },
-							{ node: { frontmatter: { title: title2 } } },
-						) => {
-							if (title1 === 'Lisa') return -1;
-							if (title2 === 'Lisa') return 1;
 
-							return title1.localeCompare(title2);
-						},
-					);
 					return (
 						<section className={styles.instructors} name='coaches'>
 							<Dialog
