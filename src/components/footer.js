@@ -65,7 +65,7 @@ const Footer = () => (
 						target='_blank'
 						rel='noopener noreferrer'
 					>
-						<FontAwesomeIcon icon={faInstagram} size='3x' />
+						<FontAwesomeIcon icon={faInstagram} size='2x' />
 					</a>
 				</div>
 				<div className='icon'>
