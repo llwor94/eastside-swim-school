@@ -2,7 +2,7 @@
 title: Grade School 2
 time: '5:00, 5:30, 6:00'
 day: Monday
-time2: '4:30, 5:00, 6:00'
+time2: '4:30, 5:00, '
 day2: Wednesday
 time3: ''
 day3: ''
