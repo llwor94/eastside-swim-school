@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
 import Typography from '@material-ui/core/Typography';
 import Hidden from '@material-ui/core/Hidden';
@@ -29,11 +29,20 @@ const Footer = () => (
 				</div>
 				<div className='icon'>
 					<a
+						href='https://www.instagram.com/eastsideswim/'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						<FontAwesomeIcon icon={faInstagram} size='3x' />
+					</a>
+				</div>
+				<div className='icon'>
+					<a
 						href='https://www.facebook.com/eastsideswimschool/'
 						target='_blank'
 						rel='noopener noreferrer'
 					>
-						<FontAwesomeIcon icon={faFacebook} size='3x' />
+						<FontAwesomeIcon icon={faFacebookSquare} size='3x' />
 					</a>
 				</div>
 			</div>
@@ -52,11 +61,20 @@ const Footer = () => (
 				</div>
 				<div className='icon'>
 					<a
+						href='https://www.instagram.com/eastsideswim/'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						<FontAwesomeIcon icon={faInstagram} size='3x' />
+					</a>
+				</div>
+				<div className='icon'>
+					<a
 						href='https://www.facebook.com/eastsideswimschool/'
 						target='_blank'
 						rel='noopener noreferrer'
 					>
-						<FontAwesomeIcon icon={faFacebook} size='2x' />
+						<FontAwesomeIcon icon={faFacebookSquare} size='2x' />
 					</a>
 				</div>
 			</div>
