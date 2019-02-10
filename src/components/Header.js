@@ -82,6 +82,14 @@ class Header extends React.Component {
 								color='inherit'
 								className={styles.link}
 								component={Link}
+								to='/openswim'
+							>
+								Open Swim
+							</Button>
+							<Button
+								color='inherit'
+								className={styles.link}
+								component={Link}
 								to='/about'
 							>
 								About
@@ -100,7 +108,7 @@ class Header extends React.Component {
 								component={Link}
 								to='/faq'
 							>
-								FAQs
+								FAQ
 							</Button>
 							<Button
 								color='inherit'
