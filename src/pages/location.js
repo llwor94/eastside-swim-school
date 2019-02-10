@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 	max-width: 880px;
 	margin: 0 auto;
 	display: flex;
-	margin-bottom: 100px;
+
 	@media (max-width: 700px) {
 		flex-direction: column-reverse;
 		width: 100%;
