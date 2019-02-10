@@ -185,6 +185,14 @@ class Header extends React.Component {
 									onClick={this.handleClose}
 									className={styles.link}
 									component={Link}
+									to='/openswim'
+								>
+									Open Swim
+								</MenuItem>
+								<MenuItem
+									onClick={this.handleClose}
+									className={styles.link}
+									component={Link}
 									to='/about'
 								>
 									About
@@ -203,7 +211,7 @@ class Header extends React.Component {
 									component={Link}
 									to='/faq'
 								>
-									FAQs
+									FAQ
 								</MenuItem>
 								<MenuItem
 									onClick={this.handleClose}
