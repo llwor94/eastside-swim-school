@@ -50,7 +50,7 @@ const Footer = () => (
 		<Hidden smUp>
 			<div className='icons'>
 				<div className='icon'>
-					<a href='tel:1-425-577-9426'>
+					<a href='tel:1-425-248-0908'>
 						<FontAwesomeIcon icon={faPhoneSquare} size='2x' />
 					</a>
 				</div>
