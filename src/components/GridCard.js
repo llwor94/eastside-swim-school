@@ -57,10 +57,11 @@ const GridCard = ({ img, header, ages, level, time, link, text, color, time2, ti
 						size='small'
 						color='secondary'
 						component='a'
+						disabled
 						href={link}
 						target='_blank'
 					>
-						Register now!
+						Call to Register
 					</Button>
 				</CardActions>
 			</Card>
