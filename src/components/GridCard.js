@@ -15,11 +15,10 @@ import Tooltip from '@material-ui/core/Tooltip';
 import styles from './GridCard.module.styl';
 
 const GridCard = ({ img, header, ages, level, time, link, text, color, time2, time3, time4 }) => {
-	console.log(time4);
 	return (
 		<Grid item sm={6} md={4} style={{ flexGrow: 1 }}>
 			<Card className={styles.card}>
-				<CardActionArea className={styles.grow} component='a' href={link} target='_blank'>
+				<CardActionArea className={styles.grow}>
 					<CardMedia
 						component='img'
 						alt='Image'

@@ -10,7 +10,6 @@ const Wrapper = styled.div`
 	max-width: 880px;
 	margin: 0 auto;
 	text-align: center;
-	height: calc(100vh - 112px);
 
 	.faq {
 		padding: 30px;
@@ -57,6 +56,12 @@ const OpenSwim = props => (
 				</Typography>
 				<Typography gutterBottom variant='h4' component='h2'>
 					Mon / Wed 10:30 – 11:30
+				</Typography>
+				<Typography gutterBottom variant='h2' component='h1'>
+					Water Aerobics
+				</Typography>
+				<Typography gutterBottom variant='h4' component='h2'>
+					Mon / Wed 9:30 – 10:30
 				</Typography>
 			</Paper>
 		</Wrapper>
