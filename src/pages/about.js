@@ -122,8 +122,8 @@ const About = () => (
 							correct a swimmers stroke and technique.
 						</p>
 						<p>
-							Lisa is currently the head triathlon coach for the University of
-							Washington Husky Tri Team. She also is the head coach for the Masters
+							Lisa was previously the head triathlon coach for the University of
+							Washington Husky Tri Team, as well as head coach for the Masters
 							swim program at the Gold Creek Club. Lisa is the co-founder/owner of
 							Finish Strong Events (a local events company) as well as the founder and
 							Manager of Elevation Multisport, a local triathlon club.
@@ -136,8 +136,7 @@ const About = () => (
 							CPR.
 						</p>
 						<p>
-							Lisa teaches both at her private residence and Gold Creek Club in
-							Woodinville.
+							Lisa moved Eastside Swim School to Willows Prep pool in 2019 where she currently runs the business as well as teaches classes.
 						</p>
 					</Typography>
 				</TextWrapper>
