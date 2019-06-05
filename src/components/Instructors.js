@@ -63,7 +63,7 @@ class Instructors extends React.Component {
 					}
 				`}
 				render={({ allMarkdownRemark }) => {
-					// console.log(allMarkdownRemark);
+					 console.log(allMarkdownRemark);
 					// const { classes } = props
 
 					return (
