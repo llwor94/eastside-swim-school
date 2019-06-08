@@ -26,6 +26,7 @@ collections:
     create: true
     fields:
       - { name: title, label: Title }
+      - { name: link, label: Link, required: false }
       - { name: time, label: Time, required: false }
       - {
           name: day,
