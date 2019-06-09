@@ -1,9 +1,8 @@
 ---
 title: Grade School 1
-time: '4:30'
-day: Monday
-time2: ''
-day2: ''
+day: []
+times:
+  - Time: '9:30, 10:30, 11:30'
 ageGroup: Grade School
 difficulty: '1'
 thumbnail: /assets/gs1.png
