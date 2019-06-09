@@ -31,6 +31,7 @@ class Classes extends React.Component {
 									frontmatter {
 										title
 										time
+										link
 										day
 										time2
 										day2
@@ -93,7 +94,7 @@ class Classes extends React.Component {
 								</MuiDialogContent>
 							</Dialog>
 							<Typography variant='h2' component='h2' gutterBottom>
-								Group Classes{' '}
+								Group Classes
 								<Tooltip title='How to register' placement='top'>
 									<IconButton onClick={() => this.setState({ open: true })}>
 										<InfoIcon
@@ -104,7 +105,7 @@ class Classes extends React.Component {
 									</IconButton>
 								</Tooltip>
 							</Typography>
-
+							
 							<div className={styles.grid}>
 								<Grid container spacing={40} alignItems='stretch'>
 									{allMarkdownRemark.edges

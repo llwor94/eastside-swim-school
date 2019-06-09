@@ -33,6 +33,7 @@ const GridCard = ({ img, header, ages, level, time, link, text, color, time2, ti
 							{header}
 						</Typography>
 						<Typography variant='subtitle1'>{ages && `ages: ${ages}`}</Typography>
+						<Typography variant='subtitle2'>Monday-Thursday</Typography>
 						<Chip color='primary' label={time} className={styles.chip} />
 						{time2 && <Chip color='primary' label={time2} className={styles.chip} />}
 						{time3 && <Chip color='primary' label={time3} className={styles.chip} />}
@@ -56,11 +57,11 @@ const GridCard = ({ img, header, ages, level, time, link, text, color, time2, ti
 						size='small'
 						color='secondary'
 						component='a'
-						disabled
+						//disabled
 						href={link}
 						target='_blank'
 					>
-						Call to Register
+						Register now
 					</Button>
 				</CardActions>
 			</Card>
