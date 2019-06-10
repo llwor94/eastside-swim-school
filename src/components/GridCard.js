@@ -64,16 +64,16 @@ const GridCard = ({node, ages}) => {
 								console.log(c.dateRange[0])
 								return(
 								<TableRow key={i} >
-									<TableCell size='medium'>
+									<TableCell size='medium' style={{padding: 0}}>
 										<b>{ c.dateRange[0].startDate.slice(0, -3) + ' - ' + c.dateRange[0].endDate.slice(0, -3) }</b>
 									</TableCell>
-									<TableCell style={{width: '60px'}}>
-										{c.times.map(t => <div style={{background: '#80deea', textAlign: 'center', margin: '2px', borderRadius: '3px'  }}>{t.time}</div>)}
+									<TableCell style={{ padding: 0, width: '60px', 'textAlign': 'center'}}>
+										{c.times.map(t => <div style={{background: '#80deea', textAlign: 'center', margin: '2px', borderRadius: '3px', width: '60px'  }}>{t.time}</div>)}
 									</TableCell>
-									<TableCell>
+									<TableCell style={{padding: 0}}>
 										{c.days.map(day => <div>{day}</div>)}
 									</TableCell>
-									<TableCell>
+									<TableCell style={{padding: 0}}>
 										{c.classesCount}
 									</TableCell>
 								</TableRow>
