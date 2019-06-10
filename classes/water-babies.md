@@ -12,7 +12,7 @@ classPeriods:
       - Thursday
     times:
       - time: '11:00'
-ageGroup: Preschool
+ageGroup: Baby
 difficulty: '1'
 thumbnail: /assets/derek-thomson-528251-unsplash.jpg
 ---
