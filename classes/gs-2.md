@@ -1,7 +1,5 @@
 ---
 title: Grade School 2
-link: >-
-  https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=136800&k_class_tab=10910
 classPeriods:
   - classesCount: 8
     dateRange:
@@ -19,6 +17,17 @@ classPeriods:
       - time: '10:30'
       - time: '11:00'
       - time: '12:00'
+  - classesCount: '10'
+    dateRange:
+      - endDate: Jul 31st 19
+        startDate: Jul 1st 19
+    days:
+      - Monday
+      - Wednesday
+    times:
+      - time: '4:30'
+      - time: '5:30'
+      - time: '6:00'
 ageGroup: Grade School
 difficulty: '2'
 thumbnail: /assets/gs22.jpg
