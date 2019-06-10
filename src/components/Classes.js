@@ -108,12 +108,12 @@ class Classes extends React.Component {
 							
 							<div className={styles.grid}>
 								<Grid container spacing={40} alignItems='stretch'>
-									{allMarkdownRemark.edges
+									{/* {allMarkdownRemark.edges
 										.filter(
 											({ node }) => node.frontmatter.ageGroup === 'Preschool',
 										)
-										.map(({ node }) => (
-											<GridCard
+										.map(({ node }) => ( */}
+											{/* <GridCard
 												time={'hi'
 													// node.frontmatter.day ? (
 													// 	`${node.frontmatter.day.slice(0, 3)} ${node
@@ -150,8 +150,8 @@ class Classes extends React.Component {
 											({ node }) =>
 												node.frontmatter.ageGroup === 'Grade School',
 										)
-										.map(({ node }) => (
-											<GridCard
+										.map(({ node }) => (<div> */}
+											{/* <GridCard
 												time={`${node.frontmatter.day.slice(0, 3)} ${node
 													.frontmatter.time}`}
 												time2={
@@ -184,9 +184,9 @@ class Classes extends React.Component {
 												color='gs'
 											/>
 										))}
-								</Grid>
+								</Grid> */}
 
-								<Grid container spacing={40} className={styles.grid}>
+								{/* <Grid container spacing={40} className={styles.grid}>
 									{allMarkdownRemark.edges
 										.filter(
 											({ node }) => node.frontmatter.ageGroup === 'Pre Comp',
@@ -252,8 +252,8 @@ class Classes extends React.Component {
 												link={node.frontmatter.link}
 												text={node.html}
 												color='ad'
-											/>
-										))}
+											/> */}
+										{/* ///)})} */}
 								</Grid>
 							</div>
 						</section>
