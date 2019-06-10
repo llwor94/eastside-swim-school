@@ -67,7 +67,7 @@ const GridCard = ({node, ages}) => {
 									</TableCell>
 									
 									<TableCell style={{padding: 0}}>
-										{c.days.length >= 3 ? <div>{c.days[0] + ' - ' + c.days[c.days.length - 1]}</div> : c.days.map(day => <span>{day} </span>)}
+										{c.days.length >= 3 ? <div>{c.days[0] + ' thru ' + c.days[c.days.length - 1]}</div> : c.days.length === 2 ? <div>c.days[0] & c.days[1] </div> : c.days.map(day => <span>{day} </span>)}
 									</TableCell>
 									<TableCell style={{ padding: 0, width: '60px', 'textAlign': 'center'}}>
 										{c.times.map(t => <div style={{background: '#80deea', textAlign: 'center', margin: '2px', borderRadius: '3px', width: '60px'  }}>{t.time}</div>)}
