@@ -83,7 +83,7 @@ collections:
           name: ageGroup,
           label: 'Age Group',
           widget: select,
-          options: ['Preschool', 'Grade School', 'Pre Comp', 'Adult'],
+          options: ['Baby', 'Preschool', 'Grade School', 'Pre Comp', 'Adult'],
         }
       - {
           name: difficulty,
@@ -109,3 +109,5 @@ collections:
       - { name: thumbnail, label: 'Featured Image', widget: 'image' }
       - { name: link, label: 'Link to site' }
       - { name: body, label: "Bio", widget: "text"}
+
+
