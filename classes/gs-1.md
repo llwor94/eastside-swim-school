@@ -1,7 +1,7 @@
 ---
 title: Grade School 1
 classPeriods:
-  - classesCount: '5'
+  - classesCount: 5
     dateRange:
       - endDate: Jul 18th 19
         startDate: Jul 8th 19
