@@ -1,12 +1,12 @@
 ---
 title: Grade School 1
-link: >-
-  https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=138828&k_class_tab=10908
 classPeriods:
-  - classesCount: 6
+  - classesCount: '5'
     dateRange:
-      - endDate: Jun 18th 19
+      - endDate: Jul 18th 19
         startDate: Jul 8th 19
+      - endDate: Jun 9th 19
+        startDate: Jun 9th 19
     days:
       - Monday
       - Tuesday
@@ -29,11 +29,13 @@ classPeriods:
     dateRange:
       - endDate: Aug 29th 19
         startDate: Jul 30th 19
+      - endDate: Jul 31st 19
+        startDate: Jul 1st 19
     days:
-      - Tuesday
-      - Thursday
+      - Monday
+      - Wednesday
     times:
-      - time: '12:00'
+      - time: '4:00'
 ageGroup: Grade School
 difficulty: '1'
 thumbnail: /assets/gs1.png
