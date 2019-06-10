@@ -30,13 +30,33 @@ collections:
       - name: link, 
         label: Link 
         required: false 
-      - {
-          name: day,
-          label: 'Day of the week',
-          widget: select,
-          multiple: true,
-          options:
-            [
+      - name: classPeriods
+        label: Class Periods
+        widget: list
+        required: false
+        fields:
+          - label: Date Range
+            name: dateRange
+            widget: list
+            fields:
+              - widget: date
+                label: Start Date
+                name: startDate
+                default: ""
+                format: MMM Do YY
+                timeFormat: true
+              - widget: date
+                label: End Date
+                name: endDate
+                default: ""
+                format: MMM Do YY
+                timeFormat: true
+          - name: days
+            label: 'Days of the week'
+            widget: select
+            multiple: true
+            options:
+              [
               'Sunday',
               'Monday',
               'Tuesday',
@@ -44,18 +64,20 @@ collections:
               'Thursday',
               'Friday',
               'Saturday',
-            ],
+              ]
             required: false
-        }
-      - name: times 
-        label: Times 
-        widget: list 
-        required: false 
-        fields: 
-          - label: time
-            name: Time 
-            widget: string
+          - name: classesCount
+            label: Classes Count
             required: false
+            widget: number 
+          - name: times 
+            label: Times 
+            widget: list 
+            required: false 
+            fields: 
+              - name: time
+                label: Time
+                widget: string
       - { name: body, label: Description, widget: markdown }
       - {
           name: ageGroup,
@@ -70,7 +92,6 @@ collections:
           options: ['1', '2', '3'],
         }
       - { name: thumbnail, label: 'Featured Image', widget: 'image' }
-      - { name: link, label: 'Link to site' }
   - name: coaches
     label: Coaches
     folder: coaches
