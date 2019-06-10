@@ -114,13 +114,13 @@ class Classes extends React.Component {
 										)
 										.map(({ node }) => (
 											<GridCard
-												time={
-													node.frontmatter.day ? (
-														`${node.frontmatter.day.slice(0, 3)} ${node
-															.frontmatter.time}`
-													) : (
-														'We recommend private instruction.'
-													)
+												time={'hi'
+													// node.frontmatter.day ? (
+													// 	`${node.frontmatter.day.slice(0, 3)} ${node
+													// 		.frontmatter.time}`
+													// ) : (
+													// 	'We recommend private instruction.'
+													// )
 												}
 												time2={
 													node.frontmatter.time2 &&
