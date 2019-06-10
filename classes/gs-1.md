@@ -1,7 +1,7 @@
 ---
 title: Grade School 1
 classPeriods:
-  - classesCount: 5
+  - classesCount: 8
     dateRange:
       - endDate: Jul 18th 19
         startDate: Jul 8th 19
@@ -25,7 +25,7 @@ classPeriods:
       - Thursday
     times:
       - time: '12:00'
-  - classesCount: 10
+  - classesCount: 11
     dateRange:
       - endDate: Aug 29th 19
         startDate: Jul 30th 19
