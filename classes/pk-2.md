@@ -1,6 +1,6 @@
 ---
 title: Preschool 2
-'link,': >-
+link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=138826&k_class_tab=10914
 classPeriods:
   - classesCount: 8

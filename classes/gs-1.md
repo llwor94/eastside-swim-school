@@ -1,6 +1,6 @@
 ---
 title: Grade School 1
-'link,': >-
+link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=138828&k_class_tab=10908
 classPeriods:
   - classesCount: 6

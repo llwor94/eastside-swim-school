@@ -99,7 +99,7 @@ class Classes extends React.Component {
 								</MuiDialogContent>
 							</Dialog>
 							<Typography variant='h2' component='h2' gutterBottom>
-								Group Classes
+							Summer Sessions
 								<Tooltip title='How to register' placement='top'>
 									<IconButton onClick={() => this.setState({ open: true })}>
 										<InfoIcon

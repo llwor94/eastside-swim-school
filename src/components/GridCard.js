@@ -33,7 +33,7 @@ const GridCard = ({node, ages}) => {
           }}
           src={node.frontmatter.thumbnail}
         />{" "}
-        <CardContent>
+        <CardContent style={{flexGrow: 1}}>
           <div style={{display: "flex", justifyContent: "space-between"}}>
             <Typography gutterBottom variant='h6' component='h2'>
               {node.frontmatter.title}
@@ -46,13 +46,13 @@ const GridCard = ({node, ages}) => {
 						<TableHead>
 							<TableRow>
 								<TableCell>
-									Sessions
+									Dates
 								</TableCell>
 								<TableCell>
 									Days
 								</TableCell>
 								<TableCell>
-									Times
+									Slots
 								</TableCell>
 							
 							</TableRow>
@@ -67,7 +67,7 @@ const GridCard = ({node, ages}) => {
 									</TableCell>
 									
 									<TableCell style={{padding: 0}}>
-										{c.days.map(day => <div>{day}</div>)}
+										{c.days.length >= 3 ? <div>{c.days[0] + ' - ' + c.days[c.days.length - 1]}</div> : c.days.map(day => <span>{day} </span>)}
 									</TableCell>
 									<TableCell style={{ padding: 0, width: '60px', 'textAlign': 'center'}}>
 										{c.times.map(t => <div style={{background: '#80deea', textAlign: 'center', margin: '2px', borderRadius: '3px', width: '60px'  }}>{t.time}</div>)}
@@ -77,6 +77,7 @@ const GridCard = ({node, ages}) => {
 						</TableBody>
 					</Table>):null}
         </CardContent>
+				<Button href={node.frontmatter.link} target='_blank' size='large' variant='contained'>Register Now</Button>
       </Card>
     </Grid>
   );
