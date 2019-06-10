@@ -131,7 +131,7 @@ class Classes extends React.Component {
 										))}
 										{allMarkdownRemark.edges
 										.filter(
-											({ node }) => node.frontmatter.ageGroup === 'Baby' || node.frontmatter.title === 'Diving' 
+											({ node }) => node.frontmatter.ageGroup === 'Baby'
 										)
 										.map(({ node }) => (
 											<GridCard node={node} ages='up to 14 months'/>
