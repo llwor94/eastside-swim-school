@@ -17,7 +17,7 @@ classPeriods:
       - time: '10:30'
       - time: '11:00'
       - time: '12:00'
-  - classesCount: '10'
+  - classesCount: 12
     dateRange:
       - endDate: Jul 31st 19
         startDate: Jul 1st 19
