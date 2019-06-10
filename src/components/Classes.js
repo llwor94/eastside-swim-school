@@ -30,17 +30,21 @@ class Classes extends React.Component {
 									html
 									frontmatter {
 										title
-										time
 										link
-										day
-										time2
-										day2
-										time3
-										day3
 										ageGroup
 										difficulty
 										thumbnail
-										link
+										classPeriods {
+											classesCount
+											dateRange {
+												startDate
+												endDate
+											}
+											days
+											times {
+												time
+											}
+										}
 									}
 								}
 							}
@@ -62,6 +66,7 @@ class Classes extends React.Component {
 					}
 				`}
 				render={({ allMarkdownRemark, allFile }) => {
+					console.log(allMarkdownRemark)
 					return (
 						<section className={styles.wrapper} name='classes'>
 							<Dialog
@@ -108,11 +113,29 @@ class Classes extends React.Component {
 							
 							<div className={styles.grid}>
 								<Grid container spacing={40} alignItems='stretch'>
-									{/* {allMarkdownRemark.edges
+									{allMarkdownRemark.edges
 										.filter(
-											({ node }) => node.frontmatter.ageGroup === 'Preschool',
+											({ node }) => node.frontmatter.ageGroup === 'Preschool' && node.frontmatter.classPeriods,
 										)
-										.map(({ node }) => ( */}
+										.map(({ node }) => (
+											<GridCard node={node} ages='3-5'/>
+										))}
+										</Grid>
+										<Grid container spacing={40} alignItems='stretch'>
+										{allMarkdownRemark.edges
+										.filter(
+											({ node }) => node.frontmatter.ageGroup === 'Grade School' 
+										)
+										.map(({ node }) => (
+											<GridCard node={node} ages='5-12'/>
+										))}
+										{/* {allMarkdownRemark.edges
+										.filter(
+											({ node }) => node.frontmatter.ageGroup === 'Grade School' 
+										)
+										.map(({ node }) => (
+											<GridCard node={node} ages='5-12'/>
+										))} */}
 											{/* <GridCard
 												time={'hi'
 													// node.frontmatter.day ? (
@@ -137,14 +160,14 @@ class Classes extends React.Component {
 												header={node.frontmatter.title}
 												level={node.frontmatter.difficulty}
 												link={node.frontmatter.link}
-												ages='3-5'
+												ages='5-12'
 												text={node.html}
 												color='ps'
 											/>
 										))}
-								</Grid>
+								</Grid> */}
 
-								<Grid container spacing={40} className={styles.grid}>
+								{/* <Grid container spacing={40} className={styles.grid}>
 									{allMarkdownRemark.edges
 										.filter(
 											({ node }) =>
