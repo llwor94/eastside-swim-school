@@ -1,7 +1,7 @@
 ---
 title: Grade School 3
 link: >-
-  https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=136800&k_class_tab=10910
+  https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=139403&k_class_tab=10911
 classPeriods:
   - classesCount: 5
     dateRange:
