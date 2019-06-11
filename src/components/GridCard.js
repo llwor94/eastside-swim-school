@@ -58,7 +58,6 @@ const GridCard = ({node, ages}) => {
 						</TableHead>
 						<TableBody>
 							{node.frontmatter.classPeriods ? node.frontmatter.classPeriods.map((c, i ) => {
-								console.log(c.dateRange[0])
 								return(
 								<TableRow key={i} >
 									<TableCell size='medium' style={{padding: 0}}>
