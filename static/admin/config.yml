@@ -27,7 +27,7 @@ collections:
     fields:
       - name: title
         label: Title 
-      - name: link, 
+      - name: link 
         label: Link 
         required: false 
       - name: classPeriods

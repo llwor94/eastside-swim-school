@@ -1,6 +1,6 @@
 ---
 title: Water Babies
-'link,': >-
+link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=138836&k_class_tab=16933
 classPeriods:
   - classesCount: 9
