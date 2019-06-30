@@ -78,6 +78,9 @@ collections:
               - name: time
                 label: Time
                 widget: string
+              - name: available
+                label: Has Openings
+                widget: boolean
       - { name: body, label: Description, widget: markdown }
       - {
           name: ageGroup,
