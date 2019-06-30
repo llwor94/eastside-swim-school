@@ -81,6 +81,7 @@ collections:
               - name: available
                 label: Has Openings
                 widget: boolean
+                required: false
       - { name: body, label: Description, widget: markdown }
       - {
           name: ageGroup,
