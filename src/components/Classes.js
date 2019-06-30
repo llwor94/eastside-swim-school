@@ -35,7 +35,6 @@ class Classes extends React.Component {
 										difficulty
 										thumbnail
 										classPeriods {
-											classesCount
 											dateRange {
 												startDate
 												endDate
