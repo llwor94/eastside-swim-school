@@ -13,9 +13,15 @@ classPeriods:
       - Wednesday
       - Thursday
     times:
-      - time: '9:30'
-      - time: '10:00'
-      - time: '11:30'
+      - available: true
+        time: '9:00'
+      - available: true
+        time: '9:30'
+      - available: true
+        time: '10:00'
+      - time: '10:30'
+      - available: false
+        time: '11:30'
   - classesCount: 9
     dateRange:
       - endDate: Jul 25th 19
