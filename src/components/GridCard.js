@@ -20,6 +20,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 import styles from "./GridCard.module.styl";
 
 const GridCard = ({node, ages}) => {
+	console.log(node)
   return (
     <Grid item sm={6} md={6} style={{flexGrow: 1}}>
       <Card className={styles.card}>
@@ -58,6 +59,7 @@ const GridCard = ({node, ages}) => {
 						</TableHead>
 						<TableBody>
 							{node.frontmatter.classPeriods ? node.frontmatter.classPeriods.map((c, i ) => {
+								console.log(c)
 								return(
 								<TableRow key={i} >
 									<TableCell size='medium' style={{padding: 0}}>
