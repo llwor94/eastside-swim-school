@@ -32,9 +32,12 @@ classPeriods:
       - Monday
       - Wednesday
     times:
-      - time: '4:30'
-      - time: '5:30'
-      - time: '6:00'
+      - available: true
+        time: '4:30'
+      - available: true
+        time: '5:30'
+      - available: true
+        time: '6:00'
   - dateRange:
       - endDate: Jul 25th 19
         startDate: Jun 25th 19
@@ -44,6 +47,32 @@ classPeriods:
     times:
       - available: true
         time: '12:00'
+  - dateRange:
+      - endDate: Aug 25th 19
+        startDate: Jul 8th 19
+    days:
+      - Monday
+    times:
+      - available: true
+        time: '5:00'
+      - available: true
+        time: '6:00'
+      - available: true
+        time: '6:30'
+      - available: true
+        time: '7:00'
+  - dateRange:
+      - endDate: Aug 25th 19
+        startDate: Jul 8th 19
+    days:
+      - Thursday
+    times:
+      - available: true
+        time: '5:00'
+      - available: true
+        time: '6:00'
+      - available: true
+        time: '7:00'
 ageGroup: Grade School
 difficulty: '2'
 thumbnail: /assets/gs22.jpg
