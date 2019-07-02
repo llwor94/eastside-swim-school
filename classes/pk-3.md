@@ -13,10 +13,11 @@ classPeriods:
       - Wednesday
       - Thursday
     times:
-      - time: '9:00'
+      - available: false
+        time: '9:00'
       - time: '10:30'
 ageGroup: Preschool
 difficulty: '3'
 thumbnail: /assets/ps2.jpg
 ---
-comfortable in water, can do beginning strokes and swim 15 yards unassisted.
+1. comfortable in water, can do beginning strokes and swim 15 yards unassisted.
