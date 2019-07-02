@@ -20,7 +20,6 @@ import Tooltip from "@material-ui/core/Tooltip";
 import styles from "./GridCard.module.styl";
 
 const GridCard = ({node, ages}) => {
-	console.log(node)
   return (
     <Grid item sm={6} md={6} style={{flexGrow: 1}}>
       <Card className={styles.card}>
@@ -59,7 +58,6 @@ const GridCard = ({node, ages}) => {
 						</TableHead>
 						<TableBody>
 							{node.frontmatter.classPeriods ? node.frontmatter.classPeriods.map((c, i ) => {
-								console.log(c)
 								return(
 								<TableRow key={i} >
 									<TableCell size='medium' style={{padding: 0}}>
@@ -70,7 +68,7 @@ const GridCard = ({node, ages}) => {
 										{c.days.length >= 3 ? <div>{c.days[0] + ' thru ' + c.days[c.days.length - 1]}</div> : c.days.length === 2 ? <div>{c.days[0] +  " & " + c.days[1] }</div> : c.days.map(day => <span>{day} </span>)}
 									</TableCell>
 									<TableCell style={{ padding: 0, width: '60px', 'textAlign': 'center'}}>
-										{c.times.map(t => <div style={{background: '#80deea', textAlign: 'center', margin: '2px', borderRadius: '3px', width: '60px'  }}>{t.time}</div>)}
+										{c.times.map(t => <div style={{background: t.available ? '#80deea' : '#e0e0e0', textAlign: 'center', margin: '2px', borderRadius: '3px', width: '60px'  }}>{t.time}</div>)}
 									</TableCell>
 								</TableRow>
 							)}): null}

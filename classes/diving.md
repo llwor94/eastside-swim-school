@@ -10,6 +10,7 @@ classPeriods:
       - Thursday
     times:
       - time: '1:30'
+        available: false
 ageGroup: Grade School
 difficulty: '3'
 thumbnail: /assets/dive-2.jpg

@@ -42,6 +42,7 @@ class Classes extends React.Component {
 											days
 											times {
 												time
+												available
 											}
 										}
 									}
