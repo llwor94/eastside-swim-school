@@ -29,7 +29,8 @@ classPeriods:
       - Tuesday
       - Thursday
     times:
-      - time: '12:00'
+      - available: true
+        time: '11:30'
   - classesCount: 11
     dateRange:
       - endDate: Aug 29th 19
