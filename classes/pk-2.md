@@ -30,8 +30,8 @@ classPeriods:
       - Tuesday
       - Thursday
     times:
-      - time: '11:30'
-      - time: '12:30'
+      - available: true
+        time: '12:30'
   - classesCount: 9
     dateRange:
       - endDate: Aug 29th 19
