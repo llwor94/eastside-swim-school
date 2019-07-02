@@ -35,6 +35,15 @@ classPeriods:
       - time: '4:30'
       - time: '5:30'
       - time: '6:00'
+  - dateRange:
+      - endDate: Jul 25th 19
+        startDate: Jun 25th 19
+    days:
+      - Tuesday
+      - Thursday
+    times:
+      - available: true
+        time: '12:00'
 ageGroup: Grade School
 difficulty: '2'
 thumbnail: /assets/gs22.jpg
