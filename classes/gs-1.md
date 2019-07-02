@@ -33,15 +33,14 @@ classPeriods:
         time: '11:30'
   - classesCount: 11
     dateRange:
-      - endDate: Aug 29th 19
-        startDate: Jul 30th 19
       - endDate: Jul 31st 19
         startDate: Jul 1st 19
     days:
       - Monday
       - Wednesday
     times:
-      - time: '4:00'
+      - available: true
+        time: '4:00'
 ageGroup: Grade School
 difficulty: '1'
 thumbnail: /assets/gs1.png
