@@ -13,9 +13,9 @@ classPeriods:
       - Wednesday
       - Thursday
     times:
-      - available: true
+      - available: false
         time: '9:00'
-      - available: true
+      - available: false
         time: '9:30'
       - available: true
         time: '10:00'
