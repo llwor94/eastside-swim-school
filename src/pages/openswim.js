@@ -43,10 +43,16 @@ const OpenSwim = props => (
 					 <b>5 punch swim pass:</b> 18+ - 30$ | youth/senior - 20$
 				</Typography>
 				<Typography gutterBottom variant='h4' component='h2'>
-					Monday-Thursday 1:00 – 2:30 & 3:00 - 4:30
+					Monday-Thursday:
+				</Typography>
+				<Typography gutterBottom variant='h5' component='h2'>
+					1:00 – 2:30 & 3:00 - 4:30
 				</Typography>
 				<Typography gutterBottom variant='h4' component='h2'>
-					Saturday/Sunday 11:30 – 1:00 & 2:00 - 4:00
+					Saturday/Sunday:
+				</Typography>
+				<Typography gutterBottom variant='h5' component='h2'>
+					11:30 – 1:00 & 2:00 - 4:00
 				</Typography>
 				<Typography gutterBottom variant='h2' component='h1'>
 					Adult Swim
