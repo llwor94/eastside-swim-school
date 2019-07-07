@@ -46,13 +46,19 @@ const OpenSwim = props => (
 					Monday-Thursday:
 				</Typography>
 				<Typography gutterBottom variant='h5' component='h2'>
-					1:00 – 2:30 & 3:00 - 4:30
+					1:00 – 2:30
+				</Typography>
+				<Typography gutterBottom variant='h5' component='h2'>
+					3:00 - 4:30
 				</Typography>
 				<Typography gutterBottom variant='h4' component='h2'>
 					Saturday/Sunday:
 				</Typography>
 				<Typography gutterBottom variant='h5' component='h2'>
-					11:30 – 1:00 & 2:00 - 4:00
+					11:30 – 1:00
+				</Typography>
+				<Typography gutterBottom variant='h5' component='h2'>
+					2:00 - 4:00
 				</Typography>
 				<Typography gutterBottom variant='h2' component='h1'>
 					Adult Swim
