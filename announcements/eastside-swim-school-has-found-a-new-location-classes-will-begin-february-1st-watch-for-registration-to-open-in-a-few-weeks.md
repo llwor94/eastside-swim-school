@@ -1,4 +1,6 @@
 ---
-title: 'We are now booking for July group classes.  Go to groups lessons link. '
+title: >-
+  New Open Swim hours.  Check to tab above.  ADULTS 8 - 9 AM swim - laps,
+  walking or aerobics.
 ---
 Summer swim lessons will be online registration watch for announcement.
