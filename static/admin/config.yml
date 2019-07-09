@@ -110,7 +110,7 @@ collections:
         }
       - { name: oneStudent, label: 'One Student', required: false }
       - { name: twoStudents, label: 'Two Students', required: false }
-      - { name: thumbnail, label: 'Featured Image', widget: 'image' }
+      - { name: thumbnail, label: 'Featured Image', widget: 'image', required: false }
       - { name: link, label: 'Link to site' }
       - { name: body, label: "Bio", widget: "text"}
 
