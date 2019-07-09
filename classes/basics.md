@@ -1,13 +1,20 @@
 ---
 title: Adult Learn To Swim
-time: '7:00'
-day: Thursday
-time2: ''
-day2: Thursday
+link: >-
+  https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=107801&k_class_tab=10915
+classPeriods:
+  - dateRange:
+      - endDate: Jul 30th 19
+        startDate: Jul 9th 19
+    days:
+      - Tuesday
+    times:
+      - available: true
+        time: '6:00'
+      - available: true
+        time: '6:30'
 ageGroup: Adult
 difficulty: '1'
 thumbnail: /assets/adult.jpg
-link: >-
-  https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=107801&k_class_tab=10915
 ---
 Adults new to swimming, not comfortable in the water.
