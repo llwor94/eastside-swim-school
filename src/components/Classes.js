@@ -135,6 +135,13 @@ class Classes extends React.Component {
 										.map(({ node }) => (
 											<GridCard node={node} ages='up to 14 months'/>
 										))}
+										{allMarkdownRemark.edges
+										.filter(
+											({ node }) => node.frontmatter.ageGroup === 'Adult'
+										)
+										.map(({ node }) => (
+											<GridCard node={node} ages='18 +'/>
+										))}
 										{/* {allMarkdownRemark.edges
 										.filter(
 											({ node }) => node.frontmatter.ageGroup === 'Grade School' 
