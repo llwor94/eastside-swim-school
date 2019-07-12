@@ -11,6 +11,14 @@ classPeriods:
     times:
       - available: true
         time: '7:30'
+  - dateRange:
+      - endDate: Aug 6th 19
+        startDate: Jul 9th 19
+    days:
+      - Tuesday
+    times:
+      - available: true
+        time: '7:30'
 ageGroup: Adult
 difficulty: '2'
 thumbnail: /assets/adult-class.jpg
