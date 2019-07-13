@@ -50,7 +50,7 @@ classPeriods:
       - available: true
         time: '10:00'
       - available: true
-        time: '10:30'
+        time: '11:30'
 ageGroup: Grade School
 difficulty: '3'
 thumbnail: /assets/gs3.png
