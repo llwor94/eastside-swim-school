@@ -108,6 +108,10 @@ classPeriods:
         time: '10:00'
       - available: true
         time: '10:30'
+      - available: true
+        time: '11:00'
+      - available: true
+        time: '11:30'
 ageGroup: Grade School
 difficulty: '2'
 thumbnail: /assets/gs22.jpg
