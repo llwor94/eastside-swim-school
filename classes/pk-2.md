@@ -19,7 +19,8 @@ classPeriods:
         time: '9:30'
       - available: true
         time: '10:00'
-      - time: '10:30'
+      - available: false
+        time: '10:30'
       - available: false
         time: '11:30'
   - classesCount: 9
@@ -40,8 +41,27 @@ classPeriods:
       - Tuesday
       - Thursday
     times:
-      - time: '11:30'
-      - time: '12:30'
+      - available: false
+        time: '11:30'
+      - available: false
+        time: '12:30'
+  - dateRange:
+      - endDate: Aug 1st 19
+        startDate: Jul 22nd 19
+    days:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+    times:
+      - available: true
+        time: '9:00'
+      - available: true
+        time: '9:30'
+      - available: true
+        time: '10:00'
+      - available: true
+        time: '10:30'
 ageGroup: Preschool
 difficulty: '2'
 thumbnail: /assets/preschool.jpg
