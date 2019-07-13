@@ -17,7 +17,8 @@ classPeriods:
         time: '9:00'
       - available: true
         time: '9:30'
-      - time: '10:00'
+      - available: true
+        time: '10:00'
       - available: true
         time: '10:30'
       - available: true
@@ -73,6 +74,23 @@ classPeriods:
         time: '6:00'
       - available: true
         time: '7:00'
+  - dateRange:
+      - endDate: Aug 1st 19
+        startDate: Jul 22nd 19
+    days:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+    times:
+      - available: true
+        time: '9:00'
+      - available: true
+        time: '9:30'
+      - available: true
+        time: '10:30'
+      - available: true
+        time: '11:00'
 ageGroup: Grade School
 difficulty: '2'
 thumbnail: /assets/gs22.jpg
