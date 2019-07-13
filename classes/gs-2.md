@@ -91,6 +91,23 @@ classPeriods:
         time: '10:30'
       - available: true
         time: '11:00'
+  - dateRange:
+      - endDate: Aug 15th 19
+        startDate: Aug 5th 19
+    days:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+    times:
+      - available: true
+        time: '9:00'
+      - available: true
+        time: '9:30'
+      - available: true
+        time: '10:00'
+      - available: true
+        time: '10:30'
 ageGroup: Grade School
 difficulty: '2'
 thumbnail: /assets/gs22.jpg
