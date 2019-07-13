@@ -23,7 +23,21 @@ classPeriods:
       - Monday
       - Wednesday
     times:
-      - time: '5:00'
+      - available: false
+        time: '5:00'
+  - dateRange:
+      - endDate: Aug 1st 19
+        startDate: Jul 22nd 19
+    days:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+    times:
+      - available: true
+        time: '10:00'
+      - available: true
+        time: '11:00'
 ageGroup: Grade School
 difficulty: '3'
 thumbnail: /assets/gs3.png
