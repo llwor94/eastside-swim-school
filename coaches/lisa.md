@@ -2,7 +2,8 @@
 title: Lisa
 order: '1'
 thumbnail: /assets/lisa1.jpg
-link: 'https://www.wellnessliving.com/rs/appointment/eastside_swim_school?s_id=K5TcjV'
+link: >-
+  https://www.wellnessliving.com/rs/appointment-start.html?id_class_tab=3&k_business=248418&k_class_tab=13640&k_service=109085
 ---
 Lisa has has been teaching swim lessons for over 35 years and competing and coaching triathlons of all distances for 25 years . She learned to swim at a young age, competed thru the collegiate level and has continued swimming competitively thru her adult life.
 
