@@ -9,6 +9,7 @@ require('dotenv').config({
 module.exports = {
 	siteMetadata: {
 		title: 'Eastside Swim School',
+		description: 'Swim School in Redmond, WA'
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
