@@ -8,7 +8,7 @@ require('dotenv').config({
 
 module.exports = {
 	siteMetadata: {
-		title: 'Eastside Swim School',
+		title: 'Swim Lessons in Redmond | Eastside Swim School',
 		description: 'Swim School in Redmond, WA'
 	},
 	plugins: [
