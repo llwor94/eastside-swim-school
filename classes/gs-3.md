@@ -38,6 +38,19 @@ classPeriods:
     times:
       - available: true
         time: '5:00'
+  - dateRange:
+      - endDate: Aug 29th 19
+        startDate: Aug 19th 19
+    days:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+    times:
+      - available: true
+        time: '9:30'
+      - available: true
+        time: '10:00'
 ageGroup: Grade School
 difficulty: '3'
 thumbnail: /assets/gs3.png
