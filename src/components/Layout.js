@@ -16,6 +16,7 @@ const Layout = ({ children }) => (
 				site {
 					siteMetadata {
 						title
+						description
 					}
 				}
 			}
@@ -27,7 +28,7 @@ const Layout = ({ children }) => (
 					<Helmet
 						title={data.site.siteMetadata.title}
 						meta={[
-							{ name: 'description', content: 'Sample' },
+							{ name: 'description', content: 'Swim School in Redmond' },
 							{
 								name: 'keywords',
 								content:
@@ -36,6 +37,7 @@ const Layout = ({ children }) => (
 						]}
 					>
 						<html lang="en" />
+						<meta name="description" content={data.site.siteMetadata.description} />
 						<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" />
 						<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
 						<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
