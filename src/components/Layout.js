@@ -32,7 +32,7 @@ const Layout = ({ children }) => (
 							{
 								name: 'keywords',
 								content:
-									'swim, swimming, lessons, kids, woodinville, youth, adult, learn, instruction, woodinville, bothell, redmond, kirkland, eastside, school, bellevue, kenmore, snohomish, king, seattle, north, east, babies, toddler, instruction, triathlon, masters, class, video, analysis',
+									'swim, redmond, swimming, lessons, kids, woodinville, youth, adult, learn, instruction, woodinville, bothell, redmond, kirkland, eastside, school, bellevue, kenmore, snohomish, king, seattle, north, east, babies, toddler, instruction, triathlon, masters, class, video, analysis',
 							},
 						]}
 					>

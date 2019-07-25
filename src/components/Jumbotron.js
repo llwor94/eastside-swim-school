@@ -10,6 +10,7 @@ const Jumbotron = () => (
 			<Typography className={styles.title} variant='h2' component='h1'>
 				Eastside <span className={styles.green}>Swim</span> School
 			</Typography>
+			<Typography variant='h5' component='h1' style={{textTransform: 'none', marginBottom: '2rem'}}>Swim Lessons in Redmond, WA</Typography>
 		</div>
 		<Fab
 			variant='extended'
@@ -23,6 +24,7 @@ const Jumbotron = () => (
 		>
 			Jump In!
 		</Fab>
+		
 		{/* <Button to="#classes">Jump In!</Button> */}
 	</div>
 );
