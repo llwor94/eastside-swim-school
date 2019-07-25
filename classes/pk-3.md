@@ -3,20 +3,6 @@ title: Preschool 3
 link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=136787&k_class_tab=10864
 classPeriods:
-  - classesCount: 5
-    dateRange:
-      - endDate: Jul 18th 19
-        startDate: Jul 8th 19
-    days:
-      - Monday
-      - Tuesday
-      - Wednesday
-      - Thursday
-    times:
-      - available: false
-        time: '9:00'
-      - available: false
-        time: '10:30'
   - dateRange:
       - endDate: Aug 15th 19
         startDate: Aug 5th 19
