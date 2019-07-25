@@ -29,6 +29,15 @@ classPeriods:
         time: '10:30'
       - available: true
         time: '11:30'
+  - dateRange:
+      - endDate: Aug 29th 18
+        startDate: Aug 5th 19
+    days:
+      - Monday
+      - Wednesday
+    times:
+      - available: true
+        time: '4:00'
 ageGroup: Grade School
 difficulty: '1'
 thumbnail: /assets/gs1.png
