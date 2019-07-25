@@ -41,6 +41,21 @@ classPeriods:
     times:
       - available: true
         time: '5:30'
+  - dateRange:
+      - endDate: Aug 29th 19
+        startDate: Aug 19th 19
+    days:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+    times:
+      - available: true
+        time: '9:00'
+      - available: true
+        time: '10:30'
+      - available: true
+        time: '11:00'
 ageGroup: Preschool
 difficulty: '2'
 thumbnail: /assets/preschool.jpg
