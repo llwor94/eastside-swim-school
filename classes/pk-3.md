@@ -23,4 +23,4 @@ ageGroup: Preschool
 difficulty: '3'
 thumbnail: /assets/ps2.jpg
 ---
-1. comfortable in water, can do beginning strokes and swim 15 yards unassisted.
+comfortable in water, can do beginning strokes and swim 15 yards unassisted.
