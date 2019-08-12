@@ -3,7 +3,7 @@ title: Adult lessons
 link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=85843&k_class_tab=10916
 classPeriods: []
-ageGroup: Adult
+ageGroup: Baby
 difficulty: '2'
 thumbnail: /assets/adult-class.jpg
 ---
