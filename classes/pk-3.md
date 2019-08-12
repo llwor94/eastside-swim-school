@@ -18,7 +18,7 @@ classPeriods:
       - Thursday
     times:
       - available: true
-        time: '11:00'
+        time: '11:30'
 ageGroup: Preschool
 difficulty: '3'
 thumbnail: /assets/ps2.jpg
