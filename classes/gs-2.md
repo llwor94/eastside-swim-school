@@ -37,7 +37,9 @@ classPeriods:
       - Wednesday
     times:
       - available: true
-        time: '6:00'
+        time: '5:30'
+      - available: true
+        time: '6:30'
   - dateRange:
       - endDate: Oct 31st 19
         startDate: Sep 5th 19
