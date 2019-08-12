@@ -16,7 +16,7 @@ classPeriods:
       - available: true
         time: '5:00'
       - available: true
-        time: '6:30'
+        time: '6:00'
   - classesCount: ''
     dateRange:
       - endDate: Oct 29th 19
