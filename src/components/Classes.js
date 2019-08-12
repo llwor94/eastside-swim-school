@@ -98,7 +98,7 @@ class Classes extends React.Component {
 								</MuiDialogContent>
 							</Dialog>
 							<Typography variant='h2' component='h2' gutterBottom>
-							Summer Sessions
+							Class Sessions
 								<Tooltip title='How to register' placement='top'>
 									<IconButton onClick={() => this.setState({ open: true })}>
 										<InfoIcon
@@ -130,11 +130,12 @@ class Classes extends React.Component {
 										))}
 										{allMarkdownRemark.edges
 										.filter(
-											({ node }) => node.frontmatter.ageGroup === 'Baby'
+											({ node }) => node.frontmatter.ageGroup === 'Pre Comp'
 										)
 										.map(({ node }) => (
-											<GridCard node={node} ages='up to 14 months'/>
+											<GridCard node={node} ages='6-14'/>
 										))}
+
 										{allMarkdownRemark.edges
 										.filter(
 											({ node }) => node.frontmatter.ageGroup === 'Adult'

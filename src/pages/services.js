@@ -94,6 +94,18 @@ const Services = props => {
 We make our pool available to rent for special events.  Our price is a $15/hr lifeguard fee (per lifeguard) plus $85/hr for the facility.  For every twenty people at your event you will need one lifeguard.  Contact us at 425-248-0908 to make an appointment.
 
 					</Typography>
+					<Typography gutterBottom variant='h5' component='h2'>
+						Birthday Party Pool Rentals
+					</Typography>
+					<Typography gutterBottom variant='body1' component='p'>
+						Saturdays 9:00am-11:00am, 4:00pm-6:00pm <br/>
+						Sundays 4:00pm-6:00pm <br/>
+						1 hour of pool time followed by 1 hour of patio/deck space. <br/>
+						Bring your own food, games, toys and fun! No food allowed on the pool deck. Children 6 and under must have a parent in the water with them.<br/>
+						$400 for up to 20 kids (parents do not count in the total number), $10 for each additional child.
+
+
+					</Typography>
 				</Paper>
 			</Wrapper>
 		</Layout>
