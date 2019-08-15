@@ -1,6 +1,4 @@
 ---
-title: >-
-  New Open Swim hours.  Check to tab above.  ADULTS 8 - 9 AM swim - laps,
-  walking or aerobics.
+title: No Open swims on Sat. August 17th.  The pool is closed that day.
 ---
 Summer swim lessons will be online registration watch for announcement.
