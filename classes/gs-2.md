@@ -54,6 +54,14 @@ classPeriods:
         time: '6:30'
       - available: true
         time: '7:00'
+  - dateRange:
+      - endDate: Oct 26th 19
+        startDate: Sep 7th 19
+    days:
+      - Saturday
+    times:
+      - available: true
+        time: '10:30'
 ageGroup: Grade School
 difficulty: '2'
 thumbnail: /assets/gs22.jpg
