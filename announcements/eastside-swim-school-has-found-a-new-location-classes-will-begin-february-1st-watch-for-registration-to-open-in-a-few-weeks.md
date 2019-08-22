@@ -1,4 +1,4 @@
 ---
-title: No Open swims on Sat. August 17th.  The pool is closed that day.
+title: We are now booking for Fall lessons. Private and group classes
 ---
-Summer swim lessons will be online registration watch for announcement.
+We are now booking for Fall lessons, both private and group classes.
