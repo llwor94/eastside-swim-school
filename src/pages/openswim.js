@@ -66,6 +66,12 @@ const OpenSwim = props => (
 				<Typography gutterBottom variant='h5' component='h2'>
 					10:00 AM - 11:00 AM
 				</Typography>
+				<Typography gutterBottom variant='h4' component='h2'>
+					Thursday:
+				</Typography>
+				<Typography gutterBottom variant='h5' component='h2'>
+					7:00 PM - 8:00 PM
+				</Typography>
 				
 			</Paper>
 		</Wrapper>
