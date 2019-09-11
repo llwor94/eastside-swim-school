@@ -1,4 +1,6 @@
 ---
-title: We are now booking for Fall lessons. Private and group classes
+title: >-
+  We are currently booked full for private and group classes unless you are
+  available before 3:30 PM.
 ---
-We are now booking for Fall lessons, both private and group classes.
+We are currently booked full for private and group classes unless you are available before 3:30 PM.  Watch our facebook page for new openings.
