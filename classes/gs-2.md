@@ -34,7 +34,8 @@ classPeriods:
         time: '4:00'
       - available: true
         time: '6:00'
-      - time: '6:30'
+      - available: true
+        time: '6:30'
   - dateRange:
       - endDate: Dec 19th 19
         startDate: Nov 7th 19
