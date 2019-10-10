@@ -12,6 +12,8 @@ classPeriods:
       - available: true
         time: '4:30'
       - available: true
+        time: '5:00'
+      - available: true
         time: '6:00'
       - available: true
         time: '6:30'
