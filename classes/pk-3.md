@@ -10,7 +10,7 @@ classPeriods:
       - Monday
     times:
       - available: true
-        time: ':330'
+        time: '3:30'
   - dateRange:
       - endDate: Dec 18th 19
         startDate: Nov 6th 19
