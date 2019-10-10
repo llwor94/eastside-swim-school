@@ -4,13 +4,15 @@ link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class_tab=18048&uid=0&id_class_tab=2
 classPeriods:
   - dateRange:
-      - endDate: Oct 28th 19
-        startDate: Sep 9th 19
+      - endDate: Dec 16th 19
+        startDate: Nov 4th 19
+      - endDate: Dec 19th 19
+        startDate: Nov 7th 19
     days:
-      - Monday
+      - Thursday
     times:
       - available: true
-        time: '5:00'
+        time: '6:30'
 ageGroup: Grade School
 difficulty: '2'
 thumbnail: /assets/elementary1.jpg
