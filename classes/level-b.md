@@ -4,10 +4,11 @@ link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class_tab=12269&uid=0&id_class_tab=2
 classPeriods:
   - dateRange:
-      - endDate: Oct 30th 19
+      - endDate: Dec 31st 19
         startDate: Sep 4th 19
     days:
       - Wednesday
+      - Sunday
     times:
       - available: true
         time: '6:00'
