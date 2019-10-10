@@ -18,9 +18,9 @@ classPeriods:
       - Tuesday
     times:
       - available: true
-        time: '7:00'
-      - available: true
         time: '5:00'
+      - available: true
+        time: '7:00'
 ageGroup: Grade School
 difficulty: '3'
 thumbnail: /assets/gs3.png
