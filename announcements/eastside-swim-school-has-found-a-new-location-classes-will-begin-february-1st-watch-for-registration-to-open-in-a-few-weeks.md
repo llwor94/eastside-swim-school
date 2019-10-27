@@ -1,6 +1,4 @@
 ---
-title: >-
-  We are currently booked full for private and group classes unless you are
-  available before 3:30 PM.
+title: NOW BOOKING - Nov/Dec group classes and private lessons
 ---
-We are currently booked full for private and group classes unless you are available before 3:30 PM.  Watch our facebook page for new openings.
+NOW BOOKING - Nov/Dec group classes and private lessons.  See our fb page for private openings.
