@@ -1,4 +1,6 @@
 ---
-title: NOW BOOKING - Nov/Dec group classes and private lessons
+title: >-
+  We are open Thanksgiving weekend running normal hours.   Closed on
+  Thanksgiving 28th
 ---
-NOW BOOKING - Nov/Dec group classes and private lessons.  See our fb page for private openings.
+We are open Thanksgiving week and weekend running normal hours and programs.  Closed on Thanksgiving Day.
