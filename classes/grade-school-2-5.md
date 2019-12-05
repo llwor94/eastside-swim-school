@@ -4,10 +4,10 @@ link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class_tab=18048&uid=0&id_class_tab=2
 classPeriods:
   - dateRange:
-      - endDate: Dec 16th 19
-        startDate: Nov 4th 19
-      - endDate: Dec 19th 19
-        startDate: Nov 7th 19
+      - endDate: Feb 24th 20
+        startDate: Jan 6th 20
+      - endDate: Feb 27th 20
+        startDate: Jan 9th 20
     days:
       - Thursday
     times:
