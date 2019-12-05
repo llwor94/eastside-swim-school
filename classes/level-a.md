@@ -15,3 +15,5 @@ difficulty: '3'
 thumbnail: /assets/precomp1.png
 ---
 This is the more advanced Pre-Comp swimming more 50’s and working more endurance.  This :45 minute class works as a group practicing all 4 strokes, turns and mechanics.
+
+Contact Lisa for registration.
