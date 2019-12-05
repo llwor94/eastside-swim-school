@@ -12,6 +12,7 @@ classPeriods:
       - available: true
         time: '6:00'
       - time: '10:30'
+      - time: '3:30'
   - dateRange:
       - endDate: Feb 25th 20
         startDate: Jan 7th 20
