@@ -1,6 +1,4 @@
 ---
-title: >-
-  We are open Thanksgiving weekend running normal hours.   Closed on
-  Thanksgiving 28th
+title: 'Holiday schedule - We will be closed Dec 19 - Jan 5.  '
 ---
-We are open Thanksgiving week and weekend running normal hours and programs.  Closed on Thanksgiving Day.
+We will be closed for 2 weeks over the holiday season.  Dec 20th - Jan 5th.
