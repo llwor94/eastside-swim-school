@@ -39,7 +39,6 @@ classPeriods:
         time: '6:00'
       - available: true
         time: '6:30'
-      - time: '4:30'
   - dateRange:
       - endDate: Feb 27th 20
         startDate: Jan 9th 20
