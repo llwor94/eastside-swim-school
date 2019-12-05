@@ -3,9 +3,7 @@ title: Pre Comp B
 link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class_tab=12269&uid=0&id_class_tab=2
 classPeriods:
-  - dateRange:
-      - endDate: Dec 31st 19
-        startDate: Sep 4th 19
+  - dateRange: []
     days:
       - Wednesday
       - Sunday
