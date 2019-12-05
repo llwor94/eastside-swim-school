@@ -15,3 +15,5 @@ difficulty: '2'
 thumbnail: /assets/precomp1.jpg
 ---
 This is a lower level Pre-Comp focused more on 25’s and stroke development.  This :45 minute class works as a group practicing all 4 strokes, turns and mechanics.
+
+Contact Lisa for registration.
