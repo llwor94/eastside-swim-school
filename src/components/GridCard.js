@@ -42,7 +42,7 @@ const GridCard = ({node, ages}) => {
             </Typography>
           </div>
           <Typography variant='body1' dangerouslySetInnerHTML={{__html: node.html}}/>
-					{node.frontmatter.classPeriods ? (<Table>
+					{node.frontmatter.classPeriods.length ? (<Table>
 						<TableHead>
 							<TableRow>
 								<TableCell>
@@ -54,17 +54,17 @@ const GridCard = ({node, ages}) => {
 								<TableCell>
 									Slots
 								</TableCell>
-							
+
 							</TableRow>
 						</TableHead>
 						<TableBody>
-							{node.frontmatter.classPeriods ? node.frontmatter.classPeriods.map((c, i ) => {
-								return(
+							{node.frontmatter.classPeriods.length ? node.frontmatter.classPeriods.map((c, i ) => {
+								if (c.dateRange && c.dateRange.length) return(
 								<TableRow key={i} >
 									<TableCell size='medium' style={{padding: 0}}>
 										<b>{ c.dateRange[0].startDate.slice(0, -3) + ' - ' + c.dateRange[0].endDate.slice(0, -3) }</b>
 									</TableCell>
-									
+
 									<TableCell style={{padding: 0}}>
 										{c.days.length >= 3 ? <div>{c.days[0] + ' thru ' + c.days[c.days.length - 1]}</div> : c.days.length === 2 ? <div>{c.days[0] +  " & " + c.days[1] }</div> : c.days.map(day => <span>{day} </span>)}
 									</TableCell>
