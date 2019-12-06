@@ -23,7 +23,6 @@ const BottomBar = ({ styles, link }) => (
 	<div>
 		<Button
 			variant='contained'
-			color='secondary'
 			href={link}
 			component='a'
 			className={styles.mr}

@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import { MuiThemeProvider } from '@material-ui/core/styles';
 
 import Header from './Header';
 import Footer from './footer';
-import theme from '../styles/theme';
+
+import '../styles/index.css';
 
 const Layout = ({ children }) => (
 	<StaticQuery
@@ -22,9 +22,8 @@ const Layout = ({ children }) => (
 			}
 		`}
 		render={(data) => {
-			// console.log(data)
 			return (
-				<MuiThemeProvider theme={theme}>
+				<>
 					<Helmet
 						title={data.site.siteMetadata.title}
 						meta={[
@@ -38,16 +37,16 @@ const Layout = ({ children }) => (
 					>
 						<html lang="en" />
 						<meta name="description" content={data.site.siteMetadata.description} />
-						<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" />
-						<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
-						<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+						<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet"/>
+						<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+						<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet"/>
 					</Helmet>
 					<CssBaseline />
 					<Header siteTitle={data.site.siteMetadata.title} />
 
 					{children}
 					<Footer />
-				</MuiThemeProvider>
+					</>
 			);
 		}}
 	/>

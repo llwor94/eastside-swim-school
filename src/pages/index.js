@@ -8,7 +8,7 @@ import Testimonial from '../components/Testimonials';
 import Announcement from '../components/Announcement'
 
 class IndexPage extends React.Component {
-	
+
 	render() {
 		return (
 			<Layout>

@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from 'gatsby';
 import { Location } from '@reach/router';
-import Toolbar from '@material-ui/core/Toolbar';
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
 import Hidden from '@material-ui/core/Hidden';
@@ -34,8 +33,7 @@ class Header extends React.Component {
 		const { anchorEl } = this.state;
 		const open = Boolean(anchorEl);
 		return (
-			<AppBar color='primary'>
-				<Toolbar className={styles.toolbar}>
+			<AppBar className={styles.toolbar}>
 					<Link to='/'>
 						<img src={Logo} className={styles.img} alt='logo' />
 					</Link>
@@ -49,7 +47,6 @@ class Header extends React.Component {
 											<Fragment>
 												<Button
 													color='inherit'
-													className={styles.link}
 													component='a'
 													href='#classes'
 												>
@@ -57,7 +54,6 @@ class Header extends React.Component {
 												</Button>
 												<Button
 													color='inherit'
-													className={styles.link}
 													component='a'
 													href='#coaches'
 												>
@@ -69,7 +65,6 @@ class Header extends React.Component {
 										return (
 											<Button
 												color='inherit'
-												className={styles.link}
 												component='a'
 												href='/'
 											>
@@ -80,7 +75,6 @@ class Header extends React.Component {
 							</Location>
 							<Button
 								color='inherit'
-								className={styles.link}
 								component={Link}
 								to='/openswim'
 							>
@@ -88,7 +82,6 @@ class Header extends React.Component {
 							</Button>
 							<Button
 								color='inherit'
-								className={styles.link}
 								component={Link}
 								to='/about'
 							>
@@ -96,7 +89,6 @@ class Header extends React.Component {
 							</Button>
 							<Button
 								color='inherit'
-								className={styles.link}
 								component={Link}
 								to='/services'
 							>
@@ -104,7 +96,6 @@ class Header extends React.Component {
 							</Button>
 							<Button
 								color='inherit'
-								className={styles.link}
 								component={Link}
 								to='/faq'
 							>
@@ -112,7 +103,6 @@ class Header extends React.Component {
 							</Button>
 							<Button
 								color='inherit'
-								className={styles.link}
 								component={Link}
 								to='/location'
 							>
@@ -128,7 +118,7 @@ class Header extends React.Component {
 								onClick={this.handleMenu}
 								color='inherit'
 							>
-								<Icon className={styles.icon}>menu</Icon>
+								<Icon>menu</Icon>
 							</IconButton>
 							<Menu
 								id='menu-appbar'
@@ -151,7 +141,6 @@ class Header extends React.Component {
 												<Fragment>
 													<MenuItem
 														onClick={this.handleClose}
-														className={styles.link}
 														component='a'
 														href='#classes'
 													>
@@ -159,7 +148,6 @@ class Header extends React.Component {
 													</MenuItem>
 													<MenuItem
 														onClick={this.handleClose}
-														className={styles.link}
 														component='a'
 														href='#coaches'
 													>
@@ -171,7 +159,6 @@ class Header extends React.Component {
 											return (
 												<MenuItem
 													onClick={this.handleClose}
-													className={styles.link}
 													component={Link}
 													to='/'
 												>
@@ -183,7 +170,6 @@ class Header extends React.Component {
 								</Location>
 								<MenuItem
 									onClick={this.handleClose}
-									className={styles.link}
 									component={Link}
 									to='/openswim'
 								>
@@ -191,7 +177,6 @@ class Header extends React.Component {
 								</MenuItem>
 								<MenuItem
 									onClick={this.handleClose}
-									className={styles.link}
 									component={Link}
 									to='/about'
 								>
@@ -199,7 +184,6 @@ class Header extends React.Component {
 								</MenuItem>
 								<MenuItem
 									onClick={this.handleClose}
-									className={styles.link}
 									component={Link}
 									to='/services'
 								>
@@ -207,7 +191,6 @@ class Header extends React.Component {
 								</MenuItem>
 								<MenuItem
 									onClick={this.handleClose}
-									className={styles.link}
 									component={Link}
 									to='/faq'
 								>
@@ -215,7 +198,6 @@ class Header extends React.Component {
 								</MenuItem>
 								<MenuItem
 									onClick={this.handleClose}
-									className={styles.link}
 									component={Link}
 									to='/location'
 								>
@@ -224,7 +206,6 @@ class Header extends React.Component {
 							</Menu>
 						</div>
 					</Hidden>
-				</Toolbar>
 			</AppBar>
 		);
 	}

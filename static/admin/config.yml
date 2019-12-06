@@ -26,10 +26,10 @@ collections:
     create: true
     fields:
       - name: title
-        label: Title 
-      - name: link 
-        label: Link 
-        required: false 
+        label: Title
+      - name: link
+        label: Link
+        required: false
       - name: classPeriods
         label: Class Periods
         widget: list
@@ -69,12 +69,12 @@ collections:
           - name: classesCount
             label: Classes Count
             required: false
-            widget: number 
-          - name: times 
-            label: Times 
-            widget: list 
-            required: false 
-            fields: 
+            widget: number
+          - name: times
+            label: Times
+            widget: list
+            required: false
+            fields:
               - name: time
                 label: Time
                 widget: string
@@ -102,16 +102,24 @@ collections:
     create: true
     fields:
       - { name: title, label: Name }
-      - { 
-          name: order, 
+      - {
+          name: order,
           label: Ranking,
           widget: select,
-          options: ['1', '2', '3', '4', '5', '6', '7', '8'], 
+          options: ['1', '2', '3', '4', '5', '6', '7', '8'],
         }
       - { name: oneStudent, label: 'One Student', required: false }
       - { name: twoStudents, label: 'Two Students', required: false }
       - { name: thumbnail, label: 'Featured Image', widget: 'image', required: false }
       - { name: link, label: 'Link to site' }
       - { name: body, label: "Bio", widget: "text"}
+  - name: pages
+    label: Pages
+    folder: pages
+    create: true
+    fields:
+      - {label: Title, name: "title", widget: "string"}
+      - {label: Url, name: path, widget: "string"}
+      - { label: Page Body, name: 'body', widget: 'markdown' }
 
 
