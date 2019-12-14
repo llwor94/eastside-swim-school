@@ -20,15 +20,15 @@ Eastside Swim School features instructors who are certified and trained in Triat
 
 ## Seniors and Disabled
 
-Pools that are appropriate for competition-level instruction are rarely accessible but ours is. It features a ramped entry and can also be brought to 87 degrees for comfort.
+Pools that are appropriate for competition-level instruction are rarely accessible but ours is. It features a ramped entry and can also be brought to 88-89 degrees for comfort.
 
 ## Open Swim
 
-Splish, splash! Jump in and have fun during our unprogrammed hours.
+Splish, splash! Jump in and have fun during our un programmed hours.
 
 ## Pool Rental
 
-We make our pool available to rent for special events. Our price is a $15/hr lifeguard fee (per lifeguard) plus $85/hr for the facility. For every twenty people at your event you will need one lifeguard. Contact us at 425-248-0908 to make an appointment.
+We make our pool available to rent for special events. Our price is a $15/hr lifeguard fee (per lifeguard) plus $100/hr for the facility. For every twenty people at your event you will need one lifeguard. Contact us at 425-248-0908 to make an appointment.
 
 ## Birthday Party Pool Rentals
 
