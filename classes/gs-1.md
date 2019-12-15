@@ -6,11 +6,14 @@ classPeriods:
   - dateRange:
       - endDate: Feb 24th 20
         startDate: Jan 6th 20
+      - endDate: Feb 25th 20
+        startDate: Jan 7th 20
     days:
       - Monday
+      - Tuesday
     times:
       - available: true
-        time: '5:30'
+        time: '6:30'
   - dateRange:
       - endDate: Feb 26th 20
         startDate: Jan 8th 20
