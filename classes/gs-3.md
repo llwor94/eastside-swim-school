@@ -9,7 +9,7 @@ classPeriods:
     days:
       - Monday
     times:
-      - available: true
+      - available: false
         time: '5:00'
   - dateRange:
       - endDate: Feb 25th 20
@@ -19,10 +19,17 @@ classPeriods:
     days:
       - Tuesday
     times:
-      - available: true
+      - available: false
         time: '5:00'
-      - available: true
+      - available: false
         time: '7:00'
+  - dateRange:
+      - endDate: Feb 27th 20
+        startDate: Jan 9th 20
+    days:
+      - Thursday
+    times:
+      - time: '5:00'
 ageGroup: Grade School
 difficulty: '3'
 thumbnail: /assets/gs3.png
