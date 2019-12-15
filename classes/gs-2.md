@@ -9,13 +9,13 @@ classPeriods:
     days:
       - Monday
     times:
-      - available: true
+      - available: false
         time: '4:30'
-      - available: true
+      - available: false
         time: '5:00'
-      - available: true
+      - available: false
         time: '6:00'
-      - available: true
+      - available: false
         time: '6:30'
       - time: '7:30'
   - classesCount: ''
@@ -25,27 +25,29 @@ classPeriods:
     days:
       - Tuesday
     times:
-      - available: true
+      - available: false
         time: '6:00'
+      - time: '4:30'
   - dateRange:
       - endDate: Feb 26th 20
         startDate: Jan 8th 20
     days:
       - Wednesday
     times:
-      - available: true
+      - available: false
         time: '4:00'
-      - available: true
+      - available: false
         time: '6:00'
-      - available: true
+      - available: false
         time: '6:30'
+      - time: '4:30'
   - dateRange:
       - endDate: Feb 27th 20
         startDate: Jan 9th 20
     days:
       - Thursday
     times:
-      - available: true
+      - available: false
         time: '4:30'
       - time: '4:00'
 ageGroup: Grade School
