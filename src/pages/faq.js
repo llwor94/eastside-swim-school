@@ -64,19 +64,19 @@ const Faq = props => {
 							Group:
 						</Typography>
 						<Typography gutterBottom variant='body1' component='p'>
-							Classes average $22 a class or $88 a month.
+							Classes average $25 a class or $100 a month.
 						</Typography>
 						<Typography gutterBottom variant='h6' component='h2'>
 							One instructor, one student:
 						</Typography>
 						<Typography gutterBottom variant='body1' component='p'>
-							These vary by instructor and range from $40 - $50 per class.
+							These vary by instructor and range from $45 - $50 per class.
 						</Typography>
 						<Typography gutterBottom variant='h6' component='h2'>
 							One instructor, two students:
 						</Typography>
 						<Typography gutterBottom variant='body1' component='p'>
-							These are for siblings or friends and are $30 per student. We do not
+							These are for siblings or friends and are $35 per student. We do not
 							arrange the pairings.
 						</Typography>
 						<Typography gutterBottom variant='h6' component='h2'>

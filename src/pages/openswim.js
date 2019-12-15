@@ -37,10 +37,10 @@ const OpenSwim = props => (
 					Open Swim
 				</Typography>
 				<Typography gutterBottom variant='h5' component='h5'>
-					 <b>single swim:</b> 18+ - 7$ | youth/senior - 5$ | 2 and under - free 
+					 <b>single swim:</b> 8$ | youth/senior - 6$ | 2 and under - free
 				</Typography>
 				<Typography gutterBottom variant='h5' component='h5'>
-					 <b>5 punch swim pass:</b> 18+ - 30$ | youth/senior - 20$
+					 <b>5 punch swim pass:</b> 35$ | youth/senior - 25$
 				</Typography>
 				<Typography gutterBottom variant='h4' component='h2'>
 					Monday - Thursday:
@@ -72,7 +72,7 @@ const OpenSwim = props => (
 				<Typography gutterBottom variant='h5' component='h2'>
 					7:00 PM - 8:00 PM
 				</Typography>
-				
+
 			</Paper>
 		</Wrapper>
 	</Layout>
