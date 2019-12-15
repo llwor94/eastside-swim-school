@@ -9,9 +9,9 @@ classPeriods:
     days:
       - Tuesday
     times:
-      - available: true
+      - available: false
         time: '7:00'
-      - available: true
+      - available: false
         time: '7:30'
 ageGroup: Adult
 difficulty: '2'
