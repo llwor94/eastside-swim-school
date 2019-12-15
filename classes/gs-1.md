@@ -12,7 +12,7 @@ classPeriods:
       - Monday
       - Tuesday
     times:
-      - available: true
+      - available: false
         time: '6:30'
   - dateRange:
       - endDate: Feb 26th 20
@@ -20,7 +20,7 @@ classPeriods:
     days:
       - Wednesday
     times:
-      - available: true
+      - available: false
         time: '7:00'
 ageGroup: Grade School
 difficulty: '1'
