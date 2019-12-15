@@ -9,7 +9,7 @@ classPeriods:
     days:
       - Monday
     times:
-      - available: true
+      - available: false
         time: '6:00'
       - time: '10:30'
       - time: '3:30'
@@ -19,17 +19,19 @@ classPeriods:
     days:
       - Tuesday
     times:
-      - available: true
+      - available: false
         time: '5:30'
+      - time: '5:00'
   - dateRange:
       - endDate: Feb 26th 20
         startDate: Jan 8th 20
     days:
       - Wednesday
     times:
-      - available: true
+      - available: false
         time: '6:00'
       - time: '2:30'
+      - time: '5:30'
   - classesCount: ''
     dateRange:
       - endDate: Feb 27th 20
@@ -37,15 +39,15 @@ classPeriods:
     days:
       - Thursday
     times:
-      - available: true
+      - available: false
         time: '11:00'
-      - available: true
+      - available: false
         time: '1:00'
-      - available: true
+      - available: false
         time: '1:30'
-      - available: true
+      - available: false
         time: '5:00'
-      - available: true
+      - available: false
         time: '5:30'
       - time: '4:00'
       - time: '6:00'
@@ -55,9 +57,9 @@ classPeriods:
     days:
       - Saturday
     times:
-      - available: true
+      - available: false
         time: '10:00'
-      - available: true
+      - available: false
         time: '10:30'
 ageGroup: Preschool
 difficulty: '2'
