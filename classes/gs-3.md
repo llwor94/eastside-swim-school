@@ -14,8 +14,6 @@ classPeriods:
   - dateRange:
       - endDate: Feb 25th 20
         startDate: Jan 7th 20
-      - endDate: Feb 27th 20
-        startDate: Jan 9th 20
     days:
       - Tuesday
     times:
