@@ -10,7 +10,7 @@ classPeriods:
     days:
       - Wednesday
     times:
-      - available: true
+      - available: false
         time: '11:30 AM'
 ageGroup: Baby
 difficulty: '1'
