@@ -5,7 +5,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 import Header from './Header';
-import Footer from './footer';
+import Footer from './Footer';
 
 import '../styles/index.css';
 
