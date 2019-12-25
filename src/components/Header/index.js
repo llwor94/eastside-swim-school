@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from "react";
 import { Link } from 'gatsby';
 import { Location } from '@reach/router';
 import AppBar from '@material-ui/core/AppBar';
@@ -9,34 +9,75 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import Icon from '@material-ui/core/Icon';
 
-import Logo from '../images/logo.png';
-import styles from './Header.module.styl';
+import Logo from '../../images/logo.png';
+import styles from './index.module.styl';
+
+const routes = [
+	{url: '/openswim', title: 'Open Swim'},
+	{url: '/about', title: 'About'},
+	{url: '/services', title: 'Services'},
+	{url: '/faq', title: 'FAQ'},
+	{url: '/location', title: 'Location'}
+]
+
+const HeaderFunc = () => {
+	const [anchorEl, setAnchorEl] = useState(null);
+
+	const handleClick = event => {
+		setAnchorEl(event.currentTarget);
+	};
+
+	const handleClose = () => {
+		setAnchorEl(null);
+	};
+
+	return (
+		<AppBar className={styles.toolbar}>
+			<Link to='/'>
+				<img src={Logo} className={styles.img} alt='logo' />
+			</Link>
+
+			<Hidden xsDown>
+				<div>
+					<PageLinks/>
+					{routes.map(({url, title}) =>
+						<Button
+							color='inherit'
+							component={Link}
+							to={url}
+						>
+							{title}
+						</Button>
+					)}
+				</div>
+			</Hidden>
+		</AppBar>
+	)
+
+}
+
 
 class Header extends React.Component {
-	state = {
-		auth: true,
-		anchorEl: null,
-	};
-
-	handleChange = event => {
-		this.setState({ auth: event.target.checked });
-	};
-
-	handleMenu = event => {
-		this.setState({ anchorEl: event.currentTarget });
-	};
-
-	handleClose = () => {
-		this.setState({ anchorEl: null });
-	};
+	// state = {
+	// 	anchorEl: null,
+	// };
+	//
+	// // handleChange = event => {
+	// // 	this.setState({ auth: event.target.checked });
+	// // };
+	//
+	// handleMenu = event => {
+	// 	this.setState({ anchorEl: event.currentTarget });
+	// };
+	//
+	// handleClose = () => {
+	// 	this.setState({ anchorEl: null });
+	// };
 	render() {
 		const { anchorEl } = this.state;
 		const open = Boolean(anchorEl);
 		return (
 			<AppBar className={styles.toolbar}>
-					<Link to='/'>
-						<img src={Logo} className={styles.img} alt='logo' />
-					</Link>
 
 					<Hidden xsDown>
 						<div>
