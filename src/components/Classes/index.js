@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import Index from './Class';
+import Class from './Class';
 import styles from './index.module.styl';
 import { ToolTip } from './tooltip';
 
@@ -74,29 +74,29 @@ const Classes = () => {
                 node.frontmatter.classPeriods,
             )
             .map(({ node }) => (
-              <Index node={node} ages="3-5" />
+              <Class node={node} ages="3-5" />
             ))}
         </Grid>
         <Grid container spacing={40} alignItems="stretch">
           {allMarkdownRemark.edges
             .filter(({ node }) => node.frontmatter.ageGroup === 'Grade School')
             .map(({ node }) => (
-              <Index node={node} ages="5-12" />
+              <Class node={node} ages="5-12" />
             ))}
           {allMarkdownRemark.edges
             .filter(({ node }) => node.frontmatter.ageGroup === 'Pre Comp')
             .map(({ node }) => (
-              <Index node={node} ages="6-14" />
+              <Class node={node} ages="6-14" />
             ))}
           {allMarkdownRemark.edges
             .filter(({ node }) => node.frontmatter.ageGroup === 'Adult')
             .map(({ node }) => (
-              <Index node={node} ages="18 +" />
+              <Class node={node} ages="18 +" />
             ))}
           {allMarkdownRemark.edges
             .filter(({ node }) => node.frontmatter.ageGroup === 'Baby')
             .map(({ node }) => (
-              <Index node={node} ages="0-2" />
+              <Class node={node} ages="0-2" />
             ))}
         </Grid>
       </div>

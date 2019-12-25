@@ -13,7 +13,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import styles from './index.module.styl';
 
-const Index = ({ node, ages }) => {
+const Class = ({ node, ages }) => {
   return (
     <Grid item sm={6} md={6} style={{ flexGrow: 1 }}>
       <Card className={styles.card}>
@@ -104,4 +104,4 @@ const Index = ({ node, ages }) => {
   );
 };
 
-export default Index;
+export default Class;
