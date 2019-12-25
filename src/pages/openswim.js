@@ -29,7 +29,7 @@ const Wrapper = styled.div`
 	}
 `;
 
-const OpenSwim = props => (
+const OpenSwim = () => (
 	<Layout>
 		<Wrapper>
 			<Paper className='faq'>

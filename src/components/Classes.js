@@ -65,7 +65,7 @@ class Classes extends React.Component {
 						}
 					}
 				`}
-				render={({ allMarkdownRemark, allFile }) => {
+				render={({ allMarkdownRemark }) => {
 					return (
 						<section className={styles.wrapper} name='classes'>
 							<Dialog
@@ -109,7 +109,7 @@ class Classes extends React.Component {
 									</IconButton>
 								</Tooltip>
 							</Typography>
-							
+
 							<div className={styles.grid}>
 								<Grid container spacing={40} alignItems='stretch'>
 									{allMarkdownRemark.edges
@@ -123,7 +123,7 @@ class Classes extends React.Component {
 										<Grid container spacing={40} alignItems='stretch'>
 										{allMarkdownRemark.edges
 										.filter(
-											({ node }) => node.frontmatter.ageGroup === 'Grade School' 
+											({ node }) => node.frontmatter.ageGroup === 'Grade School'
 										)
 										.map(({ node }) => (
 											<GridCard node={node} ages='5-12'/>
@@ -143,154 +143,13 @@ class Classes extends React.Component {
 										.map(({ node }) => (
 											<GridCard node={node} ages='18 +'/>
 										))}
-										{/* {allMarkdownRemark.edges
+											{allMarkdownRemark.edges
 										.filter(
-											({ node }) => node.frontmatter.ageGroup === 'Grade School' 
+											({ node }) => node.frontmatter.ageGroup === 'Baby'
 										)
 										.map(({ node }) => (
-											<GridCard node={node} ages='5-12'/>
-										))} */}
-											{/* <GridCard
-												time={'hi'
-													// node.frontmatter.day ? (
-													// 	`${node.frontmatter.day.slice(0, 3)} ${node
-													// 		.frontmatter.time}`
-													// ) : (
-													// 	'We recommend private instruction.'
-													// )
-												}
-												time2={
-													node.frontmatter.time2 &&
-													`${node.frontmatter.day2.slice(0, 3)} ${node
-														.frontmatter.time2}`
-												}
-												key={node.frontmatter.title}
-												img={allFile.edges.find(({ node: file }) => {
-													return (
-														file.childImageSharp.fluid.originalName ===
-														node.frontmatter.thumbnail.split('/')[2]
-													);
-												})}
-												header={node.frontmatter.title}
-												level={node.frontmatter.difficulty}
-												link={node.frontmatter.link}
-												ages='5-12'
-												text={node.html}
-												color='ps'
-											/>
+											<GridCard node={node} ages='0-2'/>
 										))}
-								</Grid> */}
-
-								{/* <Grid container spacing={40} className={styles.grid}>
-									{allMarkdownRemark.edges
-										.filter(
-											({ node }) =>
-												node.frontmatter.ageGroup === 'Grade School',
-										)
-										.map(({ node }) => (<div> */}
-											{/* <GridCard
-												time={`${node.frontmatter.day.slice(0, 3)} ${node
-													.frontmatter.time}`}
-												time2={
-													node.frontmatter.time2 &&
-													`${node.frontmatter.day2.slice(0, 3)} ${node
-														.frontmatter.time2}`
-												}
-												time3={
-													node.frontmatter.time3 &&
-													`${node.frontmatter.day3.slice(0, 3)} ${node
-														.frontmatter.time3}`
-												}
-												time4={
-													node.frontmatter.time4 &&
-													`${node.frontmatter.day4.slice(0, 3)} ${node
-														.frontmatter.time4}`
-												}
-												img={allFile.edges.find(({ node: file }) => {
-													return (
-														file.childImageSharp.fluid.originalName ===
-														node.frontmatter.thumbnail.split('/')[2]
-													);
-												})}
-												header={node.frontmatter.title}
-												level={node.frontmatter.difficulty}
-												ages='5-12'
-												key={node.frontmatter.title}
-												link={node.frontmatter.link}
-												text={node.html}
-												color='gs'
-											/>
-										))}
-								</Grid> */}
-
-								{/* <Grid container spacing={40} className={styles.grid}>
-									{allMarkdownRemark.edges
-										.filter(
-											({ node }) => node.frontmatter.ageGroup === 'Pre Comp',
-										)
-										.map(({ node }) => (
-											<GridCard
-												time={`${node.frontmatter.day.slice(0, 3)} ${node
-													.frontmatter.time}`}
-												time2={
-													node.frontmatter.time2 &&
-													`${node.frontmatter.day2.slice(0, 3)} ${node
-														.frontmatter.time2}`
-												}
-												time3={
-													node.frontmatter.time3 &&
-													`${node.frontmatter.day3.slice(0, 3)} ${node
-														.frontmatter.time3}`
-												}
-												img={allFile.edges.find(({ node: file }) => {
-													return (
-														file.childImageSharp.fluid.originalName ===
-														node.frontmatter.thumbnail.split('/')[2]
-													);
-												})}
-												header={node.frontmatter.title}
-												ages='14 and under'
-												level={node.frontmatter.difficulty}
-												key={node.frontmatter.title}
-												link={node.frontmatter.link}
-												text={node.html}
-												color='jh'
-											/>
-										))}
-								</Grid>
-
-								<Grid container spacing={40} className={styles.grid}>
-									{allMarkdownRemark.edges
-										.filter(({ node }) => node.frontmatter.ageGroup === 'Adult')
-										.map(({ node }) => (
-											<GridCard
-												time={`${node.frontmatter.day.slice(0, 3)} ${node
-													.frontmatter.time}`}
-												time2={
-													node.frontmatter.time2 &&
-													`${node.frontmatter.day2.slice(0, 3)} ${node
-														.frontmatter.time2}`
-												}
-												time3={
-													node.frontmatter.time3 &&
-													`${node.frontmatter.day3.slice(0, 3)} ${node
-														.frontmatter.time3}`
-												}
-												img={allFile.edges.find(({ node: file }) => {
-													return (
-														file.childImageSharp.fluid.originalName ===
-														node.frontmatter.thumbnail.split('/')[2]
-													);
-												})}
-												header={node.frontmatter.title}
-												ages='18 +'
-												level={node.frontmatter.difficulty}
-												key={node.frontmatter.title}
-												link={node.frontmatter.link}
-												text={node.html}
-												color='ad'
-											/> */}
-										{/* ///)})} */}
 								</Grid>
 							</div>
 						</section>

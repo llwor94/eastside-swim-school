@@ -31,7 +31,7 @@ const PricesWrapper = styled.div`
 	}
 `;
 
-const Faq = props => {
+const Faq = () => {
 	return (
 		<Layout>
 			<Wrapper>
