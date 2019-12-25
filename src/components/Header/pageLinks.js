@@ -1,39 +1,38 @@
-import { Location } from "@reach/router";
-import React, { Fragment } from "react";
-import Button from "@material-ui/core/Button";
+import { Location } from '@reach/router';
+import React from 'react';
+import Button from '@material-ui/core/Button';
+import MenuItem from '@material-ui/core/MenuItem';
 
-export const PageLinks = () => (
+const links = [
+  { href: '#classes', title: 'Group Classes' },
+  { href: '#coaching', title: 'Private Lessons' },
+];
+
+export const PageLinks = ({ mobile, handleClick }) => (
   <Location>
     {({ location }) => {
       if (location.pathname === '/') {
-        return (
-          <Fragment>
-            <Button
-              color='inherit'
-              component='a'
-              href='#classes'
-            >
-              Group Classes
+        return links.map(({ href, title }) =>
+          mobile ? (
+            <MenuItem onClick={handleClick} component="a" href={href}>
+              {title}
+            </MenuItem>
+          ) : (
+            <Button color="inherit" component="a" href={href}>
+              {title}
             </Button>
-            <Button
-              color='inherit'
-              component='a'
-              href='#coaches'
-            >
-              Private Lessons
-            </Button>
-          </Fragment>
+          ),
         );
       } else
-        return (
-          <Button
-            color='inherit'
-            component='a'
-            href='/'
-          >
+        return mobile ? (
+          <MenuItem onClick={handleClick} component="a" href="/">
+            Home
+          </MenuItem>
+        ) : (
+          <Button color="inherit" component="a" href="/">
             Home
           </Button>
         );
     }}
   </Location>
-)
+);
