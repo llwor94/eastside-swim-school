@@ -118,8 +118,8 @@ collections:
     folder: pages
     create: true
     fields:
-      - {label: Title, name: "title", widget: "string"}
-      - {label: Url, name: path, widget: "string"}
+      - { label: Url, name: path, widget: "string" }
+      - { label: Title, name: "title", widget: "string" }
       - { label: Page Body, name: 'body', widget: 'markdown' }
 
 
