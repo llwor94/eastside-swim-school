@@ -13,7 +13,7 @@ const Jumbotron = () => (
     }}
   >
     <div className={styles.textBox}>
-      <h1>Eastside Swim School</h1>
+      <h1 className={styles.title}>Eastside Swim School</h1>
       <Typography
         variant="h5"
         component="h1"
