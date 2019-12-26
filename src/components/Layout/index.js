@@ -4,10 +4,10 @@ import Helmet from 'react-helmet';
 import { graphql, useStaticQuery } from 'gatsby';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
-import Header from './Header';
-import Footer from './Footer';
+import Header from '../Header';
+import Footer from '../Footer';
 
-import '../styles/index.css';
+import '../../styles/index.css';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
