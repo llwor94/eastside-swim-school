@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import Button from '@material-ui/core/Button';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
@@ -11,15 +11,31 @@ import Logo from '../../images/logo.png';
 import styles from './index.module.styl';
 import { PageLinks } from './pageLinks';
 
-const routes = [
-  { url: '/openswim', title: 'Open Swim' },
-  { url: '/about', title: 'About' },
-  { url: '/services', title: 'Services' },
-  { url: '/faq', title: 'FAQ' },
-  { url: '/location', title: 'Location' },
+const STATIC_ROUTES = [
+  { path: 'open-swim', title: 'Open Swim' },
+  { path: 'about', title: 'About' },
+  { path: 'location', title: 'Location' },
 ];
 
+const query = graphql`
+  query {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/pages/" } }) {
+      edges {
+        node {
+          frontmatter {
+            title
+            path
+          }
+        }
+      }
+    }
+  }
+`;
+
 const Header = () => {
+  const { allMarkdownRemark } = useStaticQuery(query);
+
+  console.log(allMarkdownRemark);
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClick = event => {
@@ -30,6 +46,7 @@ const Header = () => {
     setAnchorEl(null);
   };
 
+  const routes = [...allMarkdownRemark.edges.map(({node}) => node.frontmatter), ...STATIC_ROUTES];
   return (
     <div className={styles.toolbar}>
       <Link to="/">
@@ -39,9 +56,9 @@ const Header = () => {
       <Hidden xsDown>
         <div>
           <PageLinks />
-          {routes.map(({ url, title }) => (
-            <Button color="inherit" component={Link} to={url}>
-              {title}
+          {routes.map(({ path }) => (
+            <Button color="inherit" component={Link} to={`/${path}`}>
+              {path.replace('-', ' ')}
             </Button>
           ))}
         </div>
@@ -72,9 +89,9 @@ const Header = () => {
             onClose={handleClose}
           >
             <PageLinks mobile handleClick={handleClose} />
-            {routes.map(({ url, title }) => (
-              <MenuItem onClick={handleClose} component={Link} to={url}>
-                {title}
+            {routes.map(({ path }) => (
+              <MenuItem onClick={handleClose} component={Link} to={`/${path}`}>
+                {path.replace('-', ' ')}
               </MenuItem>
             ))}
           </Menu>

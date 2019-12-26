@@ -3,7 +3,6 @@ import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
 import styles from './index.module.styl';
 import Paper from "@material-ui/core/Paper";
-import Typography from "@material-ui/core/Typography";
 
 export default ({data}) => {
   return (

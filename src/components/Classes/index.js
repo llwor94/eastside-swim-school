@@ -57,7 +57,6 @@ const Classes = () => {
   const [toolTipOpen, setToolTipOpen] = useState(false);
   const { allMarkdownRemark } = useStaticQuery(query);
 
-  console.log(allMarkdownRemark);
   return (
     <section className={styles.wrapper} id="classes">
       <Typography variant="h2" component="h2" gutterBottom>
