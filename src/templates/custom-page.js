@@ -6,7 +6,7 @@ import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 
 export default ({data}) => {
-  console.log(data)
+  console.log(data);
   return (
     <Layout>
       <div className={styles.wrapper}>
