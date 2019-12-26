@@ -15,7 +15,7 @@ import styles from './index.module.styl';
 
 const Class = ({ node, ages }) => {
   return (
-    <Grid item sm={6} md={6} style={{ flexGrow: 1 }}>
+    <Grid item sm={6} md={6} style={{ flexGrow: 1, padding: '20px' }}>
       <Card className={styles.card}>
         <CardMedia
           component="img"
@@ -53,7 +53,7 @@ const Class = ({ node, ages }) => {
                   if (c.dateRange && c.dateRange.length)
                     return (
                       <TableRow key={i}>
-                        <TableCell size="medium" className={styles.cell}>
+                        <TableCell className={styles.cell}>
                           <b>
                             {c.dateRange[0].startDate.slice(0, -3) +
                               ' - ' +
@@ -72,7 +72,8 @@ const Class = ({ node, ages }) => {
                             c.days.map(day => <span>{day} </span>)
                           )}
                         </TableCell>
-                        <TableCell className={`${styles.cell} ${styles.times}`}>
+                        <TableCell className={`${styles.cell}`}>
+                          <div className={styles.times}>
                           {c.times.map(t => (
                             <div
                               className={styles.time}
@@ -83,6 +84,7 @@ const Class = ({ node, ages }) => {
                               {t.time}
                             </div>
                           ))}
+                          </div>
                         </TableCell>
                       </TableRow>
                     );

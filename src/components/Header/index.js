@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
-import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
@@ -32,7 +31,7 @@ const Header = () => {
   };
 
   return (
-    <AppBar className={styles.toolbar}>
+    <div className={styles.toolbar}>
       <Link to="/">
         <img src={Logo} className={styles.img} alt="logo" />
       </Link>
@@ -81,7 +80,7 @@ const Header = () => {
           </Menu>
         </div>
       </Hidden>
-    </AppBar>
+    </div>
   );
 };
 
