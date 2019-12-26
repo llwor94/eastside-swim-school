@@ -116,7 +116,7 @@ collections:
   - name: pages
     label: Pages
     folder: pages
-    identifier_field: Url
+    identifier_field: path
     create: true
     fields:
       - { label: Url, name: path, widget: "string" }
