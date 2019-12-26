@@ -12,7 +12,6 @@ import styles from './index.module.styl';
 import { PageLinks } from './pageLinks';
 
 const STATIC_ROUTES = [
-  { path: 'open-swim', title: 'Open Swim' },
   { path: 'about', title: 'About' },
   { path: 'location', title: 'Location' },
 ];
