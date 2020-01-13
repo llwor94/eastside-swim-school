@@ -1,4 +1,4 @@
 ---
-title: 'Holiday schedule - We will be closed Dec 20 - Jan 5.  '
+title: 'Schedules due to weather will be updated here.  '
 ---
-We will be closed for 2 weeks over the holiday season.  Dec 20th - Jan 5th.
+Schedules due to weather will be updated here.
