@@ -1,6 +1,4 @@
 ---
-title: >-
-  Pool will be closed for morning programs.   Afternoon and evening swim lessons
-  will be decided and and announced by 1;00  pm today.
+title: 'Tuesday - Pool is closed for all programs today.  Stay home and stay safe.  '
 ---
-Pool will be closed for morning programs.   Afternoon and evening swim lessons will be decided and and announced by 1;00  pm today.
+Tuesday - Pool is closed for all programs today.  Stay home and stay safe.
