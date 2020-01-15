@@ -1,4 +1,4 @@
 ---
-title: 'Tuesday - Pool is closed for all programs today.  Stay home and stay safe.  '
+title: ' Wednesday - MORNING programs are cancelled.  We will update regarding pm lessons by 1 PM'
 ---
-Tuesday - Pool is closed for all programs today.  Stay home and stay safe.
+Wednesday - MORNING programs are cancelled.  We will update regarding pm lessons by 1 PM.
