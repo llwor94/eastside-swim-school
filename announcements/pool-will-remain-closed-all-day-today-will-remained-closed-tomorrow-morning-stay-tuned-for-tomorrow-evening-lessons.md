@@ -1,4 +1,4 @@
 ---
-title: ' Wednesday - MORNING programs are cancelled.  We will update regarding pm lessons by 1 PM'
+title: Closed Wednesday
 ---
-Wednesday - MORNING programs are cancelled.  We will update regarding pm lessons by 1 PM.
+Wednesday - POOL IS CLOSED ALL DAY.  No lessons today.
