@@ -1,4 +1,4 @@
 ---
-title: Closed Wednesday
+title: 'Thursday - WE ARE OPEN! '
 ---
-Wednesday - POOL IS CLOSED ALL DAY.  No lessons today.
+We are open today.
