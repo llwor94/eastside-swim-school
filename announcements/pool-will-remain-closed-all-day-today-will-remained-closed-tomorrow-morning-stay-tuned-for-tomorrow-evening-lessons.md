@@ -1,4 +1,4 @@
 ---
-title: Monday - WE ARE OPEN TODAY - running normal hours and programs.
+title: 'Watch our facebook page for updates and openings. '
 ---
-We are open today.
+Watch our facebook page for updates and openings.
