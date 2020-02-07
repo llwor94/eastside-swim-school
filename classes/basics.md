@@ -4,13 +4,13 @@ link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=107801&k_class_tab=10915
 classPeriods:
   - dateRange:
-      - endDate: Feb 25th 20
-        startDate: Jan 7th 20
+      - endDate: Apr 28th 20
+        startDate: Mar 10th 20
     days:
       - Tuesday
     times:
-      - available: false
-        time: '6:30'
+      - time: '6:30'
+      - time: '7:30'
 ageGroup: Adult
 difficulty: '1'
 thumbnail: /assets/adult.jpg
