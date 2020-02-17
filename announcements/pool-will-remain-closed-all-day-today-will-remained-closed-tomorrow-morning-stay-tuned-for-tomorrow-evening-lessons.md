@@ -1,4 +1,4 @@
 ---
-title: 'Watch our facebook page for updates and openings. '
+title: 'We are open for all holidays and school breaks running normal schedules.  '
 ---
-Watch our facebook page for updates and openings.
+We are open for all holidays and school breaks running normal schedules.
