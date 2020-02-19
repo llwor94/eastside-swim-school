@@ -65,7 +65,7 @@ class Instructors extends React.Component {
 					// const { classes } = props
 
 					return (
-						<section className={styles.instructors} id='coaches'>
+						<section className={styles.instructors} id='coaching'>
 							<Dialog
 								onClose={() => this.setState({ open: false })}
 								aria-labelledby='customized-dialog-title'
