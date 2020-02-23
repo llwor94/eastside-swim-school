@@ -3,12 +3,14 @@ title: Water Babies
 link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=138836&k_class_tab=16933
 classPeriods:
-  - classesCount: '6'
+  - classesCount: '7'
     dateRange:
       - endDate: Jan 29th 20
         startDate: Jan 8th 20
+      - endDate: Apr 23rd 20
+        startDate: Mar 12th 20
     days:
-      - Wednesday
+      - Thursday
     times:
       - available: false
         time: '11:30 AM'
