@@ -5,8 +5,6 @@ link: >-
 classPeriods:
   - classesCount: '7'
     dateRange:
-      - endDate: Jan 29th 20
-        startDate: Jan 8th 20
       - endDate: Apr 23rd 20
         startDate: Mar 12th 20
     days:
