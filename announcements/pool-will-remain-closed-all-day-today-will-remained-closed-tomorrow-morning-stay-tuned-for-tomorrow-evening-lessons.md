@@ -1,4 +1,4 @@
 ---
-title: 'We are open for all holidays and school breaks running normal schedules.  '
+title: We are CLOSED this week but monitoring situation weekly.
 ---
-We are open for all holidays and school breaks running normal schedules.
+We are CLOSED this week but monitoring situation weekly.
