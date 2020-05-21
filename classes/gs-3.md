@@ -2,32 +2,7 @@
 title: Grade School 3
 link: >-
   https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=139403&k_class_tab=10911
-classPeriods:
-  - dateRange:
-      - endDate: Apr 27th 20
-        startDate: Mar 9th 20
-    days:
-      - Monday
-    times:
-      - available: false
-        time: '5:00'
-  - dateRange:
-      - endDate: Apr 28th 20
-        startDate: Mar 10th 20
-    days:
-      - Tuesday
-    times:
-      - available: false
-        time: '5:00'
-      - available: false
-        time: '7:00'
-  - dateRange:
-      - endDate: Apr 30th 20
-        startDate: Mar 5th 20
-    days:
-      - Thursday
-    times:
-      - time: '5:00'
+classPeriods: []
 ageGroup: Grade School
 difficulty: '3'
 thumbnail: /assets/gs3.png
