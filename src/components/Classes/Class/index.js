@@ -39,7 +39,7 @@ const Class = ({ node, ages }) => {
             variant="body1"
             dangerouslySetInnerHTML={{ __html: node.html }}
           />
-          {node.frontmatter.classPeriods.length ? (
+          {node.frontmatter.classPeriods?.length ? (
             <Table>
               <TableHead>
                 <TableRow>

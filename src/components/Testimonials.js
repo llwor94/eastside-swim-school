@@ -33,7 +33,6 @@ const Testimonials = () => (
 						<div className='content-wrapper'>
 							{allMarkdownRemark.edges.map(({ node }) => (
 								<Paper
-									key={node.title}
 									className='content active'
 									key={node.frontmatter.title}
 								>

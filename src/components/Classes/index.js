@@ -21,17 +21,6 @@ const query = graphql`
             ageGroup
             difficulty
             thumbnail
-            classPeriods {
-              dateRange {
-                startDate
-                endDate
-              }
-              days
-              times {
-                time
-                available
-              }
-            }
           }
         }
       }

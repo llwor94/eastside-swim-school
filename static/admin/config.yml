@@ -38,6 +38,7 @@ collections:
           - label: Date Range
             name: dateRange
             widget: list
+            required: false
             fields:
               - widget: date
                 label: Start Date
