@@ -1,6 +1,6 @@
 ---
 title: Emilie
-order: '8'
+order: 8
 thumbnail: /assets/emilie-photo.jpg
 link: >-
   https://www.wellnessliving.com/rs/appointment-start.html?id_class_tab=3&id_mode=1&k_business=248418&k_class_tab=20335&k_service=120406

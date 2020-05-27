@@ -1,6 +1,6 @@
 ---
 title: Charlize
-order: '10'
+order: 10
 thumbnail: /assets/char.jpg
 link: >-
   :

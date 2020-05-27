@@ -1,6 +1,6 @@
 ---
 title: Carrie
-order: '7'
+order: 7
 oneStudent: $45
 twoStudents: $60
 thumbnail: /assets/img_4824.jpeg
