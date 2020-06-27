@@ -1,4 +1,4 @@
 ---
-title: We are CLOSED this week but monitoring situation weekly.
+title: We are now OPEN!  Call to book a lesson.
 ---
-We are CLOSED this week but monitoring situation weekly.
+We are now OPEN!  Call to book a lesson.
