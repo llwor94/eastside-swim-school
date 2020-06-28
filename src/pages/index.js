@@ -14,7 +14,7 @@ import MuiDialogTitle from "@material-ui/core/DialogTitle";
 import MuiDialogContent from "@material-ui/core/DialogContent";
 
 const IndexPage = () => {
-  const [dialogOpen, setDialogOpen] = React.useState(true);
+  const [dialogOpen, setDialogOpen] = React.useState(false);
   const notistackRef = useRef();
   const onClickDismiss = key => () => {
     notistackRef.current.closeSnackbar(key);
