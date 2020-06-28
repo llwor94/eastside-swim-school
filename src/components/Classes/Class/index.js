@@ -95,11 +95,12 @@ const Class = ({ node, ages }) => {
         </CardContent>
         <Button
           href={node.frontmatter.link}
+          disabled={true}
           target="_blank"
           size="large"
           variant="contained"
         >
-          Register Now
+          {['Adult', 'Pre Comp'].includes(node.frontmatter.ageGroup) ? 'Call To Register' : 'Not Available' }
         </Button>
       </Card>
     </Grid>
