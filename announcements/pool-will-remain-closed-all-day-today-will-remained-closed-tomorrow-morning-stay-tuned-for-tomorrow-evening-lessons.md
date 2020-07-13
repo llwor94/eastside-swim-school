@@ -1,4 +1,4 @@
 ---
-title: We are now OPEN!  Call to book a lesson.
+title: We are now OPEN!  Email EastsideSwimSchool@comcast.net with your request.
 ---
-We are now OPEN!  Call to book a lesson.
+We are now OPEN!  Email EastsideSwimSchool@comcast.net with your request.
