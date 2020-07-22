@@ -8,7 +8,13 @@ title: Open Swim
 
 **5 punch swim pass:** 35$ | youth/senior - 25$
 
-## All Ages:
+## All Ages:  
+
+**Temporarily suspended all open swims during the Covid phases 1-3.  **
+
+**Please call or email to make a reservation for adult drop in aerobic, lap or water walking times.  **
+
+
 
 **Monday - Thursday:** 
 
