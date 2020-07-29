@@ -55,6 +55,7 @@ class Instructors extends React.Component {
 										twoStudents
 										thumbnail
 										link
+										order
 									}
 								}
 							}
@@ -62,7 +63,9 @@ class Instructors extends React.Component {
 					}
 				`}
 				render={({ allMarkdownRemark }) => {
-					// const { classes } = props
+					allMarkdownRemark.edges.sort((coachA, coachB) => {
+						return parseInt(coachA.node.frontmatter.order) - parseInt(coachB.node.frontmatter.order)
+					})
 
 					return (
 						<section className={styles.instructors} id='coaching'>
