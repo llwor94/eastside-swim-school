@@ -2,7 +2,7 @@
 title: Tiffani
 oneStudent: '45'
 twoStudents: '55'
-order: 2
+order: '2'
 thumbnail: /assets/tiffani.jpeg
 link: >-
   https://www.wellnessliving.com/rs/appointment-start.html?id_class_tab=3&k_business=248418&k_class_tab=13643&k_service=87318

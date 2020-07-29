@@ -1,7 +1,7 @@
 ---
 title: Allison
 thumbnail: /assets/allison.jpg
-order: 3
+order: '3'
 link: 'https://www.wellnessliving.com/rs/appointment/eastside_swim_school?s_id=rQqGaf'
 ---
 Growing up in California Allison was always in the water. She started competitive swimming when she was 5 and hasn’t stopped. Getting an athletic scholarship to swim at SDSU she swam throughout college and dove right into masters swimming once her college days were over. 

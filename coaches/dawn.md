@@ -1,6 +1,6 @@
 ---
 title: Dawn
-order: 5
+order: '5'
 oneStudent: $45
 twoStudents: $60
 thumbnail: /assets/dawn.jpg

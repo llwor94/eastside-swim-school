@@ -1,6 +1,6 @@
 ---	
 title: Lori
-order: 4
+order: '4'
 thumbnail: /assets/lori1.jpg	
 link: 'https://www.wellnessliving.com/rs/appointment-start.html?id_class_tab=3&k_business=248418&k_class_tab=13642&k_service=87321'
 ---	
