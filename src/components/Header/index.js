@@ -14,7 +14,7 @@ import { PageLinks } from './pageLinks';
 const STATIC_ROUTES = [
   { path: 'about', title: 'About' },
   { path: 'location', title: 'Location' },
-  { path: 'waitlist', title: 'Join Waitlist'}
+  { path: 'request', title: 'Lesson Request'}
 ];
 
 const query = graphql`
@@ -54,11 +54,11 @@ const Header = () => {
       </Link>
 
       <Hidden xsDown>
-        <div>
+        <div className={styles.links}>
           <PageLinks />
-          {routes.map(({ path }) => (
+          {routes.map(({ path, title }) => (
             <Button color="inherit" component={Link} to={`/${path}`}>
-              {path.replace('-', ' ')}
+              {title || path.replace('-', ' ')}
             </Button>
           ))}
         </div>
@@ -89,9 +89,9 @@ const Header = () => {
             onClose={handleClose}
           >
             <PageLinks mobile handleClick={handleClose} />
-            {routes.map(({ path }) => (
+            {routes.map(({ path, title }) => (
               <MenuItem onClick={handleClose} component={Link} to={`/${path}`}>
-                {path.replace('-', ' ')}
+                {title || path.replace('-', ' ')}
               </MenuItem>
             ))}
           </Menu>

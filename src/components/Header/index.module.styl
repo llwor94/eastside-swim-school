@@ -18,3 +18,29 @@
   background-color rgba(25,43,53,.9) !important
   box-shadow 0px 2px 4px -1px rgba(0,0,0,0.2) 0px 4px 5px 0px rgba(0,0,0,0.14) 0px 1px 10px 0px rgba(0,0,0,0.12)
 
+.links
+  a
+    border-radius 0
+    border 1px solid transparent
+    &:not(:last-child)
+      border-right-color #57737D
+
+    &:hover
+      border-radius 6px
+      border 1px solid #57737D
+      background-color #3C5A65
+
+    &:last-child
+      position relative
+
+      &::after
+        content 'new'
+        background-color #65bb4b
+        position absolute
+        font-size 10px
+        padding 2px 4px
+        border-radius 4px
+        top -11px
+        right -11px
+
+

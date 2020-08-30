@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import Button from '@material-ui/core/Button';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import { useSnackbar } from 'notistack';
 
 const Announcement = ({ children }) => {
@@ -31,9 +32,14 @@ const Announcement = ({ children }) => {
       });
     }
 
-    enqueueSnackbar('JOIN THE WAIT LIST NOW: https://www.eastsideswimschool.com/waitlist', {
+    enqueueSnackbar('LESSON REQUESTS NOW AVAILABLE ONLINE', {
       persist: true,
       preventDuplicate: true,
+      action: (
+        <Button component={Link} to={'/request'} style={{backgroundColor: '#65bb4b', color: 'white'}}>
+          Make a request
+        </Button>
+      )
     })
   }, [allMarkdownRemark]);
 
