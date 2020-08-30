@@ -76,7 +76,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `announcements`,
-        path: `${__dirname}/announcements/`,
+        path: `${__dirname}/announcements`,
       },
     },
     'gatsby-transformer-remark',
