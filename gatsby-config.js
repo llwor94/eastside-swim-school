@@ -1,3 +1,4 @@
+const {existsSync} = require('fs')
 let activeEnv = process.env.ACTIVE_ENV || process.env.NODE_ENV || 'development';
 
 console.log(`Using environment config: '${activeEnv}'`);
@@ -72,11 +73,11 @@ module.exports = {
         path: `${__dirname}/coaches/`,
       },
     },
-    {
+    existsSync(`${__dirname}/announcements`) && {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `announcements`,
-        path: `${__dirname}/announcements`,
+        path: `${__dirname}/announcements/`,
       },
     },
     'gatsby-transformer-remark',
