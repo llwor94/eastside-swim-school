@@ -73,7 +73,7 @@ const PLUGINS = [
   '@wapps/gatsby-plugin-material-ui',
 ];
 
-if (existsSync(`${__dirname}/announcements`) {
+if (existsSync(`${__dirname}/announcements`)) {
   PLUGINS.push({
     resolve: `gatsby-source-filesystem`,
     options: {
