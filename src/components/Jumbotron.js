@@ -44,9 +44,6 @@ const Jumbotron = () => (
         >
           Available Openings
         </Typography>
-        <Button component={Link} to={'/request'} style={{backgroundColor: '#65bb4b', color: 'white'}}>
-          Make a request
-        </Button>
       </span>
       <iframe src="https://docs.google.com/document/d/e/2PACX-1vRclKBbIAR_qKfWYQ544ZY11Q-2oqN5HNJPNJ9dCK508-iOdCaTI4eT8q81jFlmM5luT84741IBqAzE/pub?embedded=true"></iframe>
     </div>

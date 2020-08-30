@@ -31,6 +31,16 @@ const Announcement = ({ children }) => {
         });
       });
     }
+
+    enqueueSnackbar('LESSON REQUESTS NOW AVAILABLE ONLINE', {
+      persist: true,
+      preventDuplicate: true,
+      action: (
+        <Button component={Link} to={'/request'} style={{backgroundColor: '#65bb4b', color: 'white'}}>
+          Make a request
+        </Button>
+      )
+    })
   }, [allMarkdownRemark]);
 
   return children;
