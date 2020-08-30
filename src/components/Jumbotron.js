@@ -4,6 +4,8 @@ import Typography from '@material-ui/core/Typography';
 import Fab from '@material-ui/core/Fab';
 import styles from './Jumbotron.module.styl';
 import image from '../images/swim.jpg';
+import { Link } from "gatsby";
+import Button from "@material-ui/core/Button";
 
 const Jumbotron = () => (
   <div
@@ -33,6 +35,22 @@ const Jumbotron = () => (
     >
       Jump In!
     </Fab>
+
+    <div className={styles.embedded}>
+      <span className={styles.heading}>
+        <Typography
+          variant="h6"
+          component="h5"
+        >
+          Available Openings
+        </Typography>
+        <Button component={Link} to={'/request'} style={{backgroundColor: '#65bb4b', color: 'white'}}>
+          Make a request
+        </Button>
+      </span>
+      <iframe src="https://docs.google.com/document/d/e/2PACX-1vRclKBbIAR_qKfWYQ544ZY11Q-2oqN5HNJPNJ9dCK508-iOdCaTI4eT8q81jFlmM5luT84741IBqAzE/pub?embedded=true"></iframe>
+    </div>
+
     <svg
       style={{ position: 'absolute', bottom: 0 }}
       width="100%"
