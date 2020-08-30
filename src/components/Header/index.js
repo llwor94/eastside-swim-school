@@ -14,6 +14,7 @@ import { PageLinks } from './pageLinks';
 const STATIC_ROUTES = [
   { path: 'about', title: 'About' },
   { path: 'location', title: 'Location' },
+  { path: 'waitlist', title: 'Join Waitlist'}
 ];
 
 const query = graphql`

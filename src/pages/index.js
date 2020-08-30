@@ -77,7 +77,7 @@ const IndexPage = () => {
             </Typography>
           </MuiDialogContent>
         </Dialog>
-        <Announcement >
+        <Announcement>
           <Jumbotron />
           <Classes />
           <Instructors />

@@ -30,6 +30,11 @@ const Announcement = ({ children }) => {
         });
       });
     }
+
+    enqueueSnackbar('JOIN THE WAIT LIST NOW: https://www.eastsideswimschool.com/waitlist', {
+      persist: true,
+      preventDuplicate: true,
+    })
   }, [allMarkdownRemark]);
 
   return children;

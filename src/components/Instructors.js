@@ -1,5 +1,6 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql } from "gatsby";
+import {Link} from '@reach/router';
 
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
@@ -189,6 +190,11 @@ class Instructors extends React.Component {
 												</IconButton>
 											</Tooltip>
 										</Typography>
+										<div className={styles.link}>
+											<Link to={'/waitlist'}>
+													Join the Wait List
+											</Link>
+									</div>
 									</div>
 
 									<Grid container spacing={40}>
