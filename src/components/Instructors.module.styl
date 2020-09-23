@@ -20,9 +20,10 @@
   margin-bottom 3rem
 
 .img
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width 100%
+  height 100%
+  border-radius 50%
+  object-fit cover
 
 .instructor
   padding: 5rem 3rem;
@@ -38,21 +39,58 @@
     margin 40px auto
 
 .img-wrapper
-  clip-path: circle(45%)
+  width 150px
+  border 3px solid primary-main
+  background black
+  height 150px
+  display flex
+  position relative
+  border-radius 50%
+  justify-content center
+  align-items center
 
 .grow
   flex-grow: 1
+  border 1px solid transparent
+  transition: all .2s;
+
+  &:hover {
+    .img-wrapper {
+      //transform scale(1.1)
+    }
+
+    .img {
+      opacity: .4
+    }
+
+
+    .mr.mr {
+      display: inline-block
+      position absolute
+      color white
+      text-align center
+      width 100%
+      font-weight bold
+
+      &:hover {
+        background-color transparent
+      }
+    }
+  }
 
 
 .mr.mr
+  display none
   @media (min-width 600px)
-    margin-right: 1rem;
+    margin-right: 1rem
 
 .wrapper
-  flex(column, flex-start, stretch)
+  flex(column, flex-start, center)
   height 100%
-  h3, p
+  h3
     line-height 1.5
+    text-align center
+
 
 .align-right
   text-align: right

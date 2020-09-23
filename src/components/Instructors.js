@@ -19,7 +19,7 @@ import calendarView from '../images/calendarView.png';
 import finishedView from '../images/finishedView.png';
 import timeView from '../images/timeView.png';
 
-const BottomBar = ({ styles, link }) => (
+const BottomBar = ({ link }) => (
 	<div>
 		<Button
 			variant='contained'
@@ -204,71 +204,42 @@ class Instructors extends React.Component {
 														frontmatter: {
 															thumbnail,
 															title,
-
 															link,
 														},
-														html,
-													},
-												},
-												idx,
+													}
+												}
 											) => (
 												<Grid
-													key={title}
-													className={styles.bottomLineWrapper}
 													item
-													xs={12}
+													className={styles.grow}
+													xs={6}
+													sm={4}
+													md={3}
 												>
-													<Grid
-														container
-														spacing={40}
-														className={styles.bottomLine}
-													>
-														<Grid
-															item
-															className={styles.grow}
-															xs={12}
-															sm={7}
-															md={8}
+													<div className={styles.wrapper}>
+														<div className={styles.imgWrapper}>
+															<img
+																src={thumbnail}
+																alt={title}
+																className={styles.img}
+															/>
+															<Button
+																href={link}
+																component='a'
+																className={styles.mr}
+																target='_blank'
+															>
+																Schedule Private Lessons
+															</Button>
+														</div>
+														<Typography
+															gutterBottom
+															variant='h5'
+															component='h3'
 														>
-															<div className={styles.wrapper}>
-																<Typography
-																	gutterBottom
-																	variant='h5'
-																	component='h3'
-																>
-																	{title}
-																</Typography>
-																<Typography
-																	gutterBottom
-																	variant='body1'
-																	component='div'
-																	dangerouslySetInnerHTML={{
-																		__html: html,
-																	}}
-																/>
-																<BottomBar
-																	styles={styles}
-																	link={link}
-																/>
-															</div>
-														</Grid>
-														<Grid
-															item
-															className={`${idx % 2 === 0 &&
-																styles.first} ${styles.pic}`}
-															xs={12}
-															sm={5}
-															md={4}
-														>
-															<div className={styles.imgWrapper}>
-																<img
-																	src={thumbnail}
-																	alt={title}
-																	className={styles.img}
-																/>
-															</div>
-														</Grid>
-													</Grid>
+															{title}
+														</Typography>
+													</div>
 												</Grid>
 											),
 										)}
