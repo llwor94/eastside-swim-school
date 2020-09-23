@@ -1,6 +1,6 @@
 ---
-title: What We Offer
 path: services
+title: What We Offer
 ---
 ## Lessons
 
@@ -28,11 +28,11 @@ Splish, splash! Jump in and have fun during our un programmed hours.
 
 ## Pool Rental
 
-We make our pool available to rent for special events. Our price is a $15/hr lifeguard fee (per lifeguard) plus $100/hr for the facility. For every twenty people at your event you will need one lifeguard. Contact us at 425-248-0908 to make an appointment.
+We make our pool available to rent for special events.  Contact us at 425-248-0908 for more information.
 
 ## Birthday Party Pool Rentals
 
-Saturdays 9:00am-11:00am, 4:00pm-6:00pm
+Saturdays  4:00pm-6:00pm
 
 Sundays 4:00pm-6:00pm
 
