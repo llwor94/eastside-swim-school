@@ -36,6 +36,10 @@ There is no registration or monthly membership fee at Eastside Swim School.
 
 We cannot provide credit for missed classes.
 
+## Cancellation Policy
+
+We require AT LEAST 24 hours notice of cancellation which allows us time to try to fill the spot.   If a lesson is cancelled within the 24 hours, we will try to fill the spot but if we can't your account will be charged for the lesson.
+
 ## Assigned Instructors
 
 We do our best to keep your child with the instructor they’ve become comfortable with but we must reserve the prerogative to use a substitute teacher on an occasional basis.
