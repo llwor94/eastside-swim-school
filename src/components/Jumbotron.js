@@ -4,8 +4,6 @@ import Typography from '@material-ui/core/Typography';
 import Fab from '@material-ui/core/Fab';
 import styles from './Jumbotron.module.styl';
 import image from '../images/swim.jpg';
-import { Link } from "gatsby";
-import Button from "@material-ui/core/Button";
 
 const Jumbotron = () => (
   <div

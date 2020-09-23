@@ -113,7 +113,7 @@ collections:
       - { name: twoStudents, label: 'Two Students', required: false }
       - { name: thumbnail, label: 'Featured Image', widget: 'image', required: false }
       - { name: link, label: 'Link to site' }
-      - { name: body, label: "Bio", widget: "text"}
+      - { name: body, label: "Bio", widget: "text", required: false }
   - name: pages
     label: Pages
     folder: pages
