@@ -14,6 +14,7 @@ import TableRow from '@material-ui/core/TableRow';
 import styles from './index.module.styl';
 
 const Class = ({ node, ages }) => {
+  console.log(node)
   return (
     <Grid item sm={6} md={6} style={{ flexGrow: 1, padding: '20px' }}>
       <Card className={styles.card}>
@@ -95,12 +96,12 @@ const Class = ({ node, ages }) => {
         </CardContent>
         <Button
           href={node.frontmatter.link}
-          disabled={true}
+          disabled={node.frontmatter.title !== 'Water Aerobics'}
           target="_blank"
           size="large"
           variant="contained"
         >
-          {['Adult', 'Pre Comp'].includes(node.frontmatter.ageGroup) ? 'Call To Register' : 'Not Available' }
+          {node.frontmatter.title === 'Water Aerobics' ? 'Register Now' : ['Adult', 'Pre Comp'].includes(node.frontmatter.ageGroup) ? 'Call To Register' : 'Not Available' }
         </Button>
       </Card>
     </Grid>
