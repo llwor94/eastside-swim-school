@@ -26,7 +26,7 @@ title: Open Swim / Adult Swim
 
 5:05 PM - 5:55PM 
 
-**Sunday:**
+**Sunday:**[**https://www.wellnessliving.com/schedule/eastside_swim_school?id_class_tab=1&k_class=250867&k_class_tab=25941**](https://www.wellnessliving.com/schedule/eastside_swim_school?id_class_tab=1&k_class=250867&k_class_tab=25941)****
 
 3:05 PM - 3:55PM
 
