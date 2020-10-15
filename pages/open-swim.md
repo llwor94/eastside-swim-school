@@ -12,7 +12,7 @@ title: Open Swim / Adult Swim
 
 **You must make a reservation online for water aerobics, lap or water walking times.  .  If you don't have an account with us, you will need to create one.**
 
-# **OPEN SWIMS**
+## ****[**OPEN SWIMS**](https://www.wellnessliving.com/schedule/eastside_swim_school?id_class_tab=1&k_class=250867&k_class_tab=25941)****
 
 **Monday & Thursday:** 
 
@@ -26,13 +26,13 @@ title: Open Swim / Adult Swim
 
 5:05 PM - 5:55PM 
 
-**Sunday:**[**https://www.wellnessliving.com/schedule/eastside_swim_school?id_class_tab=1&k_class=250867&k_class_tab=25941**](https://www.wellnessliving.com/schedule/eastside_swim_school?id_class_tab=1&k_class=250867&k_class_tab=25941)****
+**Sunday:**
 
 3:05 PM - 3:55PM
 
 4:05 PM -4:55PM
 
-# **Adult Lap Swim:**
+# ****[**Adult Lap Swim**](https://www.wellnessliving.com/schedule/eastside_swim_school?id_class_tab=1&k_class=225443&k_class_tab=25477)**:**
 
 **Saturday **
 
