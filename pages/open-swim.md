@@ -32,7 +32,7 @@ title: Open Swim / Adult Swim
 
 4:05 PM -4:55PM
 
-# Adult Lap/Open Swim:
+# **Adult Lap Swim:**
 
 **Saturday **
 
