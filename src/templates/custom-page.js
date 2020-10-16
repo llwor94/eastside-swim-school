@@ -3,6 +3,8 @@ import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
 import styles from './index.module.styl';
 import Paper from "@material-ui/core/Paper";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+
 
 export default ({data}) => {
   return (
@@ -10,9 +12,11 @@ export default ({data}) => {
       <div className={styles.wrapper}>
         <Paper>
           <h1>
-            {data.markdownRemark.frontmatter.title}
+            {data.contentfulPage.title}
           </h1>
-          <div className={styles.paper} dangerouslySetInnerHTML={{__html: data.markdownRemark.html}} />
+          <div className={styles.paper}>
+            {documentToReactComponents(data.contentfulPage.body.json)}
+          </div>
         </Paper>
       </div>
     </Layout>
@@ -21,10 +25,10 @@ export default ({data}) => {
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
+    contentfulPage(slug: { eq: $slug }) {
+      title
+      body {
+        json
       }
     }
   }

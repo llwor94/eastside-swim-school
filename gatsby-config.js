@@ -1,86 +1,26 @@
-const {existsSync} = require('fs')
-let activeEnv = process.env.ACTIVE_ENV || process.env.NODE_ENV || 'development';
-
-console.log(`Using environment config: '${activeEnv}'`);
-
 require('dotenv').config({
-	path: `.env.${activeEnv}`,
-});
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
-const PLUGINS = [
-  'gatsby-plugin-react-helmet',
-  `gatsby-plugin-styled-components`,
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `images`,
-      path: `${__dirname}/src/images`,
-    },
-  },
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `cms-images`,
-      path: `${__dirname}/static/assets/`,
-    },
-  },
-  'gatsby-transformer-sharp',
-  'gatsby-plugin-sharp',
-  {
-    resolve: `gatsby-plugin-manifest`,
-    options: {
-      name: 'gatsby-starter-default',
-      short_name: 'starter',
-      start_url: '/',
-      background_color: '#663399',
-      theme_color: '#663399',
-      display: 'minimal-ui',
-      icon: 'src/assets/favicon.png', // This path is relative to the root of the site.
-    },
-  },
-  'gatsby-plugin-offline',
-  'gatsby-plugin-netlify-cms',
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `testimonials`,
-      path: `${__dirname}/testimonials/`,
-    },
-  },
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `pages`,
-      path: `${__dirname}/pages/`,
-    },
-  },
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `classes`,
-      path: `${__dirname}/classes/`,
-    },
-  },
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `coaches`,
-      path: `${__dirname}/coaches/`,
-    },
-  },
-  'gatsby-transformer-remark',
-  'gatsby-plugin-stylus',
-  '@wapps/gatsby-plugin-material-ui',
-];
+const contentfulConfig = {
+  spaceId: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+}
 
-if (existsSync(`${__dirname}/announcements`)) {
-  PLUGINS.push({
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `announcements`,
-      path: `${__dirname}/announcements/`,
-    },
-  })
+// if you want to use the preview API please define
+// CONTENTFUL_HOST in your environment config
+// the `host` property should map to `preview.contentful.com`
+// https://www.contentful.com/developers/docs/references/content-preview-api/#/reference/spaces/space/get-a-space/console/js
+if (process.env.CONTENTFUL_HOST) {
+  contentfulConfig.host = process.env.CONTENTFUL_HOST
+}
+
+const { spaceId, accessToken } = contentfulConfig
+
+if (!spaceId || !accessToken) {
+  throw new Error(
+    'Contentful spaceId and the access token need to be provided.'
+  )
 }
 
 module.exports = {
@@ -88,5 +28,59 @@ module.exports = {
     title: 'Swim Lessons in Redmond | Eastside Swim School',
     description: 'Swim School in Redmond, WA',
   },
-  plugins: PLUGINS
-};
+  plugins: [
+    'gatsby-transformer-remark',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sharp',
+    `gatsby-plugin-styled-components`,
+    'gatsby-plugin-stylus',
+    '@wapps/gatsby-plugin-material-ui',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `cms-images`,
+        path: `${__dirname}/static/assets/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `classes`,
+        path: `${__dirname}/classes/`,
+      },
+    },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'gatsby-starter-default',
+        short_name: 'starter',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/assets/favicon.png', // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `testimonials`,
+        path: `${__dirname}/testimonials/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-contentful',
+      options: contentfulConfig,
+    },
+  ],
+}

@@ -2,6 +2,7 @@
   "name": "eastside-swim-school",
   "version": "1.0.0",
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^14.1.1",
     "@fortawesome/fontawesome-free": "^5.5.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.7",
     "@fortawesome/free-brands-svg-icons": "^5.4.2",
@@ -12,6 +13,7 @@
     "@reach/router": "^1.2.1",
     "@wapps/gatsby-plugin-material-ui": "^1.1.0",
     "babel-plugin-styled-components": "^1.8.0",
+    "contentful-import": "^7.9.12",
     "dotenv": "^6.2.0",
     "gatsby": "^2.18.7",
     "gatsby-image": "^2.0.15",
@@ -22,6 +24,7 @@
     "gatsby-plugin-sharp": "^2.3.5",
     "gatsby-plugin-styled-components": "^3.0.0",
     "gatsby-plugin-stylus": "^2.0.1",
+    "gatsby-source-contentful": "^2.3.53",
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-transformer-remark": "^2.1.9",
     "gatsby-transformer-sharp": "^2.3.7",

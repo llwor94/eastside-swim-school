@@ -12,20 +12,18 @@ import styles from './index.module.styl';
 import { PageLinks } from './pageLinks';
 
 const STATIC_ROUTES = [
-  { path: 'about', title: 'About' },
-  { path: 'location', title: 'Location' },
-  { path: 'request', title: 'Lesson Request'}
+  { slug: 'about', title: 'About' },
+  { slug: 'location', title: 'Location' },
+  { slug: 'request', title: 'Lesson Request'}
 ];
 
 const query = graphql`
   query {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/pages/" } }) {
+    allContentfulPage {
       edges {
         node {
-          frontmatter {
-            title
-            path
-          }
+          title
+          slug 
         }
       }
     }
@@ -33,9 +31,9 @@ const query = graphql`
 `;
 
 const Header = () => {
-  const { allMarkdownRemark } = useStaticQuery(query);
+  const { allContentfulPage } = useStaticQuery(query);
 
-  console.log(allMarkdownRemark);
+  console.log(allContentfulPage);
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClick = event => {
@@ -46,7 +44,7 @@ const Header = () => {
     setAnchorEl(null);
   };
 
-  const routes = [...allMarkdownRemark.edges.map(({node}) => node.frontmatter), ...STATIC_ROUTES];
+  const routes = [...allContentfulPage.edges.map(({node}) => node), ...STATIC_ROUTES];
   return (
     <div className={styles.toolbar}>
       <Link to="/">
@@ -56,9 +54,9 @@ const Header = () => {
       <Hidden xsDown>
         <div className={styles.links}>
           <PageLinks />
-          {routes.map(({ path, title }) => (
-            <Button color="inherit" component={Link} to={`/${path}`}>
-              {title || path.replace('-', ' ')}
+          {routes.map(({ slug, title }) => (
+            <Button color="inherit" component={Link} to={`/${slug}`}>
+              {title || slug.replace('-', ' ')}
             </Button>
           ))}
         </div>
@@ -89,9 +87,9 @@ const Header = () => {
             onClose={handleClose}
           >
             <PageLinks mobile handleClick={handleClose} />
-            {routes.map(({ path, title }) => (
-              <MenuItem onClick={handleClose} component={Link} to={`/${path}`}>
-                {title || path.replace('-', ' ')}
+            {routes.map(({ slug, title }) => (
+              <MenuItem onClick={handleClose} component={Link} to={`/${slug}`}>
+                {title || slug.replace('-', ' ')}
               </MenuItem>
             ))}
           </Menu>

@@ -42,31 +42,26 @@ class Instructors extends React.Component {
 			<StaticQuery
 				query={graphql`
 					query {
-						allMarkdownRemark(
-							filter: { fileAbsolutePath: { regex: "/coaches/" } }
-							sort: { fields: frontmatter___order }
-						) {
+						allContentfulInstructor {
 							edges {
-								node {
-									html
-									frontmatter {
-										title
-										oneStudent
-										twoStudents
-										thumbnail
-										link
-										order
-									}
+                node {
+									name
+									profileImage {
+										fixed(width: 1600) {
+											width
+											height
+											src
+											srcSet
+										}
+          				}
+									registrationLink 
 								}
 							}
 						}
 					}
 				`}
-				render={({ allMarkdownRemark }) => {
-					allMarkdownRemark.edges.sort((coachA, coachB) => {
-						return parseInt(coachA.node.frontmatter.order) - parseInt(coachB.node.frontmatter.order)
-					})
-
+				render={({ allContentfulInstructor: instructorCollection }) => {
+					console.log(instructorCollection)
 					return (
 						<section className={styles.instructors} id='coaching'>
 							<Dialog
@@ -197,18 +192,13 @@ class Instructors extends React.Component {
 									</div>
 
 									<Grid container spacing={40}>
-										{allMarkdownRemark.edges.map(
-											(
-												{
-													node: {
-														frontmatter: {
-															thumbnail,
-															title,
-															link,
-														},
-													}
+										{instructorCollection.edges.map(
+											({ node: {
+													name,
+													profileImage,
+													registrationLink
 												}
-											) => (
+											}) => (
 												<Grid
 													item
 													className={styles.grow}
@@ -219,12 +209,12 @@ class Instructors extends React.Component {
 													<div className={styles.wrapper}>
 														<div className={styles.imgWrapper}>
 															<img
-																src={thumbnail}
-																alt={title}
+																src={profileImage.fixed.src}
+																alt={name}
 																className={styles.img}
 															/>
 															<Button
-																href={link}
+																href={registrationLink}
 																component='a'
 																className={styles.mr}
 																target='_blank'
@@ -237,7 +227,7 @@ class Instructors extends React.Component {
 															variant='h5'
 															component='h3'
 														>
-															{title}
+															{name}
 														</Typography>
 													</div>
 												</Grid>
