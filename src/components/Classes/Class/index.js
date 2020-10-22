@@ -96,12 +96,12 @@ const Class = ({ node, ages }) => {
         </CardContent>
         <Button
           href={node.frontmatter.link}
-          disabled={node.frontmatter.title !== 'Water Aerobics'}
+          disabled={!['Water Aerobics', 'Grade School 2', 'Grade School 3'].includes(node.frontmatter.title)}
           target="_blank"
           size="large"
           variant="contained"
         >
-          {node.frontmatter.title === 'Water Aerobics' ? 'Register Now' : ['Adult', 'Pre Comp'].includes(node.frontmatter.ageGroup) ? 'Call To Register' : 'Not Available' }
+          {['Water Aerobics', 'Grade School 2', 'Grade School 3'].includes(node.frontmatter.title) ? 'Register Now' : ['Adult', 'Pre Comp'].includes(node.frontmatter.ageGroup) ? 'Call To Register' : 'Not Available' }
         </Button>
       </Card>
     </Grid>
