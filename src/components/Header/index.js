@@ -33,7 +33,6 @@ const query = graphql`
 const Header = () => {
   const { allContentfulPage } = useStaticQuery(query);
 
-  console.log(allContentfulPage);
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClick = event => {
@@ -95,6 +94,9 @@ const Header = () => {
           </Menu>
         </div>
       </Hidden>
+      <div className={styles.banner}>
+        <p>Our pools are OPEN and running on a normal schedule.</p>
+      </div>
     </div>
   );
 };
