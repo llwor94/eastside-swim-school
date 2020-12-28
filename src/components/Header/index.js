@@ -95,7 +95,7 @@ const Header = () => {
         </div>
       </Hidden>
       <div className={styles.banner}>
-        <p>Our pools are OPEN and running on a normal schedule.</p>
+        <p>We are closed until January 2nd.</p>
       </div>
     </div>
   );
