@@ -95,7 +95,7 @@ const Header = () => {
         </div>
       </Hidden>
       <div className={styles.banner}>
-        <p>Sunday 2/14 we are closed today due to snow.  Stay home and stay safe</p>
+        <p>Monday 2/15 we are open for lessons starting at noon</p>
       </div>
     </div>
   );
