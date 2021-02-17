@@ -95,7 +95,7 @@ const Header = () => {
         </div>
       </Hidden>
       <div className={styles.banner}>
-        <p>Monday 2/15 we are open for lessons starting at noon</p>
+        <p>We are open and operating normal hours following Covid guidelines</p>
       </div>
     </div>
   );
