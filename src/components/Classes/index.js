@@ -54,7 +54,7 @@ const Classes = () => {
       </Typography>
 
       <div className={styles.grid}>
-        <Grid container spacing={40} alignItems="stretch">
+        <Grid container spacing={40}>
           {allMarkdownRemark.edges
             .filter(
               ({ node }) =>
@@ -69,22 +69,22 @@ const Classes = () => {
           {allMarkdownRemark.edges
             .filter(({ node }) => node.frontmatter.ageGroup === 'Grade School')
             .map(({ node }) => (
-              <Class node={node} ages="5-12" />
+              <Class node={node} ages="5-12" disabled={node.frontmatter.difficulty === '1'} ctaText={node.frontmatter.difficulty === '1' ? 'Not Available' : 'Register Now'} />
             ))}
           {allMarkdownRemark.edges
             .filter(({ node }) => node.frontmatter.ageGroup === 'Pre Comp')
             .map(({ node }) => (
-              <Class node={node} ages="6-14" />
+              <Class node={node} ages="6-14"  disabled={true} ctaText={'Call To Register'} />
             ))}
           {allMarkdownRemark.edges
             .filter(({ node }) => node.frontmatter.ageGroup === 'Adult')
             .map(({ node }) => (
-              <Class node={node} ages="18 +" />
+              <Class node={node} ages="18 +" ctaText={'Register Now'} />
             ))}
           {allMarkdownRemark.edges
             .filter(({ node }) => node.frontmatter.ageGroup === 'Baby')
             .map(({ node }) => (
-              <Class node={node} ages="0-2" />
+              <Class node={node} ages="0-2" ctaText={'Register Now'} />
             ))}
         </Grid>
       </div>
