@@ -95,7 +95,7 @@ const Header = () => {
         </div>
       </Hidden>
       <div className={styles.banner}>
-        <p>We are closed Sunday April 4rd for the Easter holiday.</p>
+        <p>We are open and operating normal hours following Covid guidelines.</p>
       </div>
     </div>
   );
