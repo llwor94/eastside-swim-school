@@ -57,12 +57,9 @@ const Classes = () => {
         <Grid container spacing={40}>
           {allMarkdownRemark.edges
             .filter(
-              ({ node }) =>
-                node.frontmatter.ageGroup === 'Preschool' &&
-                node.frontmatter.classPeriods,
-            )
+              ({ node }) => node.frontmatter.ageGroup === 'Preschool')
             .map(({ node }) => (
-              <Class node={node} ages="3-5" />
+              <Class node={node} ages="3-5" disabled={node.frontmatter.difficulty !== '2'} ctaText={node.frontmatter.difficulty !== '2' ? 'Not Available' : 'Register Now'} />
             ))}
         </Grid>
         <Grid container spacing={40} alignItems="stretch">

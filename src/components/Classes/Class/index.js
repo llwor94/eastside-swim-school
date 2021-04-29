@@ -10,7 +10,6 @@ import Typography from '@material-ui/core/Typography';
 import styles from './index.module.styl';
 
 const Class = ({ node, ages, disabled, ctaText }) => {
-  console.log(node)
   return (
     <Grid item sm={6} md={6} style={{ flexGrow: 1, padding: '20px' }}>
       <Card className={styles.card}>
