@@ -59,14 +59,14 @@ const Classes = () => {
             .filter(
               ({ node }) => node.frontmatter.ageGroup === 'Preschool')
             .map(({ node }) => (
-              <Class node={node} ages="3-5" disabled={node.frontmatter.difficulty === '3'} ctaText={node.frontmatter.difficulty === '3' ? 'Not Available' : 'Register Now'} />
+              <Class node={node} ages="3-5" ctaText={'Register Now'} />
             ))}
         </Grid>
         <Grid container spacing={40} alignItems="stretch">
           {allMarkdownRemark.edges
             .filter(({ node }) => node.frontmatter.ageGroup === 'Grade School')
             .map(({ node }) => (
-              <Class node={node} ages="5-12" disabled={node.frontmatter.difficulty === '1'} ctaText={node.frontmatter.difficulty === '1' ? 'Not Available' : 'Register Now'} />
+              <Class node={node} ages="5-12" ctaText={'Register Now'} />
             ))}
           {allMarkdownRemark.edges
             .filter(({ node }) => node.frontmatter.ageGroup === 'Pre Comp')

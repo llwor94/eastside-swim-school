@@ -1,7 +1,7 @@
 ---
 title: Preschool 3
 link: >-
-  https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=136787&k_class_tab=10864
+  https://www.wellnessliving.com/rs/event/eastside_swim_school?k_class=305258&k_class_tab=10864
 classPeriods: []
 ageGroup: Preschool
 difficulty: '3'
