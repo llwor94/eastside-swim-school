@@ -59,7 +59,7 @@ const Classes = () => {
             .filter(
               ({ node }) => node.frontmatter.ageGroup === 'Preschool')
             .map(({ node }) => (
-              <Class node={node} ages="3-5" disabled={node.frontmatter.difficulty !== '2'} ctaText={node.frontmatter.difficulty !== '2' ? 'Not Available' : 'Register Now'} />
+              <Class node={node} ages="3-5" disabled={node.frontmatter.difficulty === '3'} ctaText={node.frontmatter.difficulty === '3' ? 'Not Available' : 'Register Now'} />
             ))}
         </Grid>
         <Grid container spacing={40} alignItems="stretch">
