@@ -95,7 +95,7 @@ const Header = () => {
         </div>
       </Hidden>
       <div className={styles.banner}>
-        <p>We are open and operating normal hours following Covid guidelines.</p>
+        <p>We are closed Sunday July 4th.</p>
       </div>
     </div>
   );
