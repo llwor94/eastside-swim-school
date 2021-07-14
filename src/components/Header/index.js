@@ -94,9 +94,6 @@ const Header = () => {
           </Menu>
         </div>
       </Hidden>
-//       <div className={styles.banner}>
-//         <p>We are closed Sunday July 4th.</p>
-//       </div>
     </div>
   );
 };
