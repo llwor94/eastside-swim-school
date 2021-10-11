@@ -52,6 +52,9 @@ const Classes = () => {
         Class Sessions
         <ToolTip open={toolTipOpen} setOpen={setToolTipOpen} />
       </Typography>
+      <Typography variant="caption" className={styles.important}>
+        We do not offer refunds or makeup classes for missed sessions. Cancelling will not refund the class.
+      </Typography>
 
       <div className={styles.grid}>
         <Grid container spacing={40}>

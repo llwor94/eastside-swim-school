@@ -184,11 +184,6 @@ class Instructors extends React.Component {
 												</IconButton>
 											</Tooltip>
 										</Typography>
-										<div className={styles.link}>
-											<Button component={Link} to={'/request'}>
-													Request A Lesson
-											</Button>
-									</div>
 									</div>
 
 									<Grid container spacing={40}>
