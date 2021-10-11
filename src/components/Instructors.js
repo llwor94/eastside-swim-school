@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql, Link } from "gatsby";
+import { StaticQuery, graphql } from "gatsby";
 
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
@@ -18,20 +18,6 @@ import classesView from '../images/classesView.png';
 import calendarView from '../images/calendarView.png';
 import finishedView from '../images/finishedView.png';
 import timeView from '../images/timeView.png';
-
-const BottomBar = ({ link }) => (
-	<div>
-		<Button
-			variant='contained'
-			href={link}
-			component='a'
-			className={styles.mr}
-			target='_blank'
-		>
-			Schedule Private Lessons
-		</Button>
-	</div>
-);
 
 class Instructors extends React.Component {
 	state = {
